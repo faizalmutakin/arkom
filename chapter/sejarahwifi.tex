@@ -32,4 +32,18 @@ jika WI-FI hanya mampu menyalurkan sinyalnya hanya sampai beberapa meter saja da
 semakin kecil pula sinyal yang diterimanya. Berbeda dengan WIMAX yang memiliki cakupan coverage area lebih luas atau jangkauan 
 sinyalnya lebih luas.
 
+\subsection{TeknikpelokalanWiFi}
+
+Teknik pelokalan WiFi masuk dalam sejumlah kategori besar. Beberapa teknik estimasi lokasi mencoba Model propagasi sinyal secara 
+langsung melalui ruang [Bahl dan Padmanabhan, 2000], dengan asumsi lokasi akses diketahui titik dan model atenuasi sinyal eksponensial. 
+Namun, bahkan saat mempertimbangkan lokasi dan material dinding dan furnitur di dalam bangunan, keakuratan perambatan sinyal Modelnya 
+sangat terbatas. Teknik lain mencoba model kemungkinan membaca berdasarkan lokasi spesifik [Haeberlen et al., 2004; Letchner et al., 
+2005], mewakili kekuatan sinyal di lokasi yang diminati dengan distribusi probabilitas yang dipelajari dari data pelatihan Sedangkan 
+lebih akurat dibanding propagasi sinyal model, metode ini secara inheren diskrit dan memiliki hanya kemampuan terbatas untuk interpolasi 
+antar lokasi. Untuk mengatasi keterbatasan tersebut, Schwaighofer dan rekannya [2003] menunjukkan bagaimana menerapkan proses Gaussian 
+ke lokalisasi kekuatan sinyal, menghasilkan model yang disediakan interpolasi melalui lokasi kontinu dengan pemodelan langsung
+ketidakpastian dari data pelatihan [Ferris dkk, 2006] diperpanjang Teknik ini untuk lokalisasi WiFi dengan menggabungkan Model kekuatan 
+sinyal GP dengan graph-based tracking, memungkinkan untuk lokalisasi yang akurat dalam skala skala besar. WiFiSLAM kami Teknik membangun 
+model terbaru ini dan meluas mereka untuk kasus pemetaan dengan lokasi yang tidak diketahui \cite{}.
+
 
