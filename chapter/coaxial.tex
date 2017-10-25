@@ -12,9 +12,13 @@
 Di dalam dunia IT khususnya Networking, untuk membentuk suatu jaringan, baik itu bersifat LAN (Local Area Network), maupun WAN (Wide Area Network), kita memerlukan media baik hardware maupun software. Beberapa media hardware yang penting di dalam membangun suatu jaringan adalah kabel atau perangkat Wi-Fi, ethernet card, hub atau switch, repeater, bridge, atau router dll. ada beberapa jenis kabel yang banyak digunakan dan menjadi standart untuk membangun atau sebagai penggunaan komunikasi data dalam jaringan komputer. Namun perlu diingat bahwa hampir 85persen kegagalan yang terjadi pada jaringan komputer disebabkan adanya kesalahan pada media komunikasi yang digunakan termasuk kabel. kabel coaxial salah satunya adalah jenis kabel yang sering digunakan untuk LAN.
 dikenal dua jenis tipe kabel coaxial yang digunakan untuk jaringan komputer, yaitu:
 	\begin{itemize}
-		\item thick coax(mempunyai diameter lumayan besar) : Thick coaxial cable sudah dispesifikasikan dengan berdasarkan standar IEEE 802.3 10 BASE 5, yang rata-rata diameternya adalah sekitar 12cm, yang biasanya diberikan warna kuning. Kabel ini juga biasa disebut dengan standard ethernet atau juga bisa dipanggil dengan thick Ethernet, atau yang biasa dikenal dengan ThickNet dan yellow cable. Kabel jenis ini mempunyai spesifikasi dan aturan sebagai berikut :
-		
-			\begin{itemsize}
+
+		\item * thick coax(mempunyai diameter lumayan besar), dan
+		\item * thin coax(mempunyai diameter lebih kecil).
+	
+		\item Thick coaxial (mempunyai diameter lumayan besar) Thick coaxial cable sudah dispesifikasikan dengan berdasarkan standar IEEE 802.3 10 BASE 5, yang rata-rata diameternya adalah sekitar 12cm, yang biasanya diberikan warna kuning. Kabel ini juga biasa disebut dengan standard ethernet atau juga bisa dipanggil dengan thick Ethernet, atau yang biasa dikenal dengan ThickNet dan yellow cable. Kabel jenis ini mempunyai spesifikasi dan aturan sebagai berikut :
+			\begin{itemize}
+
 				\item Setiap ujungnya harus diterminasi menggunakan terminator rakitan sebesar 50-ohm.
 				\item Peralatan yang terhubung maksimal 3 segment.
 				\item Ada pemancar tambahan di setiap pemancar jaringannya.
@@ -24,10 +28,10 @@ dikenal dua jenis tipe kabel coaxial yang digunakan untuk jaringan komputer, yai
 				\item Ground harus sudah terpasang di setiap segment.
 				\item Jarak terjauh untuk pencabang dari kabel utama ke device hanya sekitaran 5 meter saja.
 				\item Setiap pencabang paling banyak hanya boleh berjarak sekitar 2,5 meter.
-			\end{itemsize}
+			\end{itemize}
 			
 		\item Thin coaxial (mempunyai diameter lebih kecil). Thin Coaxial ini biasa digunakan untuk transciver di banyak radio amatir yang hanya memerlukan output atau pengeluaran daya yang kecil. Agar dapat digunakan sebagai jaringan, kabel ini harus memenuhi standar IEEE 802.3 10BASE2,yang diameter rata-ratanya kurang lebih 5mm dengan warna hitam atau warna gelap yang lain dan setiap perangkat di sambungkan ke BNCT-connector. Jika ingin kabel ini diimplementaasikan dengan T-Connector dan terminator di dalam sebuah jaringan, maka harus mengikuti aturan-aturan ini: 
-			\begin{itemsize}
+			\begin{itemize}
 				\item Seperti biasa, tiap ujungnya diberikan terminator sebesar 50-ohm.
 				\item Panjang kabel per segment nya kira-kira 185 meter.
 				\item Maksimal dapat terkoneksi 30 device per segment.
@@ -37,9 +41,14 @@ dikenal dua jenis tipe kabel coaxial yang digunakan untuk jaringan komputer, yai
 				\item Panjang minimal T-connector minimal 0,5 meter.
 				\item Panjang maksimum kabel per segment adalah 555 meter.
 				\item dapat menampung maksimum 30 device per segmentnya.
-			\end{itemsize}
-		
-\subsection{Pengertian dan Fungsi Kabel Coaxial}
+
+			\end{itemize}
+			
+	\begin{itemize}
+		\item Thick coaxial (mempunyai diameter lumayan besar) Thick coaxial cable sudah dispesifikasikan dengan berdasarkan standar IEEE 802.3 10 BASE 5, yang rata-rata diameternya adalah sekitar 12cm, yang biasanya diberikan warna kuning. Kabel ini juga biasa disebut dengan standard ethernet atau juga bisa dipanggil dengan thick Ethernet, atau yang biasa dikenal dengan ThickNet dan yellow cable. Kabel jenis ini mempunyai spesifikasi dan aturan sebagai berikut :
+
+	\subsection{Pengertian dan Fungsi Kabel Coaxial}
+
 	Kabel Coaxial dapat di artikan sebagai suatu media untuk transmisi data dan menyalurkan nya melalui sinyal listrik. Kabel Coaxial merupakan sebagai media yang bisa menghubungkan antara satu perangkat dengan perangkat lainnya, karena kabel Coaxial mempunyai kecepatan yang lumayan baik sehingga dapat di gunakan sebagai transmisi data. Fungsi lain dari kabel Coaxial, ialah dapat membagi sinyal broadband atau sebuah sinyal dengan frekuensi tinggi. Berikut adalah beberapa komponen dan bagian pada kabel Coaxial, antara lain :
 	\begin{figure} [ht]
 	\centerline{\includegraphics[width=1\textwidth]{figures/bgncoax.png}}
@@ -138,8 +147,10 @@ Gambar \ref{thincoax} adalah contoh gambar kabel coaxial thin.
 			Konektor yang menjadi pendahulunya dari konektor ST
 			\item Konektor D4
 			Konektor yang mirip seperti konektor FC, hanya saya ukuran yang berbeda.
-			
-\subsection {Penerapan Kabel Coaxial Pada Jaringan Komputer}
+
+		\end{enumerate}
+	\subsection {Penerapan Kabel Coaxial Pada Jaringan Komputer}
+
 	Dalam penerapannya, Instalasi pemasangan kabel coaxial harus dilakukan dengan sangat rapi dan hati-hati. Perhitungan kabel jaringan coaxial harus diukur dengan sangat sempurna karena jika salah dalam perhitungan ukuran dapat mengakibatkan rusaknya NIC (Network Interface Card) yang dipergunakan. Selain dapat merusak NIC, Kesalahan pengukuran kabel jaringan coaxial dalam instalasi pemasangan juga memberikan dampak pada kinerja jaringan itu sendiri yang akan terhambat karena jaringan tidak mencapai kemampuan maksimalnya.Ada beberapa hal yang perlu diperhatikan dalam instalasi pemasangan kabel coaxial untuk mendapatkan hasil yang sempurna:
 		\begin{itemize}
 			\item Kontinuitas konduktor utama kabel coaxial harus dalam kondisi baik dan terpelihara
