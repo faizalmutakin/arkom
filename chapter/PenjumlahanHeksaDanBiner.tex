@@ -1,7 +1,15 @@
 \section {Hexadecimal dan Binary}
 
 \subsection {Hexadecimal}
-Sistem bilangan heksadesimal (bilangan dasar 16) merepresentasikan angka yang menggunakan angka sebanyak seperempat digit sebagai sistem biner. Konversi antara heksadesimal dan biner sangat mudah sehingga hex bisa dianggap sebagai singkatan dari biner. Sistem heksadesimal membutuhkan 16 digit. Angka 0, 1, 2, 3, 4, 5, 6, 7, 8, dan 9 digunakan seperti pada sistem desimal A, B, C, D, E, dan F yang digunakan untuk bilangan desimal sesuai dengan kekuatan 16. 
+Sistem bilangan heksadesimal (bilangan dasar 16) merepresentasikan angka yang menggunakan angka sebanyak seperempat digit sebagai sistem biner. Konversi antara heksadesimal dan biner sangat mudah sehingga hex bisa dianggap sebagai singkatan dari biner. Sistem heksadesimal membutuhkan 16 digit. Angka 0, 1, 2, 3, 4, 5, 6, 7, 8, dan 9 digunakan seperti pada sistem desimal A, B, C, D, E, dan F yang digunakan untuk bilangan desimal sesuai dengan kekuatan 16. Angka 0, 1, 2, 3, 4, 5, 6, 7, 8, dan 9 digunakan seperti pada sistem desimal A, B, C, D, E, dan F yang digunakan untuk bilangan desimal sesuai dengan kekuatan 16. Fro kanan ke kiri, yang 1's, 6's, 256's dan seterusnya. Nilai hex number 9D7A adalah 40314 dalam desimal, karena:
+	\begin{verbatim}
+
+		 9	X	4096	36864	[	4096 = 16(3)]
+	+	13	X	 256	 3328	[	D is 13, 256 = 16(2)]
+	+	 7	X	  16	  112
+	+	10	X	   1	   10	[	A is 10	]
+						= 40314
+	\end{verbatim}
 	
 Hexadecimal atau juga bisa disebut dengan sistem bilangan basis 16 adalah sistem bilangan yang menggunakan 16 simbol. berbeda dengan sistem bilangan desimal. Simbol yang digunakan dari sistem ini adalah angka 0 sampai 9, ditambah dengan 6 simbol lainnya dari huruf A sampai F. Sistem bilangan ini digunakan untuk menampilkan nilai alamat memori dalam pemrograman komputer.
 ciri ciri bilangan hexadecimal adalah :
@@ -72,21 +80,19 @@ Berikut contoh pada sebuah bilangan desimal
 8 + 15 = 23 (CarryOut = 0)
 Maksud dari Carry Out itu sendiri adalah penyimpangan angka, berdasarkan contoh di atas. 7 + 2 = 9 CarryOut = 0 sebab tidak ada bilangan yang di simpan. 
 
-Gambar di bawah ini adalah contoh pada bilangan Biner
 	\begin{figure} [ht]
 	\centerline{\includegraphics[width=1\textwidth]{figures/Penjumlahan-Biner.gif}}
 	\caption{Penjumlahan Biner}
 	\label{Penjumlahan-Biner}
 	\end{figure}
-\ref{Penjumlahan-Biner}
+Gambar \ref{Penjumlahan-Biner} ini adalah penjelasan tentang penjumlahan biner.
 
-Gambar di bawah ini adalah Tabel Kebeneran untuk Penjumlahan 2 bit biner
 	\begin{figure} [ht]
 	\centerline{\includegraphics[width=1\textwidth]{figures/Biner2angka.png}}
 	\caption{Penjumlahan Biner 2 bit}
 	\label{Biner2angka}
 	\end{figure}
-\ref{Biner2angka}
+Gambar \ref{Biner2angka} ini adalah Tabel Kebeneran untuk Penjumlahan 2 bit biner
 
 Apabila dalam penjumlahan biner terdapat bawaan (carry), maka akan dijumlahkan dengan tingkatan diatasnya.
 
