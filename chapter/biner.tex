@@ -23,23 +23,29 @@ Sistem bilangan biner modern ditemukan oleh Gottfried Wilhelm Leibniz pada abad 
 
 Setiap digit pada bilangan biner mewakili pangkat pada angka 2 yang terus meningkat dari kanan ke kiri, Digit yang paling kanan mewakili 2 pangkat 0 ($2^0$). digit selanjutnya mewakili 2 pangkat 1 ($2^1$), selanjutnya lagi mewakili mewakili 2 pangkat 2 ($2^2$), dan seterusnya. Bilangan desimal 0 diwakili dengan bilangan biner '0', begitu juga dengan bilangan desimal 1 diwakili dengan bilangan biner '1'. Kedua bilangan 1 dan 0 tersebut tidak berubah. Bilangan desimal 2 diwakili sebagai bilangan biner '10', 3 sebagai '11', 4 sebagai '100', 5 sebagai '101', dan seterusnya.
 
-Dalam sistem komunikasi digital modern, dimana data ditransmisikan dalam bentuk bit-bit biner, dibutuhkan sistem yang tahan terhadap noise yang terdapat di kanal transmisi sehingga data yang ditransmisikan tersebut dapat diterima dengan benar. Kesalahan dalam pengiriman atau penerimaan data merupakan permasalahan yang mendasar yang memberikan dampak yang sangat signifikan pada sistem komunikasi.Biner yang biasa dipakai itu ada 8 digit angka dan cuma berisikan angka 1 dan 0, tidak ada angka lainnya.
+Dalam sistem komunikasi digital modern, dimana data ditransmisikan dalam bentuk bit-bit biner, dibutuhkan sistem yang tahan terhadap noise yang terdapat di kanal transmisi sehingga data yang ditransmisikan tersebut dapat diterima dengan benar. Kesalahan dalam pengiriman atau penerimaan data merupakan permasalahan yang mendasar yang memberikan dampak yang sangat signifikan pada sistem komunikasi.Biner yang biasa dipakai itu ada 8 digit angka dan cuma berisikan angka 1 dan 0, tidak ada angka lainnya.
 Posisi sebuah angka dalam bilangn biner atau bilangan basis dua akan menentukan berapa bobot nilainya. Posisi paling depan (kiri) sebuah bilangan memiliki nilai yang paling besar sehingga disebut sebagai MSB (Most Significant Bit), dan posisi paling belakang (kanan) sebuah bilangan memiliki nilai yang paling kecil sehingga disebut sebagai LSB (Leased Significant Bit). Berikut ini adalah contoh representasi dari bilangan biner atau bilangan berbasis dua : 
 $10110_2$ = 1 x $2^4$ + 0 x $2^3$ + 1 x $2^2$ + 1 x $2^1$ + 0 x $2^0$ = $22_{10}$
 
-A.	Bilangan Biner
+\subsection{Bilangan Biner}
 Sebagai contoh dari bilangan desimal, untuk angka 157 : $157_{(10)}$ = (1 x 100) + (5 x 10) + (7 x 1) 
 Perhatikan! Bilangan desimal ini sering juga disebut dengan basis 10. Hal ini dikarenakan perpangkatan 10 yang didapat dari 100, 101, 102, dst. 
-1.	Mengenal Konsep Bilangan Biner dan Desimal
+
+\subsubsection{Mengenal Konsep Bilangan Biner dan Desimal}
 Perbedaan paling mendasar dari metode bilangan biner dan bilangan desimal terletak pada jumlah dari basisnya. Jika desimal berbasis 10(X10) berpangkatkan 10x, maka untuk bilangan biner berbasiskan 2 (x2) menggunakan perpangkatan 2x. Sederhananya perhatikan contoh dibawah ini!
 $14_{(10)}$=(1x$^1$) + (4 x $10^0$)
 =10 + 4
 =14
 
+Bentuk umum dari bilangan biner dan bilangan desimal bisa dilihat pada tabel \ref{table:binerdesimal}. 
 
- 
-
-
+\begin{table}[h!]
+\centering
+\begin{tabular}{ |c|c|c|c|c|c|c|c|c|c| } 
+\hline
+Biner & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 11111111 \\ 
+\hline
+Desimal & 128 & 64 & 32 & 16 & 8 & 4 & 2 & 1 & 255 \\ 
 
 
 
@@ -49,4 +55,5 @@ $14_{(10)}$=(1x$^1$) + (4 x $10^0$)
 
 
 %Lanjutkan diatas tulisan ini
+%\end{enumerate}
 \end{document}
