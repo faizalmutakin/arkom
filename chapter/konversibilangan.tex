@@ -5,7 +5,13 @@
 Konversi bilangan merupakan suatu proses yang mana satu system bilangan dengan basis khusus tau tertentu akan dibuat menjadi bilangan dengan basis yang lainnya. 
 Yaitu dengan cara membagikan bilangan yang desimal dengan dua dan kemudian diambil sisa pembagiannya.
 caranya dengan mengalikan masing-masing bit pada bilangan dengan posisi nilainya.
+<<<<<<< HEAD
 \\Didalam dunia perkomputer kita dapat mengenal empat macam-macam bilangan , seperti bilangan biner,bilangan oktal, bilangan desimal , dan yang terakhir adalah bilangan hexadesimal.
+=======
+\\Didalam dunia perkomputer kita dapat mengenal empat macam-macam bilangan , seperti bilangan biner,bilangan oktal, bilangan desimal , dan yang terakhir adalah bilangan hexadesimal. Bilangan biner atau binary digit (bit) sendiri merupakan bilangan yang terdiri dari 1 dan 0. Bilangan oktal sendiri merupakan bilangan yang terdiri dari 0,1,2,3,4,5,6 dan 7.
+Sedangkan bilangan desimal sendiri merupakan bilangan yang terdiri dari 0,1,2,3,4,5,6,7,8 dan 9. Dan yang terakhir adalah bilangan hexadesimal yang merupakan bilangan yang terdiri dari 0,1,2,3,4,5,6,7,8,9,A,B,C,D,E dan F.
+
+>>>>>>> 13cd8c2381313210cf65bec860a8a3e3c037c7d9
 \section{Konversi bilangan biner}
 \subsection{Bilangan Biner}
 Sistem bilangan biner merupakan sistem dengan penulisan angka yaitu 0 dan 1.Sistem bilangan biner  modern ditemukan oleh Gittfried Wilhem Leibniz pada abad ke 17. Sistem biner juga biasa disebut dengan bit atau,Binary digit.
@@ -16,11 +22,63 @@ Bilangan biner menggunakan metode yang berkaitan dengan basis,bilangan biner jug
    	  = 8+4+2+0\\
              = 14  
 \end{itemize}
+\subsection{Konversi Sistem Bilangan Biner ke Desimal}
+Bilangan Biner dapat dikonversikan ke bentuk desimal dengan cara mengalikan bit dalam bilangan dengan position valuenya.Bilangan binari 101101 dapat dikonversikan ke dalam bentuk desimal senilai :
+\\  12	=110\\
+1002	= 410\\
+10002= 810\\
+1000002 = 3210\\
+----------------------+\\
+101101 = 4510\\
+\subsection{Konversi Sistem Bilangan Biner ke Oktal}
+Cara untuk mengkonversi bilangan biner ke oktal dapat dilakukan dengan mengkonversi tiga buah digit biner.
 
 \section{Bilangan Oktal} %Septia Rahayu (26-10-2017)
 Bilangan oktal adalah sistem bilangan yang berbasis 8 dan mempunyai delapan simbol bilangan yang berbeda : 0,1,2,...,7.
 \\
 	Teknik pembagian yang berurutan dapat menggunakan untuk mengubah bilangan desimal menjadi bilangan oktal. Bilangan desimal yang akan diubah secara berturut-turut dibagi dengan 8 dan sisa pembagian harus selalu dicatat. Sebagai contoh, untuk mengubah bilangan 5819.10 ke oktal.
+\subsection{Konversi Oktal ke Desimal}
+Cara untuk mengkorvesikan bilangan oktal ke heksadesimal yaitu dengan mengkonveksikan bilangan oktal tersebut ke biner terlebih dahulu kemudian bilangan tersebut di konveksikan ke heksadesimal. Untuk lebih jelasnya, perhatikan contoh konveksi bilangan oktal ke heksadesimal sebagai berikut:
+\\	Contoh konversi oktal ke heksadesimal:
+\\357(8)=......(16) 357 oktal sama dengan berapa bilangan heksadesimal?
+\\Adapun cara pengerjaannya sebagai berikut adalah:
+\begin{enumerate}
+	\item Kita pisahkan 357 menjadi 3, 5, dan 7 kemudian konversikan ke biner 
+	\item 3 = 011		5=101		7=111
+	\item Setelah dapat biner nya yaitu 011101111 kemudian konversi biner tersebut ke heksadesimal. 
+	\item 011101111  -------- 1111 = 15 = F            1110 = 14 = E       0 = 0
+	\item Maka di dapat bahwa 357 oktal sama dengan EF hexadesimal	
+\end{enumerate}
+
+
+
+\section{Bilangan Desimal} Salwaa Tania (26-10-2017)
+Bilangan desimal adalah bilangan yang menggunakan 10 angka mulai 0 sampai 9 berturut-turut. Setelah angka 9 , maka angka berikutnya adalah 10,11,12 dan seterusnya. Bilangan desimal disebut juga dengan bilangan berbasis 10.
+\\Contoh: 1710
+\\Berikut bagaimana cara melakukan konversi antar basis bilangan: 
+\begin{itemize}
+	\item Cara Konversi desimal ke basis lainnya
+	\item Konversi desimal ke biner
+	\item Konversi desimal ke Oktal
+	\item Konversi desimal ke Heksadesimal
+\end{itemize}
+\subsection{Cara mengkoversikan bilangan desimal ke biner}
+\begin{figure}[ht]
+\centerline{\includegraphics[width=1\textwidth]{figures/konversibiner.JPG}}
+\caption{Cara mengkonversikan bilangan desimal ke biner}
+\label{Contoh Konversi Bilangan Desimal}
+\end{figure}
+Seperti yang bisa kita lihat pada \ref{konversibiner} bahwa cara mengkonversikan bilangan desimal ke dalam bilangan biner adalah dengan membagi bilangan desimal dengan nilai 2 (basis). Cara ini merupakan cara yang sering digunakan oleh banyak orang dan cara ini cukup mudah untuk di pahami dan diterapkan. Hasil yang di dapat dari perhitungan \ref{konversibiner} adalah bilangan desimal 77 = 1001101 (bilangan biner). Dengan menggunakan rumus perhitungan konversi tersebut, kita bisa lihat langkah – langkah nya seperti berikut ini : 
+\begin{enumerate}
+	\item Pertama kita bagi 77 dengan 2, didapat bilangan bulat hasil bagi adalah 39 dengan sisa hasil bagi adalah 1,atau dengan kata lain 77=2*(36+1)
+	\item Selanjutnya bilangan bulat hasil bagi tersebut (36) kita bagi dengan 2 lagi, 36/2=18,sisa hasil bagi 0
+	\item Ulangi lagi langkah tersebut sampai bilngan bulat hasil bagi sama dengan 0. Setelah itu tulis sisa hasil bagi mulai dari bawah ke atas
+	\item Barulah kita mendapatkan hasil bahwa bilangan desimal 77 adalah bilangan desimal dari bilangan biner 1001110.
+\end{enumerate}
+
+\section{Bilangan Heksadesimal}
+Bilangan heksadesimal, atau bilangan heksa, atau bilangan basis 16, adalah sebuah sistem bilangan yang menggunakan 16 simbol. Berbeda dengan sistem bilangan desimal, simbol yang digunakan dari sistem ini menggunakan 16  buah simbol, mulai dari 0 sampai 9, kemudian dilanjut dari A sampai F. Jadi, angka A sampai F merupakan simbol untuk 10 sampai 15. Contoh penulisan : C516.
+Untuk dapat mengetahui bagimana cara mengubahnya antara bilangan satu dengan yang lain
 
 \section{Bilangan Desimal} Salwaa Tania (26-10-2017)
 Bilangan desimal adalah bilangan yang menggunakan 10 angka mulai 0 sampai 9 berturut-turut. Setelah angka 9 , maka angka berikutnya adalah 10,11,12 dan seterusnya. Bilangan desimal disebut juga dengan bilangan berbasis 10.
