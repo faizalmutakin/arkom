@@ -17,3 +17,63 @@ Heksadesimal atau sistem bilangan basis 16 adalah sebuah sistem bilangan yang me
 Dalam matematika dan komputasi, heksadesimal (juga basis 16, atau heks) adalah sistem angka posisional dengan radix, atau basis, dari 16. Ini menggunakan enam belas simbol yang berbeda, paling sering simbol 0-9 untuk mewakili nilai nol sampai sembilan, dan A, B, C, D, E, F (atau alternatif a, b, c, d, e, f) untuk mewakili nilai sepuluh sampai lima belas.
 Angka heksadesimal banyak digunakan oleh perancang dan pemrogram sistem komputer. Karena setiap digit heksadesimal mewakili empat digit biner (bit), ini memungkinkan representasi biner yang lebih ramah manusia. Satu digit heksadesimal mewakili nibble (4 bit), yang merupakan setengah dari oktet atau byte (8 bit). Sebagai contoh, satu byte dapat memiliki nilai mulai dari 00000000 sampai 11111111 dalam bentuk biner, tapi ini mungkin lebih mudah direpresentasikan sebagai 00 sampai FF dalam heksadesimal.
 Dalam konteks non-pemrograman, subskrip biasanya digunakan untuk memberi radix, misalnya nilai desimal 10.995 akan dinyatakan dalam heksadesimal sebagai 2AF316. Beberapa notasi digunakan untuk mendukung representasi heksadesimal dari konstanta dalam bahasa pemrograman, biasanya melibatkan awalan atau akhiran. Awalan "0x" digunakan dalam bahasa C dan bahasa terkait, di mana nilai ini dapat dinotasikan sebagai 0x2AF3.
+/subsection {contoh perkalian biner}
+/subsubsection {Perkalian dengan 4}
+Dari Tabel 1 dapat ditentukan
+Satuan Hasil Perkalian dengan 4 (SHP4)
+k 0 2 4 6 8
+SHP4 0 8 6 4 2
+Jika k genap maka :
+SHP4 = 10- k
+k 1 3 5 7 9
+SHP4 4 2 0 8 6
+Jika k ganjil maka:
+SHP4 = 15- k
+Sehingga cara mudah menentukan hasil
+perkalian bilangan n digit dengan 4 :
+1. Untuk angka terkanan =
+Nilai satuan pada : 10- k, k genap
+Nilai satuan pada : 15- k, k ganjil
+Jika memuat puluhan simpan sebagai
+”simpanan”
+2. Untuk angka di sebelah kirinya =
+Nilai satuan pada : (9- k)+”s” dari
+tetangganya, k genap
+Nilai satuan pada : (9- k) + “s” dari
+tetangganya + 5, k ganjil
+Jika dari langkah 1 diperoleh
+“simpanan” maka “simpana’ yang ada
+ditambahkan pula.
+Jika hasilnya memuat puluhan simpan
+sebagai ”simpanan”
+3. Ulangi langkah 2 sampai digit ke n
+4. Untuk digit ke (n+1) =
+”s” dari digit ke n + ”simpanan”-1
+Contoh :
+( 1 ) 4765 X 4 = ?
+Penyelesaian :
+C = ”simpanan”, H = hasil
+k OPERASI C H
+5 15-5 1 0
+6 (9-6)+2+1 0 6
+7 (9-7)+3+5+0 1 0
+4 (9-4)+3+1 0 9
+0 2-1+0 0 1
+Jadi 4765 X 4 = 19060
+( 2 ) 87645912 X 4 = ?
+Penyelesaian :
+C = ”simpanan”, H = hasil
+k OPERASI C H
+2 10-2 0 8
+1 (9-1)+1+5+0 1 4
+9 (9-9)+0+5+1 0 6
+5 (9-5)+4+5+0 1 3
+4 (9-4)+2+1 0 8
+6 (9-6)+2+0 0 5
+7 (9-7)+3+5+0 1 0
+8 (9-8)+3+1 0 6
+0 4-1+0 0 3
+Jadi 87645912 X 4 = 360583648
+Putut Sriwasito (Perkalian Biner Bilangan N Digit Dengan 3, 4, 5 dan 6)
+41
+
