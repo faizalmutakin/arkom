@@ -1,17 +1,16 @@
-%Ingat, jangan lupa backup file konversibilangan.tex lalu Git Pull dulu baru ubah file baru Push (Menghindari konflik karena push bersamaan)
+﻿ï»¿%Ingat, jangan lupa backup file konversibilangan.tex lalu Git Pull dulu baru ubah file baru Push (Menghindari konflik karena push bersamaan)
 %Commit setiap harinya bakal dicek sapa tau ada kesalahan jadi tar dinotif lewat file ini
 
 \section{Defenisi Konversi Bilangan}
 Konversi bilangan merupakan suatu proses yang mana satu system bilangan dengan basis khusus tau tertentu akan dibuat menjadi bilangan dengan basis yang lainnya. 
 Yaitu dengan cara membagikan bilangan yang desimal dengan dua dan kemudian diambil sisa pembagiannya.
 caranya dengan mengalikan masing-masing bit pada bilangan dengan posisi nilainya.
-<<<<<<< HEAD
-\\Didalam dunia perkomputer kita dapat mengenal empat macam-macam bilangan , seperti bilangan biner,bilangan oktal, bilangan desimal , dan yang terakhir adalah bilangan hexadesimal.
-=======
 \\Didalam dunia perkomputer kita dapat mengenal empat macam-macam bilangan , seperti bilangan biner,bilangan oktal, bilangan desimal , dan yang terakhir adalah bilangan hexadesimal. Bilangan biner atau binary digit (bit) sendiri merupakan bilangan yang terdiri dari 1 dan 0. Bilangan oktal sendiri merupakan bilangan yang terdiri dari 0,1,2,3,4,5,6 dan 7.
 Sedangkan bilangan desimal sendiri merupakan bilangan yang terdiri dari 0,1,2,3,4,5,6,7,8 dan 9. Dan yang terakhir adalah bilangan hexadesimal yang merupakan bilangan yang terdiri dari 0,1,2,3,4,5,6,7,8,9,A,B,C,D,E dan F.
-
->>>>>>> 13cd8c2381313210cf65bec860a8a3e3c037c7d9
+\\Pengertian Konversi Bilangan merupakan  suatu proses yang mana  satu system bilangan dengan dasar - dasar  tertentu akan dijadikan sebagai bilangan dengan dasar - dasar yang lainnya.
+Macam - macam Sistem Bilangan  :
+\\Bilangan desimal  merupakan bilangan yang menggunakan 10 angka yang dimulai dari angka 0 sampai angka 9 secara berururutan .
+\\ Setelah angka  9 , kemudian angka yang selanjutnya adalah angka 10, 11, 12 dan sebagainya . Bilangan desimal sering disebut sebagai bilangan berdasar angka 10. Contohnya seperti penulisan pada bilangan desimal : 1710 . Kita juga harus mengingat bahwa desimal berdasar 10 , maka angka 10-lah yang menjadi subscript pada penulisan bilangan decimal .
 \section{Konversi bilangan biner}
 \subsection{Bilangan Biner}
 Sistem bilangan biner merupakan sistem dengan penulisan angka yaitu 0 dan 1.Sistem bilangan biner  modern ditemukan oleh Gittfried Wilhem Leibniz pada abad ke 17. Sistem biner juga biasa disebut dengan bit atau,Binary digit.
@@ -23,16 +22,30 @@ Bilangan biner menggunakan metode yang berkaitan dengan basis,bilangan biner jug
              = 14  
 \end{itemize}
 \subsection{Konversi Sistem Bilangan Biner ke Desimal}
-Bilangan Biner dapat dikonversikan ke bentuk desimal dengan cara mengalikan bit dalam bilangan dengan position valuenya.Bilangan binari 101101 dapat dikonversikan ke dalam bentuk desimal senilai :
+Bilangan Biner dapat dikonversikan ke bentuk desimal dengan cara mengalikan bit dalam bilangan dengan position valu\enya.Bilangan binari 101101 dapat dikonversikan ke dalam bentuk desimal senilai :
 \\  12	=110\\
 1002	= 410\\
 10002= 810\\
 1000002 = 3210\\
 ----------------------+\\
 101101 = 4510\\
-\subsection{Konversi Sistem Bilangan Biner ke Oktal}
-Cara untuk mengkonversi bilangan biner ke oktal dapat dilakukan dengan mengkonversi tiga buah digit biner.
+Konversi Bilangan Biner ke dalam Bentuk desimal
+Cara mengkonversi bilangan biner ke  bentuk desimal dapat dilakukan dengan cara mengalikan satu-satu bilangan  dengan dua basis biner pangkat 0 dan pangkat 1. Mengalikan bilangan biner ke bentuk desimal mulai dari bilangan yang paling kanan,setelah itu jumlah bilangan tersebut. Berikut contoh nya : 
+\\11001(2) = (1x20)+(0x21)+(0x22)+(1x2)+(1x22)
+\\               = 1+0+0+8+16
+ \\              = 25
 
+\subsection{Konversi Sistem Bilangan Biner ke Oktal}
+\begin{figure}[ht]
+\centerline{\includegraphics[width=1\textwidth]{figures/konversioktal.JPG}}
+\caption{Tabel Konversi Bilangan Biner ke Oktal}
+\label{Tabel Konversi}
+\end{figure}
+Cara untuk mengkonversi bilangan biner ke oktal dapat dilakukan dengan mengkonversi tiga buah digit biner. Dapat dilihat pada gambar \ref{konversioktal} untuk dapat merubah bilangan biner ke bilangan oktal, kita harus perhatikan bahwa pada setiap bilangan oktal mewakili 3 bit dari bilangan biner. Jadi, jika kita temukan bilangan biner 111110 dikonversikan ke bilangan oktal, langkah awak yang harus dilakukan adalah membagi-bagi bilangan biner tersebut, pada setiap bagian 3 bit, dapat dimulai dari sebelah Kanan ke Kiri, hingga menjadi seperti ini : 111 110 
+yang jika di koversikan ke dalam oktal maka hasil yang di dapat adalah 76 dalam bilangan oktal.
+
+\subsection{Konversi Bilangan Biner ke Bilangan Hexadesimal}
+Konversi bilangan biner ke bilangan hexadesimal hampir mirip seperti Konversi pada bilangan oktal. Hanya saja pada bilangan hexadesimal memakai 4 digit angka yang diambil dari bilangan biner.Selain itu untuk nilai yang lebih besar dari 9 dapat diganti dengan huruf Heksadesimal seperti A,B,C,D sampai H. 
 \section{Bilangan Oktal} %Septia Rahayu (26-10-2017)
 Bilangan oktal adalah sistem bilangan yang berbasis 8 dan mempunyai delapan simbol bilangan yang berbeda : 0,1,2,...,7.
 \\
@@ -49,7 +62,18 @@ Cara untuk mengkorvesikan bilangan oktal ke heksadesimal yaitu dengan mengkonvek
 	\item 011101111  -------- 1111 = 15 = F            1110 = 14 = E       0 = 0
 	\item Maka di dapat bahwa 357 oktal sama dengan EF hexadesimal	
 \end{enumerate}
-
+\subsection{konversi oktal ke biner}
+Cara ini merupakan kebalikan cara konversi biner ke oktal. Setiap digit oktal akan langsung dikonversi ke biner lalu hasilnya digabungkan.
+\\contoh:
+\\548 = …….2 ?
+\\
+\begin{enumerate}
+	\item Pertama-tama hitung 58 = 1012 (Lihat cara konversi dari desimal ke biner)
+	\item Lalu hitung 48 = 1002
+	\item Sehingga didapat 548 = 1011002
+	\item Anda juga dapat menggunakan rumus di ms excel OCT2BIN() yang akan menkonversi bilangan oktal ke biner
+\end{enumerate}
+	
 
 
 \section{Bilangan Desimal} Salwaa Tania (26-10-2017)
@@ -68,7 +92,7 @@ Bilangan desimal adalah bilangan yang menggunakan 10 angka mulai 0 sampai 9 bert
 \caption{Cara mengkonversikan bilangan desimal ke biner}
 \label{Contoh Konversi Bilangan Desimal}
 \end{figure}
-Seperti yang bisa kita lihat pada \ref{konversibiner} bahwa cara mengkonversikan bilangan desimal ke dalam bilangan biner adalah dengan membagi bilangan desimal dengan nilai 2 (basis). Cara ini merupakan cara yang sering digunakan oleh banyak orang dan cara ini cukup mudah untuk di pahami dan diterapkan. Hasil yang di dapat dari perhitungan \ref{konversibiner} adalah bilangan desimal 77 = 1001101 (bilangan biner). Dengan menggunakan rumus perhitungan konversi tersebut, kita bisa lihat langkah – langkah nya seperti berikut ini : 
+Seperti yang bisa kita lihat pada \ref{konversibiner} bahwa cara mengkonversikan bilangan desimal ke dalam bilangan biner adalah dengan membagi bilangan desimal dengan nilai 2 (basis). Cara ini merupakan cara yang sering digunakan oleh banyak orang dan cara ini cukup mudah untuk di pahami dan diterapkan. Hasil yang di dapat dari perhitungan \ref{konversibiner} adalah bilangan desimal 77 = 1001101 (bilangan biner). Dengan menggunakan rumus perhitungan konversi tersebut, kita bisa lihat langkah Ã¢â‚¬â€œ langkah nya seperti berikut ini : 
 \begin{enumerate}
 	\item Pertama kita bagi 77 dengan 2, didapat bilangan bulat hasil bagi adalah 39 dengan sisa hasil bagi adalah 1,atau dengan kata lain 77=2*(36+1)
 	\item Selanjutnya bilangan bulat hasil bagi tersebut (36) kita bagi dengan 2 lagi, 36/2=18,sisa hasil bagi 0
@@ -86,7 +110,13 @@ Dengan rumus yang sama seperti biner kita bisa  lakukan juga untuk bilangan berb
 	\item Kita juga dapat menggunakan fungsi microsoft excel DEC20CT() untuk konversi bilngan desimal ke oktal.
 \end{enumerate}
 
-
+\subsubsection{Cara mengubah persen,pecahan,dan desimal}
+Mengubah bilangan antara persen, pecahan  dan desimal merupakan keterampilan matematika yang penting ada pun cara mengubahnya ada  beberpa cara
+\begin{itemize}
+\item untuk mengubah persen menjadi desimal
+\item mengubah persen menjadi sebagai pecahan
+\item hilanglah tanda persen
+\end{itemize}
 \section{Bilangan Heksadesimal}
 Bilangan heksadesimal, atau bilangan heksa, atau bilangan basis 16, adalah sebuah sistem bilangan yang menggunakan 16 simbol.
 \begin{figure}[ht]
@@ -96,6 +126,7 @@ Bilangan heksadesimal, atau bilangan heksa, atau bilangan basis 16, adalah sebua
 \end{figure}
 Berbeda dengan sistem bilangan desimal, bisa di lihat pada \ref{konversiheksa} simbol yang digunakan dari sistem ini menggunakan 16  buah simbol, mulai dari 0 sampai 9, kemudian dilanjut dari A sampai F. Jadi, angka A sampai F merupakan simbol untuk 10 sampai 15. Contoh penulisan : C516.
 Untuk dapat mengetahui bagimana cara mengubahnya antara bilangan satu dengan yang lain. Sebenarnya pada dasarnya, bilangan heksadesimal digunakan sebagai salah satu cara untuk menampilkan informasi bilangan biner dalam deret yang lebih pendek.
+<<<<<<< HEAD
 \subsection{Konversi bilngan desimal ke heksadesimal}
 Seprti halnya bilangan biner dan bilangan oktal,kita pun akan menggunakan teknik perhitungan yang sama.
 \begin{enumerate}
@@ -103,6 +134,18 @@ Seprti halnya bilangan biner dan bilangan oktal,kita pun akan menggunakan teknik
 	\item Lalu 4/16=0, sisa 4
 	\item Dengan demikian dari hasil pehitungan di dapatkan 6710=4316
 \end{enumerate}
+=======
+\subsection{Konversi Bilangan Heksadesimal Ke Oktal}
+Untuk konversi Bilangan Heksadesimal ke Oktal lebih mudahnya digunakan sebuah perantara, yaitu konvensi bilangan heksadesimal kepada bilangan biner lalu Bilangan biner kepada Bilangan oktal.
+Konversi ini Juga dapat dilakukan dengan menggunakan Program Excel, seperti LibreOffice yang bernama LibreOffice-Calc dengan Rumus seperti berikut :  "=HEX2OCT( 'kolom' )".
+\subsection{Konversi Bilangan Heksadesimal ke Desimal}
+Cara untuk mengkonversi bilangan heksadesimal kedalam bentuk bilangan desimal terdapat dua cara yaitu dengan mengunakan perhitungan manual yaitu dengan cara mengalikan masing-masing bit dalam bilangan dengan position valuenya.
+Langkah-langkah :
+\begin{itemize}
+\item Digit-digit dipisahkan. Dan jika terdapat huruf A-F menggantinya dengan bilangan desimal padananya
+\item Mengalikan dari tiap digit terhadap nilai tempatnya.
+\begin{itemize}
+>>>>>>> f668e134b1ef674ccc60972c9e43e30260656026
 \section{Bilangan Desimal} Salwaa Tania (26-10-2017)
 Bilangan desimal adalah bilangan yang menggunakan 10 angka mulai 0 sampai 9 berturut-turut. Setelah angka 9 , maka angka berikutnya adalah 10,11,12 dan seterusnya. Bilangan desimal disebut juga dengan bilangan berbasis 10.
 \\Contoh: 1710
@@ -119,7 +162,7 @@ Bilangan desimal adalah bilangan yang menggunakan 10 angka mulai 0 sampai 9 bert
 \caption{Cara mengkonversikan bilangan desimal ke biner}
 \label{Contoh Konversi Bilangan Desimal}
 \end{figure}
-Seperti yang bisa kita lihat pada \ref{konversibiner} bahwa cara mengkonversikan bilangan desimal ke dalam bilangan biner adalah dengan membagi bilangan desimal dengan nilai 2 (basis). Cara ini merupakan cara yang sering digunakan oleh banyak orang dan cara ini cukup mudah untuk di pahami dan diterapkan. Hasil yang di dapat dari perhitungan \ref{konversibiner} adalah bilangan desimal 77 = 1001101 (bilangan biner). Dengan menggunakan rumus perhitungan konversi tersebut, kita bisa lihat langkah � langkah nya seperti berikut ini : 
+Seperti yang bisa kita lihat pada \ref{konversibiner} bahwa cara mengkonversikan bilangan desimal ke dalam bilangan biner adalah dengan membagi bilangan desimal dengan nilai 2 (basis). Cara ini merupakan cara yang sering digunakan oleh banyak orang dan cara ini cukup mudah untuk di pahami dan diterapkan. Hasil yang di dapat dari perhitungan \ref{konversibiner} adalah bilangan desimal 77 = 1001101 (bilangan biner). Dengan menggunakan rumus perhitungan konversi tersebut, kita bisa lihat langkah â€“ langkah nya seperti berikut ini : 
 \begin{enumerate}
 	\item Pertama kita bagi 77 dengan 2, didapat bilangan bulat hasil bagi adalah 39 dengan sisa hasil bagi adalah 1,atau dengan kata lain 77=2*(36+1)
 	\item Selanjutnya bilangan bulat hasil bagi tersebut (36) kita bagi dengan 2 lagi, 36/2=18,sisa hasil bagi 0
@@ -129,18 +172,24 @@ Seperti yang bisa kita lihat pada \ref{konversibiner} bahwa cara mengkonversikan
 
 
 \section{Fungsi dari Konversi Bilangan} %Luthfi Muhammad Nabil (25-10-2017)
-Fungsi dari Konversi bilangan ini salah satunya adalah untuk membaca sebuah perintah yang dimana perintah tersebut masih menggunakan perintah yang hanya bisa dibaca oleh komputer yaitu Biner. tetapi dengan adanya Konversi Bilangan, Sebuah angka tersebut bisa dijadikan sebagai suatu line perintah bahkan sebuah kata yang nantinya dapat dimunculkan oleh komputer kepada pengguna. Pembuatan aplikasi sendiri membutuhkan sebuah Konversi Bilangan yang nantinya akan menggerakan sebuah modul - modul dalam sebuah perangkat yang dipakai dalam aplikasi tersebut. 
+Membuat sebuah program tidak hanya membutuhkan bahasa pemrograman. Pada bagian komputernya juga memerlukan sebuah bahasa yang dimengerti oleh komputer tersebut. yaitu bilangan biner. jadi salah satu Fungsi dari konversi bilangan ini salah satunya adalah untuk membuat sebuah program. Selain menggunakan bilangan desimal yang biasa kita temui di keseharian kita, pembuatan sebuah program itu terkadang juga menggunakan bilangan biner, oktal, dan hexadesimal.
+Fungsi lain dari Konversi bilangan ini salah satunya adalah untuk membaca sebuah perintah yang dimana perintah tersebut masih menggunakan perintah yang hanya bisa dibaca oleh komputer yaitu Biner. tetapi dengan adanya Konversi Bilangan, Sebuah angka tersebut bisa dijadikan sebagai suatu line perintah bahkan sebuah kata yang nantinya dapat dimunculkan oleh komputer kepada pengguna. Pembuatan aplikasi sendiri membutuhkan sebuah Konversi Bilangan yang nantinya akan menggerakan sebuah modul - modul dalam sebuah perangkat yang dipakai dalam aplikasi tersebut. 
 Konversi Sendiri dilakukan dalam sebuah Processor atau ALU yang mereka hanya dapat membaca kode biner yang nantinya saat setelah diproses akan dimasukan ke memori yang nanti akan dikonversi ditampilkan ke layar dengan berbentuk yang sesuai dengan yang dibutuhkan
+\\Membuat sebuah program tidak hanya membutuhkan bahasa pemrograman. Pada bagian komputernya juga memerlukan sebuah bahasa yang dimengerti oleh komputer tersebut. yaitu bilangan biner. jadi salah satu Fungsi dari konversi bilangan ini salah satunya adalah untuk membuat sebuah program. Selain menggunakan bilangan desimal yang biasa kita temui di keseharian kita, pembuatan sebuah program itu terkadang juga menggunakan bilangan biner, oktal, dan hexadesimal.
+\\Fungsi lain dari Konversi bilangan ini salah satunya adalah untuk membaca sebuah perintah yang dimana perintah tersebut masih menggunakan perintah yang hanya bisa dibaca oleh komputer yaitu Biner. tetapi dengan adanya Konversi Bilangan, Sebuah angka tersebut bisa dijadikan sebagai suatu line perintah bahkan sebuah kata yang nantinya dapat dimunculkan oleh komputer kepada pengguna. Pembuatan aplikasi sendiri membutuhkan sebuah Konversi Bilangan yang nantinya akan menggerakan sebuah modul - modul dalam sebuah perangkat yang dipakai dalam aplikasi tersebut. 
 
 \section{Penerapan Konversi Bilangan} %Luthfi Muhammad Nabil (26-10-2017)
 Konversi Bilangan diterapkan khususnya pada bidang Teknologi. Selain sebagai instruksi, Konversi sendiri dapat dikenal sebagai pengenal dalam situasi tertentu. seperti untuk mengenal warna dan sebagainya. Beberapa contoh dari penerapan tersebut adalah sebagai berikut : 
 \begin{itemize}
 	\item Sebagai kode warna dalam pemrograman \\ Konversi Bilangan sering sekali dipakai untuk mengetahui berapa tingkat warna dan seberapa pekat warna tersebut. Konversi Bilangan pada kasus ini menggunakan Konversi Desimal ke Heksadesimal dimana warna terbagi menjadi Merah, Hijau, Biru. 
-	\item Sebagai Penampil Angka dalam Kalkulator \\ Dengan adanya Konversi Bilangan, Angka yang dikirimkan ke memori akan diubah kedalam bentuk angka biner yang sebelumnya dikonversi dengan menekan sebuah tombol yang mengirimkan aliran kepada memori untuk mengirimkan angka biner.	
+	\item Sebagai Penampil Angka dalam Kalkulator \\ Dengan adanya Konversi Bilangan, Angka yang dikirimkan ke memori akan diubah kedalam bentuk angka biner yang sebelumnya dikonversi dengan menekan sebuah tombol yang mengirimkan aliran kepada memori untuk mengirimkan angka biner.
+	\item Untuk menampilkan hasil perhitungan dari ALU \\ Pada ALU, Bilangan yang dipakai adalah bilangan Biner yang sangat kecil memungkinkan untuk dibaca oleh computer atau monitor pada umumnya. Oleh karena itu, Untuk menampilkan hasil dari perhitungan, Dibutuhkan sebuah konversi yang dilakukan setelah proses perhitungan mengeluarkan sebuah hasil yang nanti akan ditampilkan oleh Monitor.
 \end{itemize}
 
 \section{Rangkuman} %Luthfi Muhammad Nabil (28-10-2017)
 Konversi Bilangan adalah Konversi dimana sebuah bilangan akan dikonversikan menjadi tipe bilangan yang lain. Tipe bilangan sendiri cukup beragam, seperti Bilangan Biner, Desimal, Oktal, dan Heksadesimal. Cara pengonversiannya sendiri bermacam ? macam, ada yang mampu langsung dikonversikan menjadi bilangan tipe tujuan atau diubah terlebih dahulu ke bilangan decimal. Pemakaian dari Konversi Bilangan pun beragam. Dimulai dari proses hitungan pada kalkulator dan ALU sampai pembacaan kode pada kode Heksadesimal di computer. 
+\\Pada dasarnya Konversi bilangan memiliki beberapa fungsi baik dalam Komputer maupun diluar computer. Dengan adanya metode ini kita diharapkan dapat membaca dan mengkonversi sebuah instruksi kedalam computer yang dapat terbaca oleh computer lalu dapat dikonversikan ke dalam bentuk sebuah bilangan yang kita inginkan. Bahkan seseorang yang buta warna dapat melihat warna yang tidak bisa dia lihat dengan kode yang telah tersedia yaitu kode warna. 
+
 %Note : Setiap mau push kasih note atau attention biar diarahkan supaya sebelum push nanti di pull dulu biar tau siapa yang mau push (Komunikasi Tetap Terjaga)
 %Untuk konversi bilangan desimal ada penyesuaian jadi agak lebih mendetail (Salwaa Tania)
 
