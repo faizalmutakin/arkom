@@ -160,3 +160,50 @@ objek di dalam citra biner adalah segmentasi objek. Proses segmentasi bertujuan 
     /item Segmentasi berdasarkan batas wilayah (tepidariobjek). Pixel-pixel tepi ditelusuri sehingga rangkaian pixel yang menjadi batas     (boundary) antara objek dengan latar belakang dapat diketahui secara keseluruhan (algoritma boundary following).
     
     /item Segmentasi kebentuk-bentuk dasar (misalnya segmentasi huruf menjadi garis-garis vertikal dan horizontal, segmentasi objek          menjadi bentuk lingkaran, elips, dansebagainya).
+	
+	
+/subsubsection {Perkalian dengan 6 Perkalian dengan 5}
+Dari Tabel 1 dapat ditentukan
+Satuan Hasil Perkalian dengan 5 (SHP5)
+k 0 2 4 6 8
+SHP5 0 0 0 0 0
+Jika k genap maka :
+SHP5 = 0
+k 1 3 5 7 9
+SHP5 5 5 5 5 5
+Jika k ganjil maka:
+SHP5 = 5
+Sehingga cara mudah menentukan hasil
+perkalian bilangan n digit dengan 5 :
+1. Untuk angka terkanan = 0, k genap
+5, k ganjil
+2. Untuk angka di sebelah kirinya =
+0+”s” dari tetangganya, k genap
+5+ “s” dari tetangganya + 5, k ganjil
+3. Ulangi langkah 2 sampai selesai
+Contoh:
+( 1 ) 7896 X 5 = ?
+Penyelesaian:
+H = hasil
+k OPERASI H
+6 0
+9 5+3 8
+8 0+4 4
+7 5+4 9
+0 0+3 3
+Jadi 7896 X 5 = 39480
+( 2 ) 86532947 X 5 = ?
+Penyelesaian:
+H = hasil
+k OPERASI H
+7 5
+4 0+3 3
+9 5+2 7
+2 0+4 4
+3 5+1 6
+5 5+1 6
+6 0+2 2
+8 0+3 3
+0 0+4 4
+Jadi 865
+
