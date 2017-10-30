@@ -1,0 +1,33 @@
+Bilangan Binary
+Pada saat pertama kali komputer atau elektronik digunakan,sistem operasinya telah menggunakan bilangan biner (Binary),yaitu bilangan dengan basis 2 pada system bilangan. Semua perhitungan diolah menggunakan aritmatik biner,yaitu bilangan yang hanya memiliki dua nilai kemungkinan 0 dan 1 yang biasa disebut bit (binary digit). Semua kode program dan data disimpan dalam format biner yang merupakan sebuah kode-kode dari komputer. Pada setiap posisi memiliki bobot nilai yang berbeda,dimana pada posisi paling depan (kiri) memiliki nilai yang paling besar yang biasa disebut MSB (Most Significant Bit) dan pada posisi paling belakang (kanan) memiliki nilai paling kecil yang biasa disebut LSB (Leased Significant Bit).
+	Pengurangan Bilangan Biner
+Kondisi yang muncul pada pengurangan bilangan biner (0-0,0-1,1-0,1-1) dimana :
+0 – 0 = 0
+0 – 1 = 1 borrow 1 (jika masih ada angka di sebelah kiri)
+1 – 0 = 1
+1 – 1 = 0
+Maksud dari borrow adalah peminjaman satu digit angka dari kolom sebelah yang memiliki nilai lebih besar dari hasil pengurangan mencukupi.
+Contoh pada bilangan biner :
+1100010 – 110111 = 0101011 
+Contoh pada bilangan decimal :
+37 – 32 = 5 (borrow 0)
+23 – 17 = 6 (3 borrow 1 dari angka 2)
+Pada perhitungan pertama tidak ada proses meminjam (borrow) angka yang lebih besar karena hasil pengurangan di digit belakang sudah mencukupi untuk dikurangkan dengan bilangan pengurangnya ,sementara pada perhitungan ke-2 ada proses peminjaman karena 3 tidak mencukupi dikurangkan dengan 7.
+Bilangan Hexadecimal
+
+Bilangan hexadecimal (hexa) berbasis 16 memiliki nilai dalam symbol 0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F. Adanya bilangan hexadecimal untuk memudahkan operasi bilangan biner yang sulit pada operasi komputer. Bilangan hexadecimal biasanya digunakan dalam menggambarkan memori komputer atau instruksi. Setiap digit bilangan hexadecimal mewakili 4 bit bilangan biner dan 2 bilangan hexadecimal mewakili 1 byte.
+
+Pengurangan Bilangan Hexadecimal
+a.	FBC(16) – 321(16) = ..........(16)
+Penyelesaian :
+1.	C – 1 = 12 – 1 = 11,hasil pengurangan adalah B
+2.	B – 2 = 11 – 2 = 9,hasil pengurangan adalah 9
+3.	F – 3 = 15 – 3 = 12,hasil pengurangan adalah C
+Hasil pengurangan dari FBC(16) – 321(16) = C9B(16)
+
+b.	F30(16) – D89(16) =  ..........(16)
+Penyelesaian :
+1.	0 – 9,karena angka 0 lebih kecil dari 9 maka terjadi borrow 1 yang bernilai 16 yang membuat angka 0 menjadi 16 dari 0+16. Hasil pengurangan 16 – 9 = 7.
+2.	2 – 8,karena telah terjadi borrow 1 pada sebelumnya maka angka 3 – 1 = 2. Karena angka 2 lebih kecil dari 8 maka terjadi borrow 1 yang membuat angka 2 menjadi 18 dari 2+16. Hasil pengurangan 18 – 8 = 10 atau .
+3.	E – D = 14 – 13 = 1,E berasal dari F yang dikurangi 1 karena telah terjadi borrow pada sebelumnya.
+Hasil pengurangan dari F30(16) – D89(16) = 1A7(16).
