@@ -11,7 +11,8 @@
 
 \begin{document}
 
-\section{Pengertian}
+\section{Pengertian} 
+
 
 Sejak pertama kali komputer elektronik digunakan, komputer tersebut telah beroperasi dengan menggunakan sistem bilangan biner, yaitu bilangan berbasis dua pada sistem bilangan. Semua kode program dan data pada komputer disimpan serta dimanipulasi dalam format biner yang merupakan kode - kode mesin komputer. Sehingga semua perhitungan – perhitungan yang diolah oleh computer tersebut menggunakan aritmatika biner yang hasilnya berupa bilangan hanya memiliki dua kemungkinan nilai, yaitu 0 dan 1. 
 
@@ -52,9 +53,7 @@ Pangkat & $2^7$ & $2^6$ & $2^5$ & $2^4$ & $2^3$ & $2^2$ & $2^1$ & $2^0$ & $X^{1-
 \caption{Tabel bentuk umum dari bilangan biner dan bilangan desimal}
 \label{table:binerdesimal}
 \end{table}
-Sekarang kita balik lagi ke contoh soal di atas! Darimana kita dapatkan angka desimal 14(10) menjadi 
-
-angka biner 1110(2)? 
+Sekarang kita balik lagi ke contoh soal di atas! Darimana kita dapatkan angka desimal 14(10) menjadi angka biner 1110(2)? 
 Mari kita lihat lagi pada bentuk umumnya pada tabel \ref{table:contoh1}!
 
 \begin{table}[h!]
@@ -64,6 +63,19 @@ Mari kita lihat lagi pada bentuk umumnya pada tabel \ref{table:contoh1}!
 Biner & 0 & 0 & 0 & 0 & 1 & 1 & 1 & 0 & 00001110 \\ 
 \hline
 Desimal & 0 & 0 & 0 & 0 & 8 & 4 & 2 & 0 & 14 \\ 
+\hline
+Pangkat & $2^7$ & $2^6$ & $2^5$ & $2^4$ & $2^3$ & $2^2$ & $2^1$ & $2^0$ & $X^{1-7}$ \\ 
+\hline
+\end{tabular}
+\caption{Tabel contoh biner ke desimal.}
+\label{table:contoh1}
+\end{table}
+
+Mari kita telusuri perlahan-lahan!
+
+\begin{enumerate}
+\item Pertama sekali, kita jumlahkan angka pada desimal sehingga menjadi 14. anda lihat angka - angka 
+
 
 yang menghasilkan angka 14 adalah 8, 4, dan 2!
 \item Untuk angka-angka yang membentuk angka 14 (lihat angka yang diarsir), diberi tanda biner “1”, selebihnya diberi tanda “0”.
@@ -71,12 +83,27 @@ yang menghasilkan angka 14 adalah 8, 4, dan 2!
 \end{enumerate}
 
 
-\subsubsection{Mengubah Angka 
-Biner ke Desimal}
+\subsubsection{Mengubah Angka Biner ke Desimal}
 Perhatikan contoh! 
 
 \begin{enumerate}
 \item 11001101(2) 
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{ |c|c|c|c|c|c|c|c|c|c| } 
+\hline
+Biner & 1 & 1 & 0 & 0 & 1 & 1 & 0 & 1 & 11001101 \\ 
+\hline
+Desimal & 128 & 64 & 0 & 0 & 8 & 4 & 0 & 1 & 205 \\ 
+\hline
+Pangkat & $2^7$ & $2^6$ & $2^5$ & $2^4$ & $2^3$ & $2^2$ & $2^1$ & $2^0$ & $X^{1-7}$ \\ 
+\hline
+\end{tabular}
+\caption{Tabel contoh biner ke desimal.}
+\label{table:contoh2}
+\end{table}
+
 Note:
 
 \begin{itemize}
@@ -85,11 +112,7 @@ Note:
 \end{itemize}
 
 \item 00111100(2) 
-\begin{table}[h!]
-\centering
-\begin{tabular}{ |c|c|c|c|c|c|c|c|c|c| } 
-\hline 
-\hline 
+
 
 
 
@@ -100,5 +123,5 @@ Note:
 
 
 %Lanjutkan diatas tulisan ini
-%\end{enumerate}
+\end{enumerate}
 \end{document}
