@@ -260,3 +260,26 @@ Hence the required product is 100101011.
                           1 1 0 1 1 1 0 1                    
 
                        1 0 1 0 0 0 1 0 0 1 0   0 1 1
+		     
+/subsection {Perkalian Dua-komplemen}
+•
+Urutan penambahan pelengkap ganda dari multiplicands bergeser
+kecuali untuk langkah terakhir dimana multiplicand bergeser sesuai dengan MSB
+harus ditiadakan
+•
+Sebelum menambahkan multiplicand bergeser ke produk parsial, tambahan
+bit ditambahkan ke kiri dari produk parsial menggunakan tanda ekstensi.
+Ex:
+- 5 1011 multiplicand
+x
+- 3 x
+ Pengganda 1101
+ 15 00000 produk parsial
+                                            11011 bergeser multiplikand
+                                          111011 produk parsial
+                                         00000 bergeser multiplicand
+                                       1111011 produk parsial
+                                       11011 bergeser multiplikand
+                                     11100111 produk parsial
+                                     00101 bergeser dan meniadakan perkalian
+                                     Produk 00001111
