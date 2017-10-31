@@ -17,9 +17,9 @@ untuk kabel yang mengandung sejumlah kecil pasang, tingkat twist harus berbeda. 
 perisai kabel F / UTP atau S / FTP), kabel UTP (unshielded twisted pair) tidak dikelilingi oleh perisai. UTP adalah tipe kabel utama untuk 
 telepon dan sangat umum untuk jaringan komputer, terutama sebagai kabel patch atau koneksi jaringan sementara karena tingginya fleksibilitas kabel.
 
-	contoh gambar utp dan stp \ref{utp_stp}
+	contoh gambar utp dan stp \ref{utp_stp.stp}
 	\begin{figure}[ht]
-		\centerline{\includegrapichs[width=1\textwidth]{figures/utp_stp.jpg}}
+		\centerline{\includegraphics[width=1\textwidth]{figures/utp_stp.jpg}}
 		\caption{gambar utp dan stp.}
 		\label{utp_stp}
 	\end{figure}
@@ -54,7 +54,7 @@ CAT1 biasanya digunakan untuk kabel telepon. Jenis kabel ini tidak mampu menduku
 oleh perusahaan telco yang menyediakan layanan ISDN dan PSTN. Dalam kasus seperti ini, pemasangan kabel antara situs pelanggan dan jaringan telco dilakukan 
 dengan menggunakan kabel tipe CAT 1.
 
-CAT2, CAT3, CAT4, CAT5 / 5e, CAT6 & CAT 7 adalah spesifikasi kawat jaringan. Jenis kawat ini bisa mendukung jaringan komputer dan lalu lintas telepon. CAT2 
+CAT2, CAT3, CAT4, CAT5 / 5e, CAT6 dan CAT 7 adalah spesifikasi kawat jaringan. Jenis kawat ini bisa mendukung jaringan komputer dan lalu lintas telepon. CAT2 
 banyak digunakan untuk jaringan token ring, mendukung kecepatan hingga 4 Mbps. Untuk kecepatan jaringan yang lebih tinggi (100 Mbps atau lebih tinggi) CAT5e 
 harus digunakan, namun untuk persyaratan kecepatan 10 Mbps yang hampir punah, CAT3 sudah cukup.
 
@@ -78,14 +78,14 @@ Pada tahun 2009, CAT6A diperkenalkan sebagai kabel spesifikasi yang lebih tinggi
 
 	contoh gambar utp \ref{utp}
 	\begin{figure}[ht]
-		\centerline{\includegrapichs[width=1\textwidth]{figures/utp.jpg}}
+		\centerline{\includegraphics[width=1\textwidth]{figures/utp.jpg}}
 		\caption{gambar utp.}
 		\label{utp}
 	\end{figure}
 	
 	contoh gambar stp \ref{stp}
 	\begin{figure}[ht]
-		\centerline{\includegrapichs[width=1\textwidth]{figures/stp.jpg}}
+		\centerline{\includegraphics[width=1\textwidth]{figures/stp.jpg}}
 		\caption{gambar stp.}
 		\label{stp}
 	\end{figure}
@@ -96,9 +96,18 @@ Pada tahun 2009, CAT6A diperkenalkan sebagai kabel spesifikasi yang lebih tinggi
 3. Mudah untuk menangani dan menginstal.
 
 \subsection{Kekurangan}
-1. Deformasi: Kerentanan twisted pair terhadap interferensi elektromagnetik sangat bergantung pada skema twisted pair (kadang dipatenkan oleh produsen) tetap terjaga selama pemasangan. Akibatnya, kabel twisted pair biasanya memiliki persyaratan ketat untuk tegangan tarik maksimal serta radius tikungan minimum. Kerapihan kabel twisted pair ini membuat praktik pemasangan menjadi bagian penting untuk memastikan kinerja kabel.
-2. Delay condong: pasangan yang berbeda dalam kabel memiliki penundaan yang berbeda, karena tingkat twist berbeda yang digunakan untuk meminimalkan crosstalk di antara pasangan. Hal ini dapat menurunkan kualitas gambar saat beberapa pasang digunakan untuk membawa komponen sinyal video. Kabel miring rendah tersedia untuk mengurangi masalah ini.
-3. Ketidakseimbangan: perbedaan antara kedua kabel pada pasangan dapat menyebabkan kopling antara mode umum dan mode diferensial. Diferensial terhadap konversi mode umum menghasilkan arus mode umum yang dapat menyebabkan interferensi eksternal dan dapat menghasilkan sinyal mode umum pada pasangan lainnya. Mode umum untuk konversi mode diferensial dapat menghasilkan sinyal mode diferensial dari interferensi mode umum dari pasangan lain atau sumber eksternal. Ketidakseimbangan dapat disebabkan oleh asimetri antara dua konduktor pasangan satu sama lain dan dalam hubungan dengan kabel lain dan perisai. Beberapa sumber asimetri adalah perbedaan diameter konduktor dan ketebalan insulasi. Dalam jargon telepon, mode umum disebut longitudinal dan mode diferensial disebutmetalik.
+1. Deformasi: Kerentanan twisted pair terhadap interferensi elektromagnetik sangat bergantung pada skema twisted pair (kadang dipatenkan oleh produsen) 
+tetap terjaga selama pemasangan. Akibatnya, kabel twisted pair biasanya memiliki persyaratan ketat untuk tegangan tarik maksimal serta radius tikungan 
+minimum. Kerapihan kabel twisted pair ini membuat praktik pemasangan menjadi bagian penting untuk memastikan kinerja kabel.
+2. Delay condong: pasangan yang berbeda dalam kabel memiliki penundaan yang berbeda, karena tingkat twist berbeda yang digunakan untuk meminimalkan crosstalk 
+di antara pasangan. Hal ini dapat menurunkan kualitas gambar saat beberapa pasang digunakan untuk membawa komponen sinyal video. Kabel miring rendah tersedia 
+untuk mengurangi masalah ini.
+3. Ketidakseimbangan: perbedaan antara kedua kabel pada pasangan dapat menyebabkan kopling antara mode umum dan mode diferensial. Diferensial terhadap konversi
+mode umum menghasilkan arus mode umum yang dapat menyebabkan interferensi eksternal dan dapat menghasilkan sinyal mode umum pada pasangan lainnya. Mode umum 
+untuk konversi mode diferensial dapat menghasilkan sinyal mode diferensial dari interferensi mode umum dari pasangan lain atau sumber eksternal. 
+Ketidakseimbangan dapat disebabkan oleh asimetri antara dua konduktor pasangan satu sama lain dan dalam hubungan dengan kabel lain dan perisai. Beberapa 
+sumber asimetri adalah perbedaan diameter konduktor dan ketebalan insulasi. Dalam jargon telepon, mode umum disebut longitudinal dan mode diferensial 
+disebut metalik.
 
 \subsection{KARAKTERISTIK UTP}
 
@@ -126,31 +135,43 @@ aktivasi reseptor P2Y4.
 
 \section{CARA MEMBUAT KABEL ETHERNET}
 
-Pembelian kabel Ethernet bisa sangat mahal dan panjang pra-dibuat tidak selalu panjang yang Anda butuhkan. Membuat kabel Ethernet mudah dengan sekotak kabel Ethernet kategori 5e dan konektor RJ-45 yang dilekatkan pada ujung yang dipotong dari panjang kabel yang Anda inginkan.
+Pembelian kabel Ethernet bisa sangat mahal dan panjang pra-dibuat tidak selalu panjang yang Anda butuhkan. Membuat kabel Ethernet mudah dengan sekotak kabel 
+Ethernet kategori 5e dan konektor RJ-45 yang dilekatkan pada ujung yang dipotong dari panjang kabel yang Anda inginkan.
 Kabel Ethernet Massal - Kategori 5e atau CAT5e
 (Anda juga dapat menggunakan kabel Kategori 6 atau CAT6 yang memiliki spesifikasi kinerja lebih tinggi dan sekitar 20% lebih mahal dari CAT5e.)
 
 Konektor Konter RJ45 Massal untuk CAT-5e atau Konektor Konter RJ45 Massal untuk CAT-6
 Alat crimping RJ-45
 Standard Ethernet Ada dua jenis kabel Ethernet yang bisa Anda buat, Straight Through dan Crossover.
-Straight Through kabel Ethernet adalah kabel standar yang digunakan untuk hampir semua tujuan, dan sering disebut "kabel patch". Sangat disarankan Anda menduplikat urutan warna seperti yang ditunjukkan di sebelah kiri. Perhatikan bagaimana pasangan hijau tidak berdampingan sama seperti pasangan lainnya. Konfigurasi ini memungkinkan pengoperasian kabel lebih lama.
+Straight Through kabel Ethernet adalah kabel standar yang digunakan untuk hampir semua tujuan, dan sering disebut "kabel patch". Sangat disarankan Anda 
+menduplikat urutan warna seperti yang ditunjukkan di sebelah kiri. Perhatikan bagaimana pasangan hijau tidak berdampingan sama seperti pasangan lainnya. 
+Konfigurasi ini memungkinkan pengoperasian kabel lebih lama.
 Kabel crossover
-KABEL CROSSOVER - Tujuan dari kabel Crossover Ethernet adalah menghubungkan secara langsung satu komputer ke komputer lain (atau perangkat) tanpa melalui router, switch atau hub.
+KABEL CROSSOVER - Tujuan dari kabel Crossover Ethernet adalah menghubungkan secara langsung satu komputer ke komputer lain (atau perangkat) tanpa melalui 
+router, switch atau hub.
 Inilah cara membuat kabel standar:
 Potong selubung plastik sekitar 1 inci (2,5 cm) dari ujung kabel potong. Alat crimping memiliki pisau cukur yang akan melakukan trik dengan latihan.
 Bersantai dan pasang warna yang sama.
 Jepit kabel antara jari Anda dan luruskan mereka seperti yang ditunjukkan. Tata warna penting untuk mendapatkan yang benar.
 Gunakan gunting untuk memotong lurus ke 8 kabel untuk mempersingkatnya menjadi 1/2 inci (1,3 cm) dari lengan potong sampai ujung kabel.
-Dengan hati-hati tekan semua 8 kabel berwarna yang tidak dilapisi ke dalam konektor. Perhatikan posisi lengan plastik biru. Perhatikan juga bagaimana kabelnya sampai ke ujungnya.
+Dengan hati-hati tekan semua 8 kabel berwarna yang tidak dilapisi ke dalam konektor. Perhatikan posisi lengan plastik biru. Perhatikan juga bagaimana kabelnya
+ sampai ke ujungnya.
 Sebuah pemandangan dari atas. Semua kabel ada di dalamnya. Tidak ada kabel pendek.
  
 
-Crimping Ethernet
-hati-hati letakkan konektor ke Ethernet Crimper dan masuk ke pegangan dengan erat. Tab splicing tembaga pada konektor akan menembus masing-masing dari delapan kabel. Ada juga tab pengunci yang menahan lengan plastik biru agar sesuai dengan kompresi yang ketat. Bila Anda melepaskan kabel dari crimper, ujungnya siap digunakan.
-Untuk kabel "Straight Through" standar, ulangi semua langkah dan tatanan warna kawat di ujung kabel yang lain. Untuk kabel cross-over, ujung lainnya akan memiliki tatanan warna yang berbeda seperti gambar crossover diatas.
+\\Crimping Ethernet
+hati-hati letakkan konektor ke Ethernet Crimper dan masuk ke pegangan dengan erat. Tab splicing tembaga pada konektor akan menembus masing-masing dari delapan 
+kabel. Ada juga tab pengunci yang menahan lengan plastik biru agar sesuai dengan kompresi yang ketat. Bila Anda melepaskan kabel dari crimper, ujungnya siap 
+digunakan.
+Untuk kabel "Straight Through" standar, ulangi semua langkah dan tatanan warna kawat di ujung kabel yang lain. Untuk kabel cross-over, ujung lainnya akan 
+memiliki tatanan warna yang berbeda seperti gambar crossover diatas.
 Tester Kabel Ethernet
 Pastikan untuk menguji kabel sebelum memasangnya. Tester kabel Ethernet murah melakukan ini dengan cukup baik
 
 \cite{caniggia2003common}
 \cite{jakovljevic2008common}
 \cite{ueda2011transmission}
+\cite{gagnon2002cable}
+\cite{ueda2011transmission}
+\cite{gomez2003receive}
+\cite{blouin2002cross}
