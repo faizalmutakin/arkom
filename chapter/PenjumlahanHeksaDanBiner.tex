@@ -10,7 +10,7 @@
 \section {Hexadecimal dan Binary}
 
 	\subsection {Hexadecimal}
-	Sistem bilangan heksadesimal (bilangan dasar 16) merepresentasikan angka yang menggunakan angka sebanyak seperempat digit sebagai sistem biner. Konversi antara heksadesimal dan biner sangat mudah sehingga hex bisa dianggap sebagai singkatan dari biner. Sistem heksadesimal membutuhkan 16 digit. Angka 0, 1, 2, 3, 4, 5, 6, 7, 8, dan 9 digunakan seperti pada sistem desimal A, B, C, D, E, dan F yang digunakan untuk bilangan desimal sesuai dengan kekuatan 16. Angka 0, 1, 2, 3, 4, 5, 6, 7, 8, dan 9 digunakan seperti pada sistem desimal A, B, C, D, E, dan F yang digunakan untuk bilangan desimal sesuai dengan kekuatan 16. Fro kanan ke kiri, yang 1's, 6's, 256's dan seterusnya. Nilai hex number 9D7A adalah 40314 dalam desimal, karena:
+	Sistem bilangan heksadesimal (bilangan dasar 16) merepresentasikan angka yang menggunakan angka sebanyak seperempat digit sebagai sistem biner. Konversi antara heksadesimal dan biner sangat mudah sehingga hex bisa dianggap sebagai singkatan dari biner. Sistem heksadesimal membutuhkan 16 digit. Angka 0, 1, 2, 3, 4, 5, 6, 7, 8, dan 9 digunakan seperti pada sistem desimal A, B, C, D, E, dan F yang digunakan untuk bilangan desimal sesuai dengan kekuatan 16. Angka 0, 1, 2, 3, 4, 5, 6, 7, 8, dan 9 digunakan seperti pada sistem desimal A, B, C, D, E, dan F yang digunakan untuk bilangan desimal sesuai dengan kekuatan 16. Fro kanan ke kiri, yang 1's, 6's, 256's dan seterusnya. Nilai hex number 9D7A adalah 40314 dalam desimal, karena \cite{detmer2001introduction}:
 	\begin{verbatim}
 
 		 9	X	4096	36864	[	4096 = 16(3)]
@@ -73,11 +73,12 @@
 	Selain dengan menggunakan cara yang ada di atas, bisa juga dengan menggunakan cara pertambahan atau penjumlahan bilangan heksadesimal dengan menggunakan tabel yang ada di bawah ini \ref{tabel-pertambahan-bilangan-hexadesimal}
 			\begin{figure} [ht]
 				\centerline{\includegraphics[width=1\textwidth]{figures/tabel-pertambahan-bilangan-hexadesimal.jpg}}
-				\caption{Tabel Penjumlahan Heksa}
+
+\caption{Tabel Penjumlahan Heksa}
 				\label{Tabel-Penjumlahan-Heksa}
 			\end{figure}
 
-\section {Biner}
+\subsection {Biner}
 	Di dalam sistem komunikasi digital modern, dimana data ditransmisikan dalam bentuk bit-bit biner, dibutuhkan sistem yang tahan terhadap noise yang terdapat di kanal transmisi sehingga data yang ditransmisikan tersebut dapat diterima dengan benar. Kesalahan dalam pengiriman atau penerimaan data merupakan permasalahan yang mendasar yang memberikan dampak yang sangat signifikan pada sistem komunikasi
 	Komputer menggunakan bit (digit biner, sebuah keadaan elektronik yang mewakili angka nol dan satu) untuk menunjukkan nilai. kami mewakili bilangan biner seperti itu dengan menggunakan angka 0 dan 1 sistem nilai 2 tempat. Sistem bilangan biner ini seperti sistem desimal kecuali bahwa posisi (kanan ke kiri) adalah 1, 2, 3, 4, 8, 16 (dan kekuatan yang lebih tinggi dari 2) bukan 1, 10, 100, 1000, 10000 (kekuatan 10). Sebagai contoh , bilangan biner 1101 dapat diartikan sebagai angka desimal 13.
 		\begin{verbatim}
@@ -124,6 +125,30 @@
 	Gambar \ref{Biner2angka} ini adalah Tabel Kebeneran untuk Penjumlahan 2 bit biner
 
 	Apabila dalam penjumlahan biner terdapat bawaan (carry), maka akan dijumlahkan dengan tingkatan diatasnya.
+
+\subsection {Cara konversi bilangan biner ke desimal}
+Cara mengkonversikan bilangan biner ke dalam desimal adalah yaitu dengan cara mengalikan satu persatu bilangan yang telah dipilih dengan 2 (baris bilangan biner), pangkat 0, pangkat 1 dan seterusnya, sesuai dengan banyaknya bilangan yang akan di konversikan, perhitungan nya yaitu dimulai dari bilangan yang paling kanan. 
+contoh :
+	\begin{verbatim}
+		1011(2) =  1x23 + 0x22 + 1x21 + 1x20
+				= 8 + 0 + 2 + 1
+				= 11(10) 
+	\end{verbatim}
+
+\subsection{Penjumlahan pada bilangan Hexadecimal}
+Penjumlahan bilangan hexadecimal dapat dilakukan secara sama dengan penjumlahan bilangan oktal, dengan langkah-langkah sebagai berikut :
+	\begin{itemize}
+		\item Tambahkan masing-masing kolom secara desimal
+		\item Ubah dari hasil desimal ke hexadesimal
+		\item Tuliskan hasil dari digit paling kanan dari hasil hexadesimal
+		\item Jika hasil penjumlahan tiap-tiap kolom terdiri dari dua digit, maka digit paling kiri merupakan carry of untuk penjumlahan kolom selanjutnya.
+	\end{itemize}
+Contoh :
+	\begin{verbatim}
+		Desimal :
+		2989
+		1073
+	\end{verbatim}
 
 \cite{wang201140}
 \cite{brent1970addition}
