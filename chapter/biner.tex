@@ -9,6 +9,9 @@
 
 \documentclass{article}
 
+\usepackage{amsmath}
+\usepackage{textcomp}
+
 \begin{document}
 
 \section{Pengertian} 
@@ -146,7 +149,7 @@ Perhatikan contohnya!
 12 : 2 = 6 sisa 0 
 6 : 2 = 3 sisa 0 
 3 : 2 = 1 sisa 1 
-1 sebagai sisa akhir “1”
+1 \textrightarrow sebagai sisa akhir “1”
 Note :
 Untuk menuliskan notasi binernya, pembacaan dilakukan dari bawah yang berarti 11001101(2) 
 
@@ -154,6 +157,7 @@ Untuk menuliskan notasi binernya, pembacaan dilakukan dari bawah yang berarti 11
 60 : 2 = 30 sisa 0 
 30 : 2 = 15 sisa 0 
 15 : 2 = 7 sisa 1 
+<<<<<<< HEAD
 1100 bilangan 3) \\
 ------- + \\
 111111 \\
@@ -167,13 +171,57 @@ Berapakah bilangan desimal? \\
 Sekarang coba tentukan berapakah bilangan 1,2,3,4 dan 5! Apakah memang perhitungan di atas sudah benar? \\
 
 \item Pengurangan Biner 
+=======
+1 \textrightarrow sebagai sisa akhir “1”
+Note :
+Dibaca dari bawah menjadi 111100(2) atau lazimnya dituliskan dengan 00111100(2). Ingat bentuk umumnnya mengacu untuk 8 digit! Kalau 111100 (ini 6 digit) menjadi 00111100 (ini sudah 8 digit). 
+>>>>>>> c4adb7c8d8cdf3c37438c02701b0351ae4e44fb1
 
+\end{enumerate}
 
+\subsubsection{Aritmatika Biner}
 
+Pada bagian ini akan membahas penjumlahan dan pengurangan biner. Perkalian biner adalah pengulangan dari penjumlahan; dan juga akan membahas pengurangan biner berdasarkan ide atau gagasan komplemen.
 
+\begin{enumerate}
 
+\item Penjumlahan Biner
 
+Penjumlahan biner tidak begitu beda jauh dengan penjumlahan desimal. Perhatikan contoh penjumlahan desimal antara 167 dan 235.'101'.
 
+1 \textrightarrow 7+5 = 12, tulis “2” di bawah dan angkat “1” ke atas! \\
+167 \\
+235 \\
+------ + \\
+402 \\
+
+Seperti bilangan desimal, bilangan biner juga dijumlahkan dengan cara yang sama. Pertama-tama yang harus dicermati adalah aturan pasangan digit biner berikut:
+0 + 0 = 0 \\
+0 + 1 = 1 \\
+1 + 1 = 0 \textrightarrow dan menyimpan 1 \\
+
+sebagai catatan bahwa jumlah dua yang terakhir adalah : \\
+1 + 1 + 1 = 1 \textrightarrow dengan menyimpan 1 \\
+
+Dengan hanya menggunakan penjumlahan penjumlahan di atas, kita dapat melakukan penjumlahan biner seperti ditunjukkan di bawah ini: \\
+11111 \textrightarrow “simpanan 1” ingat kembali aturan di atas! \\
+01011011 \textrightarrow bilangan biner untuk 91 \\
+01001110 \textrightarrow bilangan biner untuk 78 \\
+------------ + \\
+10101001 \textrightarrow Jumlah dari 91 + 78 = 169 \\
+
+Silahkan pelajari aturan-aturan pasangan digit biner yang telah disebutkan di atas! Contoh penjumlahan biner yang terdiri dari 5 bilangan! \\
+11101 bilangan 1) \\
+10110 bilangan 2) \\
+1100 bilangan 3) \\
+11011 bilangan 4) \\
+1001 bilangan 5) \\
+-------- + \\
+
+Untuk menjumlahkannya, kita hitung berdasarkan aturan yang berlaku, dan untuk lebih mudahnya perhitungan dilakukan bertahap. \\
+11101 bilangan 1) \\
+10110 bilangan 2) \\
+------- + \\
 
 
 
