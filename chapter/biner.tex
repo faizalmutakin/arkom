@@ -35,10 +35,15 @@ $10110_2$ = 1 x $2^4$ + 0 x $2^3$ + 1 x $2^2$ + 1 x $2^1$ + 0 x $2^0$ = $22_{10}
 Sebagai contoh dari bilangan desimal, untuk angka 157 : $157_{(10)}$ = (1 x 100) + (5 x 10) + (7 x 1) 
 Perhatikan! Bilangan desimal ini sering juga disebut dengan basis 10. Hal ini dikarenakan perpangkatan 10 yang didapat dari 100, 101, 102, dst. 
 \subsubsection{Mengenal Konsep Bilangan Biner dan Desimal}
-Perbedaan paling mendasar dari metode bilangan biner dan bilangan desimal terletak pada jumlah dari basisnya. Jika desimal berbasis 10(X10) berpangkatkan 10x, maka untuk bilangan biner berbasiskan 2 (x2) menggunakan perpangkatan 2x. Sederhananya perhatikan contoh dibawah ini!
-$14_{(10)}$=(1x$^1$) + (4 x $10^0$)
-=10 + 4
-=14
+Perbedaan paling mendasar dari metode bilangan biner dan bilangan desimal terletak pada jumlah dari basisnya. Jika desimal berbasis 10(X10) berpangkatkan 10x, maka untuk bilangan biner berbasiskan 2 (x2) menggunakan perpangkatan 2x. Sederhananya perhatikan contoh dibawah ini!\\
+Untuk Desimal:\\
+$14_{(10)}$=(1x$^1$) + (4 x $10^0$)\\
+=10 + 4\\
+=14\\
+Untuk Biner: \\
+$1110_{(2)}$ = (1 x 23) + (1 x 22) + (1 x 21) + (0 x 20)\\
+ = 8 + 4 + 2 + 0\\
+ = 14\\
 
 Bentuk umum dari bilangan biner dan bilangan desimal bisa dilihat pada tabel \ref{table:binerdesimal}. 
 
@@ -56,6 +61,7 @@ Pangkat & $2^7$ & $2^6$ & $2^5$ & $2^4$ & $2^3$ & $2^2$ & $2^1$ & $2^0$ & $X^{1-
 \caption{Tabel bentuk umum dari bilangan biner dan bilangan desimal}
 \label{table:binerdesimal}
 \end{table}
+
 Sekarang kita balik lagi ke contoh soal di atas! Darimana kita dapatkan angka desimal 14(10) menjadi angka biner 1110(2)? 
 Mari kita lihat lagi pada bentuk umumnya pada tabel \ref{table:contoh1}!
 
@@ -77,10 +83,7 @@ Pangkat & $2^7$ & $2^6$ & $2^5$ & $2^4$ & $2^3$ & $2^2$ & $2^1$ & $2^0$ & $X^{1-
 Mari kita telusuri perlahan-lahan!
 
 \begin{enumerate}
-\item Pertama sekali, kita jumlahkan angka pada desimal sehingga menjadi 14. anda lihat angka - angka 
-
-
-yang menghasilkan angka 14 adalah 8, 4, dan 2!
+\item Pertama sekali, kita jumlahkan angka pada desimal sehingga menjadi 14. anda lihat angka - angka yang menghasilkan angka 14 adalah 8, 4, dan 2!
 \item Untuk angka-angka yang membentuk angka 14 (lihat angka yang diarsir), diberi tanda biner “1”, selebihnya diberi tanda “0”.
 \item Sehingga kalau dibaca dari kanan, angka desimal 14 akan menjadi 00001110 (terkadang dibaca 1110) pada angka biner nya.
 \end{enumerate}
@@ -134,52 +137,38 @@ Pangkat & $2^7$ & $2^6$ & $2^5$ & $2^4$ & $2^3$ & $2^2$ & $2^1$ & $2^0$ & $X^{1-
 Note:
 \begin{itemize}
 \item Angka desimal 60 didapat dari penjumlahan angka yang di arsir (32+16+8+4)
-\item Setiap biner yang bertanda “1” akan dihitung, sementara biner yang bertanda “0” tidak dihitung, alias “0” juga.
+\item Setiap biner yang bertanda "1" akan dihitung, sementara biner yang bertanda "0" tidak dihitung, alias "0" juga.
 \end{itemize}
 
-\item Mengubah Angka Desimal ke Biner 
+\subsubsection {Mengubah Angka Desimal ke Biner} 
 Untuk mengubah angka desimal menjadi angka biner digunakan metode pembagian dengan angka 2 sambil memperhatikan sisanya. 
 Perhatikan contohnya! 
 \begin{enumerate}
-\item 205(10)
- 205 : 2 = 102 sisa 1 
-102 : 2 = 51 sisa 0 
-51 : 2 = 25 sisa 1
-25 : 2 = 12 sisa 1 
-12 : 2 = 6 sisa 0 
-6 : 2 = 3 sisa 0 
-3 : 2 = 1 sisa 1 
-1 \textrightarrow sebagai sisa akhir “1”
+\item 205(10)\\
+205 : 2 = 102 sisa 1\\ 
+102 : 2 = 51 sisa 0 \\
+51 : 2 = 25 sisa 1\\
+25 : 2 = 12 sisa 1 \\
+12 : 2 = 6 sisa 0 \\
+6 : 2 = 3 sisa 0 \\
+3 : 2 = 1 sisa 1 \\
+1 \textrightarrow sebagai sisa akhir "1"\\
 Note :
 Untuk menuliskan notasi binernya, pembacaan dilakukan dari bawah yang berarti 11001101(2) 
 
-\item 60(10)
-60 : 2 = 30 sisa 0 
-30 : 2 = 15 sisa 0 
-15 : 2 = 7 sisa 1 
-<<<<<<< HEAD
-1100 bilangan 3) \\
-------- + \\
-111111 \\
-11011 bilangan 4) \\ 
-------- + \\
-011010 \\
-1001 bilangan 5) \\ 
-------- + \\
-1100011 \textrightarrow Jumlah Akhir. \\
-Berapakah bilangan desimal? \\
-Sekarang coba tentukan berapakah bilangan 1,2,3,4 dan 5! Apakah memang perhitungan di atas sudah benar? \\
-
-\item Pengurangan Biner 
-=======
-1 \textrightarrow sebagai sisa akhir “1”
+\item 60(10)\\
+60 : 2 = 30 sisa 0\\ 
+30 : 2 = 15 sisa 0 \\
+15 : 2 = 7 sisa 1 \\
+7 : 2 = 3 sisa 1 \\
+3 : 2 = 1 sisa 1 \\
+1 \textrightarrow sebagai sisa akhir "1"\\
 Note :
 Dibaca dari bawah menjadi 111100(2) atau lazimnya dituliskan dengan 00111100(2). Ingat bentuk umumnnya mengacu untuk 8 digit! Kalau 111100 (ini 6 digit) menjadi 00111100 (ini sudah 8 digit). 
->>>>>>> c4adb7c8d8cdf3c37438c02701b0351ae4e44fb1
 
 \end{enumerate}
 
-\subsubsection{Aritmatika Biner}
+\subsection{Aritmatika Biner}
 
 Pada bagian ini akan membahas penjumlahan dan pengurangan biner. Perkalian biner adalah pengulangan dari penjumlahan; dan juga akan membahas pengurangan biner berdasarkan ide atau gagasan komplemen.
 
@@ -187,9 +176,8 @@ Pada bagian ini akan membahas penjumlahan dan pengurangan biner. Perkalian biner
 
 \item Penjumlahan Biner
 
-Penjumlahan biner tidak begitu beda jauh dengan penjumlahan desimal. Perhatikan contoh penjumlahan desimal antara 167 dan 235.'101'.
-
-1 \textrightarrow 7+5 = 12, tulis “2” di bawah dan angkat “1” ke atas! \\
+Penjumlahan biner tidak begitu beda jauh dengan penjumlahan desimal. Perhatikan contoh penjumlahan desimal antara 167 dan 235.
+1 \textrightarrow 7+5 = 12, tulis "2" di bawah dan angkat "1" ke atas! \\
 167 \\
 235 \\
 ------ + \\
@@ -221,6 +209,7 @@ Silahkan pelajari aturan-aturan pasangan digit biner yang telah disebutkan di at
 Untuk menjumlahkannya, kita hitung berdasarkan aturan yang berlaku, dan untuk lebih mudahnya perhitungan dilakukan bertahap. \\
 11101 bilangan 1) \\
 10110 bilangan 2) \\
+<<<<<<< HEAD
 ------- + \\
 7999 \textrightarrow hasil pinjaman \\
 800046 \\
@@ -237,7 +226,56 @@ Sebagai contoh pengurangan bilangan biner 110001 – 1010 akan diperoleh hasil s
 
 Salah satu metoda yang dipergunakan dalam pengurangan pada komputer yang ditransformasikan menjadi penjumlahan dengan menggunakan minusradiks komplemen satu atau 
 
+=======
+-------- + \\
+110011
+1100 bilangan 3) \\
+-------- + \\
+111111 \\
+11011 bilangan 4) \\ 
+-------- + \\
+011010 \\
+1001 bilangan 5) \\ 
+-------- + \\
+1100011 \textrightarrow Jumlah Akhir. \\
+Berapakah bilangan desimal? \\
+Sekarang coba tentukan berapakah bilangan 1,2,3,4 dan 5! Apakah memang perhitungan di atas sudah benar? \\
 
+\item Pengurangan Biner
+Pengurangan bilangan desimal 73426 – 9185 akan menghasilkan: \\
+73426 \textrightarrow lihat! Angka 7 dan angka 4 dikurangi dengan 1 \\
+9185 \textrightarrow digit desimal pengurang. \\
+--------- - \\
+64241 \textrightarrow Hasil pengurangan akhir. \\
+Bentuk Umum pengurangan : \\
+0 – 0 = 0 \\
+1 – 0 = 1 \\
+1 – 1 = 0 \\
+0 – 1 = 1 \textrightarrow dengan meminjam „1‟ dari digit disebelah kirinya! \\ 
+Untuk pengurangan biner dapat dilakukan dengan cara yang sama. Coba perhatikan bentuk pengurangan berikut: \\
+1111011 \textrightarrow desimal 123 \\
+101001 \textrightarrow desimal 41 \\
+--------- - \\
+1010010 \textrightarrow desimal 82 \\
+Pada contoh di atas tidak terjadi “konsep peminjaman”. Perhatikan contoh berikut! \\
+0 \textrightarrow kolom ke-3 sudah menjadi „0‟, sudah dipinjam! \\
+111101 \textrightarrow desimal 61 \\
+10010 \textrightarrow desimal 18 \\
+------------ - \\
+101011 \textrightarrow Hasil pengurangan akhir 43. \\
+
+Pada soal yang kedua ini kita pinjam „1‟ dari kolom 3, karena ada selisih 0-1 pada kolom ke-2. Lihat Bentuk Umum! \\
+>>>>>>> 4087739022945f1e642f37883aec14d4b49d2416
+
+
+
+
+
+
+
+
+
+\end{enumerate}
 
 
 
