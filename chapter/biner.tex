@@ -11,19 +11,33 @@
 
 \usepackage{amsmath}
 \usepackage{textcomp}
+\usepackage{graphicx}
 
 \begin{document}
 
+
+
 \section{Pengertian} 
 
+\begin{figure}[ht]
+\centerline{\includegraphics[width=0.4\textwidth]{../figures/biner.jpg}}
+\caption{Sistem bilangan biner.}
+\label{biner}
+\end{figure}
 
 Sejak pertama kali komputer elektronik digunakan, komputer tersebut telah beroperasi dengan menggunakan sistem bilangan biner, yaitu bilangan berbasis dua pada sistem bilangan. Semua kode program dan data pada komputer disimpan serta dimanipulasi dalam format biner yang merupakan kode - kode mesin komputer. Sehingga semua perhitungan – perhitungan yang diolah oleh computer tersebut menggunakan aritmatika biner yang hasilnya berupa bilangan hanya memiliki dua kemungkinan nilai, yaitu 0 dan 1. 
 
-Bilangan biner atau bilangan berbasis dua atau binary dalam Bahasa Inggris merupakan sebuah penulisan bilangan di mana bilangan – bilangan tersebut hanya menggunakan dua angka, yaitu 0 dan 1. Tidak seperti bilangan desimal yang merupakan sistem bilangan berbasis 10, sistem bilangan biner berbasis 2. bilangan biner digunakan untuk informasi biner dan juga satuan ukuran besarnya data. Sistem bilangan biner modern detemukan oleh Gottfried Wilhelm Leibniz pada abad ke-17. Sistem bilangan ini merupakan dasar dari semua sistem bilangan berbasis digital. Dari sistem biner , kita dapat mengkonversinya ke sistem bilangan Oktal atau Hexadesimal. Sistem ini juga dapat kita sebut dengan istilah bit atau Binary Digit atau dalam arsitektur elektronik biasa disebut sebagai digital logic.. 
+\begin{figure}[ht]
+\centerline{\includegraphics[width=0.4\textwidth]{../figures/gwl.jpg}}
+\caption{Penemu sistem bilangan biner.}
+\label{gwl}
+\end{figure}
+
+Dikutip dari \cite{hutahaean2015konsep} bilangan biner \ref{biner} atau bilangan berbasis dua atau binary dalam Bahasa Inggris merupakan sebuah penulisan bilangan di mana bilangan – bilangan tersebut hanya menggunakan dua angka, yaitu 0 dan 1. Tidak seperti bilangan desimal yang merupakan sistem bilangan berbasis 10, sistem bilangan biner berbasis 2. bilangan biner digunakan untuk informasi biner dan juga satuan ukuran besarnya data. Sistem bilangan biner modern ditemukan oleh Gottfried Wilhelm Leibniz \ref{gwl} pada abad ke-17. Sistem bilangan ini merupakan dasar dari semua sistem bilangan berbasis digital. Dari sistem biner , kita dapat mengkonversinya ke sistem bilangan Oktal atau Hexadesimal. Sistem ini juga dapat kita sebut dengan istilah bit atau Binary Digit atau dalam arsitektur elektronik biasa disebut sebagai digital logic.. 
 
 Pengelompokan biner dalam komputer selalu berjumlah 8, dengan istilah 1 Byte atau bita. Dalam istilah komputer, 1 Byte = 8 bit. Kode-kode rancang bangun sistem bilangan berbasis 10, sistem bilangan biner berbasis 2. Bilangan biner digunakan untuk informasi biner dan juga satuan ukuran besarnya data.
 
-Sistem bilangan biner modern ditemukan oleh Gottfried Wilhelm Leibniz pada abad ke-17. Sistem bilangan ini merupakan dasar dari semua sistem bilangan berbasis digital. Dari sistem biner, kita dapat mengkonversinya ke sistem bilangan Oktal atau Hexadesimal. Sistem ini juga dapat kita sebut dengan istilah bit atau Binary Digit atau dalam arsitektur elektronik biasa disebut sebagai digital logic. Pengelompokan biner dalam komputer selalu berjumlah 8, dengan istilah 1 Byte atau bita. Dalam istilah komputer, 1 Byte = 8 bit. Kode-kode rancang bangun komputer seperti ASCII, American Standard Code for Information Interchange menggunakan sistem pengkodean 1 Byte.
+Sistem bilangan ini merupakan dasar dari semua sistem bilangan berbasis digital. Dari sistem biner, kita dapat mengkonversinya ke sistem bilangan Oktal atau Hexadesimal. Sistem ini juga dapat kita sebut dengan istilah bit atau Binary Digit atau dalam arsitektur elektronik biasa disebut sebagai digital logic. Pengelompokan biner dalam komputer selalu berjumlah 8, dengan istilah 1 Byte atau bita. Dalam istilah komputer, 1 Byte = 8 bit. Kode-kode rancang bangun komputer seperti ASCII, American Standard Code for Information Interchange menggunakan sistem pengkodean 1 Byte.
 
 Setiap digit pada bilangan biner mewakili pangkat pada angka 2 yang terus meningkat dari kanan ke kiri, Digit yang paling kanan mewakili 2 pangkat 0 ($2^0$). digit selanjutnya mewakili 2 pangkat 1 ($2^1$), selanjutnya lagi mewakili mewakili 2 pangkat 2 ($2^2$), dan seterusnya. Bilangan desimal 0 diwakili dengan bilangan biner '0', begitu juga dengan bilangan desimal 1 diwakili dengan bilangan biner '1'. Kedua bilangan 1 dan 0 tersebut tidak berubah. Bilangan desimal 2 diwakili sebagai bilangan biner '10', 3 sebagai '11', 4 sebagai '100', 5 sebagai '101', dan seterusnya.
 
@@ -209,24 +223,6 @@ Silahkan pelajari aturan-aturan pasangan digit biner yang telah disebutkan di at
 Untuk menjumlahkannya, kita hitung berdasarkan aturan yang berlaku, dan untuk lebih mudahnya perhitungan dilakukan bertahap. \\
 11101 bilangan 1) \\
 10110 bilangan 2) \\
-<<<<<<< HEAD
-------- + \\
-7999 \textrightarrow hasil pinjaman \\
-800046 \\
-397261 \\
---------- - \\
-402705 \\
-Sebagai contoh pengurangan bilangan biner 110001 – 1010 akan diperoleh hasil sebagai berikut: \\
-1100101 \\
-1010 \\
----------- - \\
-100111 \\
-
-\item Komplomen
-
-Salah satu metoda yang dipergunakan dalam pengurangan pada komputer yang ditransformasikan menjadi penjumlahan dengan menggunakan minusradiks komplemen satu atau 
-
-=======
 -------- + \\
 110011
 1100 bilangan 3) \\
@@ -242,6 +238,7 @@ Berapakah bilangan desimal? \\
 Sekarang coba tentukan berapakah bilangan 1,2,3,4 dan 5! Apakah memang perhitungan di atas sudah benar? \\
 
 \item Pengurangan Biner
+
 Pengurangan bilangan desimal 73426 – 9185 akan menghasilkan: \\
 73426 \textrightarrow lihat! Angka 7 dan angka 4 dikurangi dengan 1 \\
 9185 \textrightarrow digit desimal pengurang. \\
@@ -251,6 +248,9 @@ Bentuk Umum pengurangan : \\
 0 – 0 = 0 \\
 1 – 0 = 1 \\
 1 – 1 = 0 \\
+
+
+
 0 – 1 = 1 \textrightarrow dengan meminjam „1‟ dari digit disebelah kirinya! \\ 
 Untuk pengurangan biner dapat dilakukan dengan cara yang sama. Coba perhatikan bentuk pengurangan berikut: \\
 1111011 \textrightarrow desimal 123 \\
@@ -258,6 +258,11 @@ Untuk pengurangan biner dapat dilakukan dengan cara yang sama. Coba perhatikan b
 --------- - \\
 1010010 \textrightarrow desimal 82 \\
 Pada contoh di atas tidak terjadi “konsep peminjaman”. Perhatikan contoh berikut! \\
+
+
+
+
+
 0 \textrightarrow kolom ke-3 sudah menjadi „0‟, sudah dipinjam! \\
 111101 \textrightarrow desimal 61 \\
 10010 \textrightarrow desimal 18 \\
@@ -265,7 +270,11 @@ Pada contoh di atas tidak terjadi “konsep peminjaman”. Perhatikan contoh ber
 101011 \textrightarrow Hasil pengurangan akhir 43. \\
 
 Pada soal yang kedua ini kita pinjam „1‟ dari kolom 3, karena ada selisih 0-1 pada kolom ke-2. Lihat Bentuk Umum! \\
->>>>>>> 4087739022945f1e642f37883aec14d4b49d2416
+
+
+
+
+
 7999 \textrightarrow hasil pinjaman \\
 800046 \\
 397261 \\
@@ -279,17 +288,51 @@ Sebagai contoh pengurangan bilangan biner 110001 – 1010 akan diperoleh hasil s
 
 \item Komplomen
 
-Salah satu metoda yang dipergunakan dalam pengurangan pada komputer yang ditransformasikan menjadi penjumlahan dengan menggunakan minusradiks komplemen satu atau komplemen radiks. Pertama-tama kita bahas komplemen
+Salah satu metoda yang dipergunakan dalam pengurangan pada komputer yang ditransformasikan menjadi penjumlahan dengan menggunakan minusradiks komplemen satu atau 
 
 
 
 
+komplemen radiks. Pertama-tama kita bahas komplemen di dalam sistem desimal, dimana komplemen-komplemen tersebut secara berurutan disebut dengan komplemen sembilan dan komplemen sepuluh (komplemen di dalam sistem biner disebut dengan komplemen satu dan komplemen dua). Sekarang yang paling penting adalah menanamkan prinsip ini: \\
+“Komplemen sembilan dari bilangan desimal diperoleh dengan mengurangkan masing-masing 
 
 
 
 
+digit desimal tersebut ke bilangan 9, sedangkan komplemen sepuluh adalah komplemen sembilan ditambah 1” \\
+Lihat contoh nyatanya! \\
+Bilangan Desimal 123 651 914 \\
+Komplemen Sembilan 876 348 085 \\ 
+Komplemen Sepuluh 877 349 086 \textrightarrow ditambah dengan 1! \\
+Perhatikan hubungan diantara bilangan dan komplemennya adalah simetris. Jadi, dengan memperhatikan contoh di atas, komplemen 9 dari 123 adalah 876 dengan simple menjadikan jumlahnya = 9 (1+8=9, 2+7=9, 3+6=9)! \\
+Sementara komplemen 10 didapat dengan menambahkan 1 pada komplemen 9, berarti 876+1=877. \\
+Pengurangan desimal dapat dilaksanakan dengan penjumlahan komplemen sembilan plus satu, atau penjumlahan dari komplemen sepuluh. \\
+
+\begin{center}
+\begin{tabular}{ c c c }
+893 & 893 & 893 \\ 
+321 & 678 (komp. 9) & 679 (komp. 10) \\
+----- - & ----- + & ----- + \\
+572 & 1571 & 1572 \\
+& 1 & \\
+& ----- - & \\
+& 572 \textrightarrow angka 1 dihilangkan& \\
+\end{tabular}
+\end{center}
 
 \end{enumerate}
+Analogi yang bisa diambil dari perhitungan komplemen di atas adalah, komplemen satu dari bilangan biner diperoleh dengan jalan mengurangkan masing masing digit biner tersebut ke bilangan 1, atau dengan bahasa sederhananya mengubah masing-masing 0 menjadi 1 atau sebaliknya mengubah masing-masing 1 menjadi 0. Sedangkan komplemen dua adalah satu plus satu. \\
+Perhatikan Contoh. \\
+Bilangan Biner 110011 101010 011100 \\
+Komplemen Satu 001100 010101 100011 \\
+Komplemen Dua 001101 010110 100100 \\
+
+Pengurangan biner 110001 – 1010 akan kita telaah pada contoh di bawah ini! \\
+110001 110001 110001 \\
+001010 110101 110110 \\
+--------- - -------- + --------- + \\
+100111 100111 1100111 dihilangkan! \\
+Alasan teoritis mengapa cara komplemen ini dilakukan, dapat dijelaskan dengan memperhatikan sebuah speedometer mobil/motor dengan empat digit sedang membaca nol. \\
 
 
 
