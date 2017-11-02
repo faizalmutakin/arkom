@@ -14,14 +14,14 @@
 Suatu artikel menyebutkan \cite{dale2001spacer}
 Artikel tentang Bilangan Oktal.
 \Section{Penjelasan Singkat}
-Oktal adalah sebuah sistem bilangan berbasis delapan. Sistem bilangan ini terdiri dari 0,1,2,3,4,5,6,7 dan bilangan ini biasanya dikonversi dari biner yang berkelompok setiap 3 bit. Sistem ini mempersingkat tulisannya, agar menjadi tidak terlalu panjang. Cara baca sistem ini dari ujung paling kanan (LSB kepanjangan dari Least Significant Bit).
+Oktal adalah sebuah sistem bilangan berbasis delapan. Sistem bilangan ini terdiri dari 0,1,2,3,4,5,6,7 dan bilangan ini biasanya dikonversi dari biner yang berkelompok setiap 3 bit. Sistem ini mempersingkat tulisannya, agar menjadi tidak terlalu panjang. Cara baca sistem ini dari ujung paling kanan (LSB kepanjangan dari Least Significant Bit).Ini gambarnya \ref{Posisibilanganoktal}
 
-	\ref{Posisibilanganoktal}
-	\begin{figures}[ht]
+	
+	\begin{figure}[ht]
 	\centerline{\includegraphics[width=1\textwidth]{figures/Posisibilanganoktal.JPG}}
 	\caption{Perhitungan dari kanan}
 	\label{Posisibilanganoktal}
-	\end{figures}
+	\end{figure}
 
 Contoh contoh bilangan Oktal,
 Misalnya : 
@@ -56,13 +56,14 @@ Konversikan kebilangan oktal:
 Demikian cara penjumlahan berdasarkan keempat ketentuan tersebut.
 Dalam hal ini bilangan oktal memiliki patokan, Yaitu sebagai berikut.
 
-	\ref{tabelpertambahanbilanganoktal}
-	\begin{figures}[ht]
+	
+	\begin{figure}[ht]
 	\centerline{\includegraphics[width=1\textwidth]{figures/tabelpertambahanbilanganoktal.JPG}}
 	\caption{Patokan Bilangan}
 	\label{tabelpertambahanbilanganoktal}
-	\end{figures}
+	\end{figure}
 
+Ini tabelnya \ref{tabelpertambahanbilanganoktal}
 Mungkin ada kalian yang bertanya: Kenapa dari 7 langsung menuju ke angka 10?
 Bilangan oktal adalah bilangan yang terdiri dari 0 sampai 7 dimana nilai maksimal adalah 7. Jika lebih dari 7 maka itu  adalah pembawa dan sisanya akan kita jumlahkan pada kolom selanjutnya
 1 + 6 = 7. —– > tidak lebih dari 7. Maka tetap.
@@ -137,6 +138,12 @@ Perhatikan Tabel.
 7	61
 cant Bit).
 
+Dalam perkalian di bilangan octal , kita dapat melakukan cara dengan teknik atau metode sebagai berikut , diantaranya adalah :
+1.	Kalikan masing-masing kolom secara desimal.
+2.	Kemudian ubah dari hasil desimal ke oktal.
+3.	Tuliskan hasil dari digit paling kanan dari hasil oktal.
+4.	Pada metode ini , apabila di dalam hasil perkalian tiap kolom terdiri dari 2 digit , maka digit yang ada dibagian awal atau dibagian posisi kiri merupakan carry of untuk ditambahkan pada hasil perkalian kolom berikutnya.
+=======
 	\Subsection{Pembagian pada bilangan Oktal}
 Pembagian bilangan oktal dapat dilakukan dengan cara yang sama, seperti pembagian bilangan desimal.
 Berikut contoh soalnya :
@@ -168,14 +175,6 @@ Kemudian  untuk memperjelas fungsi sebelumnya, ada beberapa keuntungan dalam mem
 Selain fungsi di atas  , di meksiko ada suku Yuki dan Pamean suku tersebut memakai sistem bilangan oktal , karena unik menghitungnya , suku Yuki dan Pamean tersebut menggunakan sela jari mereka berjumlah 8 daripada menggunakan jari mereka dan kita juga bisa menggunakan cara menghitung dengan menggunakan sela jari kita 
 
 <<<<<<< HEAD
-	\Subsection{Perkalian Pada Bilangan Oktal}
-
-Dalam perkalian di bilangan octal , kita dapat melakukan cara dengan teknik atau metode sebagai berikut , diantaranya adalah :
-1.	Kalikan masing-masing kolom secara desimal.
-2.	Kemudian ubah dari hasil desimal ke oktal.
-3.	Tuliskan hasil dari digit paling kanan dari hasil oktal.
-4.	Pada metode ini , apabila di dalam hasil perkalian tiap kolom terdiri dari 2 digit , maka digit yang ada dibagian awal atau dibagian posisi kiri merupakan carry of untuk ditambahkan pada hasil perkalian kolom berikutnya.
-=======
 \section{4 basis bilangan }
 
 Ada 4 basis bilangan yang sering digunakan yakni :
@@ -184,54 +183,61 @@ Ada 4 basis bilangan yang sering digunakan yakni :
 3. Bilangan berbasis 10 atau desimal yang sering kita digunakan di dalam kehidupan sehari-hari,adapun digit yang digunakan adalah 0, 1, 2, …, 8, 9; 
 4. bilangan berbasis 16 atau heksadesimal (hexadecimal),adapun digit yang digunakan adalah 0, 1, 2, 3, …, 8, 9, A, B, …, E, F. Dimana A di gunakan sebagai pengganti nilai 10, B=11, C=12, dst.
 
-\section{Cara merubah bilangan oktal menjadi bilangan desimal}
+\section{Konversi bilangan dari oktal ke bilangan lain}
+	\subsection{Cara merubah bilangan oktal menjadi bilangan desimal}
 
-Kita bisa merubah bilangan oktal tersebut menjadi bilangan desimal dengan cara harga tempat
-Caranya seperti langkah langkah berikut ini :
-1 . bilangan oktal harus di letakan dibawah harga tempat
-2 . masing masing digit bilangan oktal di kalikan dengan harga tempat
-3 . masing masing hasil perkalian tersebut di jumlahkan digit bilangan oktal  
->>>>>>> ecdf5d08dfcdeec95e34296801e09e61ae41359b
+	Kita bisa merubah bilangan oktal tersebut menjadi bilangan desimal dengan cara harga tempat
+	Caranya seperti langkah langkah berikut ini :
+	1 . bilangan oktal harus di letakan dibawah harga tempat
+	2 . masing masing digit bilangan oktal di kalikan dengan harga tempat
+	3 . masing masing hasil perkalian tersebut di jumlahkan digit bilangan oktal  
+	
+	Cara menkonversi bilangan oktal ke biner sama saja dengan cara ke balikan dari bilangan biner ke oktal . Tiap digit pada bilangan oktal langsung saja dikonversi ke bilangan biner dan kemudian hasilnya dapat digabungkan . Untuk lebih detailnya lagi , kita bisa menelusuri google bentuk angka perubahan dari bilangan oktal ke bilangan biner .
+	>>>>>>> ecdf5d08dfcdeec95e34296801e09e61ae41359b
 
-\section {Cara mengubah bilangan oktal menjadi bilangan desimal}
-Cara menkonversi bilangan oktal ke biner sama saja dengan cara ke balikan dari bilangan biner ke oktal . Tiap digit pada bilangan oktal langsung saja dikonversi ke bilangan biner dan kemudian hasilnya dapat digabungkan . Untuk lebih detailnya lagi , kita bisa menelusuri google bentuk angka perubahan dari bilangan oktal ke bilangan biner .
+	\subsection {Bilangan Oktal menjadi Bilangan Biner}
+	Untuk mengkonversikan Oktal ke Biner ini, kita perlu mengkonversikan masing-masing digit yang ada. Nah, konversi yang dilakukan untuk digit-digit itu adalah konversi Desimal ke Biner. Sebagai contoh, bila bilangan Desimal 4 dikonversikan menjadi Biner, maka:
+	4  / 2 = 2, Sisa 0
+	2 / 2 = 1, Sisa 0
+	1 / 2 = 0, Sisa 1
+	Dan didapatkan angka Biner 100 sebagai konversi dari Desimal 4.
 
-\section {Bilangan Oktal menjadi Bilangan Biner}
-Untuk mengkonversikan Oktal ke Biner ini, kita perlu mengkonversikan masing-masing digit yang ada. Nah, konversi yang dilakukan untuk digit-digit itu adalah konversi Desimal ke Biner. Sebagai contoh, bila bilangan Desimal 4 dikonversikan menjadi Biner, maka:
-4  / 2 = 2, Sisa 0
-2 / 2 = 1, Sisa 0
-1 / 2 = 0, Sisa 1
-Dan didapatkan angka Biner 100 sebagai konversi dari Desimal 4.
+	\subsection{Bilangan oktal menjadi hexadesimal}
+	Untuk mengubah bilangan oktal menjadi bilangan hexa maka bilangan oktal tersebut harus di rubah ke bilangan biner terlebih dahulu agar lebih mudah untuk mengkonversinya.
+Contohnya :
+1 pada bilangan oktal = 100 pada bilangan biner = 4 Bilangan hexa
+12 pada bilangan oktal = 1010 pada bilangan biner = A Bilangan hexa
 
-\section {Contoh soal konversi bilangan desimal ke bilangan oktal}
-Caranya sangat gampang tinggal kita bagi bilangan desimal dengan 8, 
-kemudian menyimpan sisa bagi per setiap pembagian 
-sampai hasil baginya menjadi < 8.
-Contoh: 19 : 8 = 2 ( sisa 3 )
-2 : 8 = 0 ( sisa 2 )
-Hasilnya: 3 + 2 = 5(8)
+\section{Konversi bilangan lain menjadi bilangan oktal}
+	\subsection {Contoh soal konversi bilangan desimal ke bilangan oktal}
+	Caranya sangat gampang tinggal kita bagi bilangan desimal dengan 8, 
+	kemudian menyimpan sisa bagi per setiap pembagian 
+	sampai hasil baginya menjadi < 8.
+	Contoh: 19 : 8 = 2 ( sisa 3 )
+	2 : 8 = 0 ( sisa 2 )
+	Hasilnya: 3 + 2 = 5(8)
 
 
 >>>>>>> 888a209a68a0b9dc4d52f78deb805609e0957204
-\section {Bilangan Biner menjadi Bilangan Oktal}
-Konversi Biner menuju Oktal ini awalnya dilakukan dengan membagi Biner menjadi beberapa kelompok, dimana masing-masing kelompoknya mempunyai maksimal 3 digit, dimulai dari bilangan Biner paling kanan.
-Penentuan pangkat dari angka 2 tersebut berdasarkan dari jumlah bilangan biner yang ada. Karena biner 10 terdiri dari 2 digit, maka angka untuk pangkatnya adalah angka 0 dan 1 (agar semua digit Biner mendapatkan pangkat untuk dikalikan). Begitu pula dengan Biner 110, angka pangkatnya adalah 0, 1, dan 2.
+	\subsection {Bilangan Biner menjadi Bilangan Oktal}
+	Konversi Biner menuju Oktal ini awalnya dilakukan dengan membagi Biner menjadi beberapa kelompok, dimana masing-masing kelompoknya mempunyai maksimal 3 digit, dimulai dari bilangan Biner paling kanan.
+	Penentuan pangkat dari angka 2 tersebut berdasarkan dari jumlah bilangan biner yang ada. Karena biner 10 terdiri dari 2 digit, maka angka untuk pangkatnya adalah angka 0 dan 1 (agar semua digit Biner mendapatkan pangkat untuk dikalikan). Begitu pula dengan Biner 110, angka pangkatnya adalah 0, 1, dan 2.
 
-\section Konversi Bilangan Heksadesimal ke Oktal
-Untuk pengkonversian heksadesimal
-ke oktal caranya :
-konversian bilangan heksadesimal ke biner terlebih dahulu
-setelah itu, hasil biner tersebut dikonversikan ke bilangan oktal
-Konversikan bilangan heksadesimal
-A516 ke bilangan Oktal:
-Konversikan A516 ke biner
- A = 10
-  A        5               
+	\subsection Konversi Bilangan Heksadesimal ke Oktal
+	Untuk pengkonversian heksadesimal
+	ke oktal caranya :
+	konversian bilangan heksadesimal ke biner terlebih dahulu
+	setelah itu, hasil biner tersebut dikonversikan ke bilangan oktal
+	Konversikan bilangan heksadesimal
+	A516 ke bilangan Oktal:
+	Konversikan A516 ke biner
+ 	A = 10
+  	A        5               
        1010   0101 
-Hasil biner tersebut dikonversikan ke dalam oktal
-  1   010010  1 (A516 konversi ke biner)
- MSB           LSB
-Kelompokkan 3 dari sisi LSB
- 10    100   101
+	Hasil biner tersebut dikonversikan ke dalam oktal
+  	1   010010  1 (A516 konversi ke biner)
+ 	MSB           LSB
+	Kelompokkan 3 dari sisi LSB
+ 	10    100   101
          2        4       5
-Jadi, A516  =  2458
+	Jadi, A516  =  2458
