@@ -163,7 +163,7 @@ Berikut contoh soalnya :
 
 Untuk Angak 6 x 7 itu dari pembagi dan hasil,Kemudian jika hasilnya ada sisa,Si R itu jadi sisanya.
 
-\Section{Fungsi Bilangan Oktal}
+\section{Fungsi Bilangan Oktal}
 
 sebenarnya fungsi bilangan oktal itu tidak jauh beda dari fungsinya bilangan biner dan heksadesimal, yaitu sebagai kode komputasi yang untuk digunakan komputer, tetapi juga biasanya bilangan oktal dipakai sebagai pengganti heksadesimal dalam menjalankannya.
 
@@ -215,12 +215,27 @@ Contohnya :
 	Caranya sangat gampang tinggal kita bagi bilangan desimal dengan 8, 
 	kemudian menyimpan sisa bagi per setiap pembagian 
 	sampai hasil baginya menjadi < 8.
-	Contoh: 19 : 8 = 2 ( sisa 3 )
+	Contoh 1 : 
+	19 : 8 = 2 ( sisa 3 )
 	2 : 8 = 0 ( sisa 2 )
 	Hasilnya: 3 + 2 = 5(8)
 
+	\subsubsection 
+	Contoh 2 :
+	bilangan desimal kita konversikan, dari nilai 256 menjadi bilangan oktal.
+cara nya adalah :
+256/8 = 32 sisa 0
+32/8 = 4 sisa 0
+4/8 = 0 sisa 4
+
+kemudian, Hasil pembagian tersebu kita iurutkan dari yang paling akhir hingga paling awal menjadi 400g
+
+Jadi Hasilnya sudah kita dapat bilangan desimal 256 menjadi bilangan biner adalah 400g.
+
+
 
 >>>>>>> 888a209a68a0b9dc4d52f78deb805609e0957204
+	
 	\subsection {Konversi Bilangan Biner menjadi Bilangan Oktal}
 	Konversi Biner menuju Oktal ini awalnya dilakukan dengan membagi Biner menjadi beberapa kelompok, dimana masing-masing kelompoknya mempunyai maksimal 3 digit, dimulai dari bilangan Biner paling kanan.
 	Penentuan pangkat dari angka 2 tersebut berdasarkan dari jumlah bilangan biner yang ada. Karena biner 10 terdiri dari 2 digit, maka angka untuk pangkatnya adalah angka 0 dan 1 (agar semua digit Biner mendapatkan pangkat untuk dikalikan). Begitu pula dengan Biner 110, angka pangkatnya adalah 0, 1, dan 2.
@@ -243,3 +258,4 @@ Contohnya :
  	10    100   101
          2        4       5
 	Jadi, A516  =  2458
+
