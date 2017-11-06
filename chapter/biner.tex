@@ -7,17 +7,15 @@
 % 5. Sri Rahayu (1174015)
 % 6. Ilham Habibi (1174028)
 
-\documentclass{article}
+%\documentclass{article}
 
-\usepackage{amsmath}
-\usepackage{textcomp}
-\usepackage{graphicx}
-\usepackage{enumitem}
-\usepackage{verbatim}
+%\usepackage{amsmath}
+%\usepackage{textcomp}
+%\usepackage{graphicx}
+%\usepackage{enumitem}
+%\usepackage{verbatim}
 
-\begin{document}
-
-
+%\begin{document}
 
 \section{Pengertian} 
 
@@ -240,7 +238,7 @@ sebagai catatan bahwa jumlah dua yang terakhir adalah : \\
 ----- +
 \end{verbatim}
 
-\qquad Untuk menjumlahkannya, kita jumlahkan berdasarkan aturan - aturan yang berlaku, dan untuk mempermudah dalam perhitungan maka dilakukan secara bertahap. \\
+\qquad Untuk menjumlahkan penjumlahan di atas , pertama kita jumlahkan berdasarkan aturan - aturan yang berlaku, dan untuk mempermudah maka perhitungannya dilakukan secara bertahap. \\
 \begin{verbatim}
   11101 bilangan 1)
   10110 bilangan 2)
@@ -311,6 +309,41 @@ Bentuk Umum pengurangan : \\
  100111
 \end{verbatim}
 
+\item Perkalian Biner
+
+\qquad Perkalian pada bilangan biner pada umumnya sama dengan perkalian pada bilangan desimal, perbedaanya terletak pada nilai yang dihasilkan adalah hanya 0 dan 1. Pada perkalian bilangan biner, bergeser1 ke kanan setiap dikalikan 1 bit pengali. Setelah proses perkalian masing-masing bit pengali sudah selesai, lakukan penjumlahan masing-masing kolom bit hasil.
+\begin{verbatim}
+
+%%%%%%%%
+
+   1101 -> Yang dikalikan
+ x 1011 -> Pengali
+-----------
+   1101
+  1101
+ 0000
+1101
+---------
+1000111
+\end{verbatim}
+
+
+\item Pembagian Biner
+
+\qquad Pembagian pada bilangan biner pada umumnya sama dengan pembagian pada bilangan desimal, perbedaanya terletak pada nilai yang dihasilkan  adalah hanya 0 dan 1. Bit - bit yang dibagi diambil bit per bit dari sebelah kiri. Apabila nilai bilangan biner yang dibagi lebih dari bit bilangan biner pembagi, maka bagilah bit-bit tersebut. Apabila setelah bergeser 1 bit nilainya masih dibawah dari bit pembagi, maka hasil bagi sama dengan 0.
+\begin{verbatim}
+      11
+     -----
+011 / 1001 -> Yang dibagi
+    - 011
+    ------
+      0011
+    - 011
+     ------
+         0
+\end{verbatim}
+
+
 \item Komplemen
 
 \qquad Metode pengurangan yang digunakn pada komputer biasanya ditransformasikan menjadi penjumlahan dengan mempergunakan komplemen radiks atau minus radiks komplemen satu. Pertama akan dibahas dahulu komplemen pada sistem desimal imana komplemen - komplemen tersebut secara berurutan disebut dengan komplemen sembilan dan komplemen sepuluh (komplemen pada sistem biner disebut dengan komplemen satu dan komplemen dua). Prinsip yang paling penting yang perlu ditanamkan adalah: \\
@@ -324,9 +357,6 @@ Komplemen Sembilan &876 &348 &085 \\
 Komplemen Sepuluh &877 &349 &086 \textrightarrow ditambah dengan 1! \\
 \end{tabular}\\
 
-
-
-%%%%%%%%
 \qquad Perhatikan hubungan diantara bilangan dan komplemennya adalah simetris. Maka dari dapat disimpulkan dengan memperhatikan contoh di atas, komplemen 9 dari 123 adalah 876 dengan simpel menjadikan jumlahnya = 9 (1 + 8 = 9, 2 + 7 = 9, 3 + 6 = 9)! \\
 
 
@@ -363,6 +393,6 @@ Komplemen Dua& 001101& 010110& 100100 \\
 
 \qquad Alasan kenapa cara komplemen ini dilakukan, dapat dijelaskan dengan memperhatikan sebuah speedometer mobil atau motor dengan empat digit yang sedang membaca nol. \\
 
-\end{enumerate}
+%\end{enumerate}
 
-\end{document}
+%\end{document}
