@@ -173,22 +173,22 @@ Sementara itu, ketidakpastian sayangnya tetap dan mungkin akan mempengaruhi
    keseimbangan antara keuntungan (pengurangan ketidakpastian) dan
    Kekurangan (kehilangan fungsi tanda tangan) dari pembatasan tersebut, itu
    berguna untuk membedakan beberapa kasus:
-\begin{itemize}
-    \item Protokol HARUS melarang penggunaan U + FEFF sebagai tanda tangan untuk itu
+
+    1. Protokol HARUS melarang penggunaan U + FEFF sebagai tanda tangan untuk itu
       elemen protokol tekstual yang mandat protokolnya selalu
       UTF-8, fungsi tanda tangan sama sekali tidak berguna bagi mereka
       kasus.
 
-    \item Protokol HARUS melarang penggunaan U + FEFF sebagai tanda tangan untuk
+    2. Protokol HARUS melarang penggunaan U + FEFF sebagai tanda tangan untuk
       elemen protokol teks yang disediakan oleh protokol ini
       mekanisme identifikasi pengkodean karakter, bila diharapkan
       bahwa implementasi protokol akan berada dalam posisi untuk
       selalu gunakan mekanisme dengan benar. Ini akan terjadi kapan
-	\item elemen protokol dipelihara dengan ketat di bawah kendali
+	  3. elemen protokol dipelihara dengan ketat di bawah kendali
       pelaksanaannya mulai dari saat penciptaan sampai saat ini
       transmisi mereka (diberi label dengan benar).
 
-    \item Protokol TIDAK HARUS melarang penggunaan U + FEFF sebagai tanda tangan
+    4. Protokol TIDAK HARUS melarang penggunaan U + FEFF sebagai tanda tangan
       elemen protokol tekstual yang protokolnya tidak
       berikan mekanisme identifikasi pengkodean karakter, bila ada larangan
       tidak dapat dijalankan, atau bila diharapkan begitu
@@ -200,5 +200,4 @@ Sementara itu, ketidakpastian sayangnya tetap dan mungkin akan mempengaruhi
       memiliki mekanisme identifikasi encoding untuk muatan (seperti FTP)
       atau dari protokol lain yang tidak menjamin tepat
       identifikasi pengkodean karakter (seperti HTTP).
-  \end{docoument}
      hal tersebut berdasarkan yang ditulis dalam artikel wahl \cite{wahl1997lightweight}
