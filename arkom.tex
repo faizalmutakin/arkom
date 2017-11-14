@@ -277,9 +277,9 @@ Arsitektur Komputer / Rolly Maulana Awangga
 %{Software\\ hardware}
 %\input{chapter/hardware.tex}
 
-%\chapter[Kernel]
-%{Software\\ kernel}
-%\input{chapter/kernel.tex}
+\chapter[Kernel]
+{Software\\ kernel}
+\input{chapter/kernel.tex}
 
 \chapter[Perintah DOS dan UNIX]
 {Software\\ DOS dan UNIX}
@@ -301,9 +301,9 @@ Arsitektur Komputer / Rolly Maulana Awangga
 {Software\\ bsd}
 \input{chapter/bsd.tex}
 
-%\chapter[Android]
-%{Software\\ android}
-%\input{chapter/android.tex}
+\chapter[Android]
+{Software\\ android}
+\input{chapter/Android.tex}
 
 \part[Hardware dan Networking]
 {Arsitektur Komputer\\ Hardware}
@@ -312,156 +312,67 @@ Arsitektur Komputer / Rolly Maulana Awangga
 %{Hardware\\ computer}
 %\input{chapter/computer.tex}
 
-%\chapter[CPU atau Prosesor]
-%{Hardware\\ CPU}
-%\input{chapter/cpu.tex}
+\chapter[CPU atau Prosesor]
+{Hardware\\ CPU}
+\input{chapter/RevisiCPU.tex}
+
+\chapter[RAM]
+{Hardware\\ RAM}
+\input{chapter/RAM.tex}
 
 %\chapter[Input Output Device]
 %{Hardware\\ io}
 %\input{chapter/io.tex}
 
-%\chapter[Memori]
-%{Hardware\\ Memori}
-%\input{chapter/memori.tex}
+\chapter[Memori]
+{Hardware\\ Memori}
+\input{chapter/memori.tex}
 
-%\chapter[Storage]
-%{Hardware\\ Storage}
-%\input{chapter/storage.tex}
-
-
+\chapter[Storage]
+{Hardware\\ Storage}
+\input{chapter/storage.tex}
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% optional prologue or prologues
-% \chapter{Chapter Title}
-% \prologue{<text>}{<author attribution>}
+\chapter[Modem]
+{Hardware\\ modem}
+\input{chapter/modem56k.tex}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Edited Book: Author and Affiliation
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-% After \chapter{Chapter Title}, you can
-% enter the author name and embed the affiliation with
-% \chapterauthors{(author name, or names)
-% \chapteraffil{(affiliation or affiliations)}
-% }    
+\chapter[Fiber Optic]
+{Hardware\\ Fiber Optic}
+\input{chapter/fiberoptic.tex}
 
-% For instance:
-% \chapter{Chapter Title}
-% \chapterauthors{G. Alvarez and R. K. Watts
-% \chapteraffil{Carnegie Mellon University, Pittsburgh, Pennsylvania}
 
-% For separate affiliations you can use \affilmark{(number)} after
-% the name of a particular author and before the matching affiliation:
+\chapter[Coaxial]
+{Hardware\\ Coaxial}
+\input{chapter/coaxial.tex}
 
-% For instance:
-% \chapter{Chapter Title}
-% \chapterauthors{George Smeal, Ph.D.\affilmark{1}, Sally Smith,
-% M.D.\affilmark{2}, and Stanley Kubrick\affilmark{1}
-% \chapteraffil{\affilmark{1}AT\&T Bell Laboratories
-% Murray Hill, New Jersey\\
-% \affilmark{2}Harvard Medical School,
-% Boston, Massachusetts}
-% }
+%\chapter[UTP]
+%{Hardware\\ UTP}
+%\input{chapter/utp.tex}
 
-%%%%%%%%%%%%%%%%%%%%%%%
+\chapter[Bilangan Komputasi ASCII]
+{Bilangan Komputasi\\ ASCII}
+\input{chapter/ASCII_UTF8.tex}
 
-%% short version of section head, or one without \\ supplied in sq. brackets.
+%\chapter[Bilangan Komputasi Octal]
+%{Bilangan Komputasi\\ Octal}
+%\input{chapter/Oktal.tex}
 
-% \section[Introduction and fugue]{Introduction\\ and fugue}
-% \subsection[This is the subsection]{This is the\\ subsection}
-% \subsubsection{This is the subsubsection}
-% \paragraph{This is the paragraph}
+\chapter[Cara kerja hardware]
+{Bilangan Komputasi\\ Hardware}
+\input{chapter/carakerjahardware2.tex}
 
-% \begin{chapreferences}{widest label}
-% \bibitem{<label>}Reference
-% \end{chapreferences}
-
-% optional chapter bibliography using BibTeX,
-% must also have \usepackage{chapterbib} before \begin{document}
-% Must use root file with \include{chap1}, \include{chap2} form.
-%\bibliographystyle{plain}
-%\bibliography{<your .bib file name>}
-
-% optional appendix at the end of a chapter:
-% \chapappendix{<chap appendix title>}
-% \chapappendix{} % no title
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% End Matter >>>>>>>>>>>>>>>>>>
-
-% \appendix{<optional title for appendix at end of book>}
-% \appendix{} % appendix without title
-
-% \begin{references}{<widest label>}
-% \bibitem{sampref}Here is reference.
-% \end{references}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% Optional Problem Sets: Can use this at the end of each chapter or at end
-%% of book
-
-% \begin{problems}
-% \prob
-% text
-
-% \prob
-% text
-
-% \subprob
-% text
-
-% \subprob
-% text
-
-% \prob
-% text
-% \end{problems}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% Optional Exercises: Can use this at the end of each chapter or at end
-%% of book
-
-% \begin{exercises}
-% \exer
-% text
-
-% \exer
-% text
-
-% \subexer
-% text
-
-% \subexer
-% text
-
-% \exer
-% text
-% \end{exercises}
-
+%\chapter[Biner]
+%{Bilangan Komputasi\\ Biner}
+%\input{chapter/biner.tex}
 
 \bibliographystyle{IEEEtran}
-\bibliography{IEEEabrv,windows,linux,mac,bsd,android,dosunix,software,definisi,kernel,hardware}
+\bibliography{IEEEabrv,windows,linux,mac,bsd,android,dosunix,software,definisi,kernel,hardware,fiberoptic,coaxial}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% INDEX: Use only one index command set:
 
-%% 1) The default LaTeX Index
 \printindex
 
-%% 2) For Topic index and Author index:
 
-% \usepackage{multind}
-% \makeindex{topic}
-% \makeindex{authors}
-% \begin{document}
-% ...
-% add index terms to your book, ie,
-% \index{topic}{A term to go to the topic index}
-% \index{authors}{Put this author in the author index}
-
-%% (these are Wiley commands)
-%\multiprintindex{topic}{Topic index}
-%\multiprintindex{authors}{Author index}
 
 \end{document}
