@@ -1,0 +1,83 @@
+/section{Perkalian}
+ 
+ /subsection(Pengertian dasar perkalian biner)
+  Perkalian dalam biner mirip dengan pasangan desimalnya. Dua angka A dan B dapat dikalikan dengan produk parsial: 
+  untuk setiap digit di B, produk dari digit di A dihitung dan ditulis pada baris baru, bergeser ke kiri sehingga 
+  garis digit paling kanannya naik dengan angka di B yang bekas. Jumlah semua produk parsial ini memberikan hasil akhir.
+  
+ /section{definisi hexadesimal}
+ /subsection{definisi hexadesimal}
+  Sistem angka heksadesimal, yang juga dikenal sebagai hex, adalah sistem angka yang terdiri dari 16 simbol (dasar 16). 
+  Sistem angka standar disebut desimal (basis 10) dan menggunakan sepuluh simbol: 0,1,2,3,4,5,6,7,8,9. Heksadesimal 
+  menggunakan angka desimal dan mencakup enam simbol tambahan. Tidak ada simbol yang berarti sepuluh, atau sebelas, 
+ -jadi simbol ini diambil dari alfabet Inggris: A, B, C, D, E dan F. Heksadesimal A = desimal 10, dan heksadesimal F = desimal 15
+ +jadi simbol ini diambil dari alfabet Inggris: A, B, C, D, E dan F. Heksadesimal A = desimal 10, dan heksadesimal F = desimal 15
+ 
+ /subsection{sistem bilangan desimal}
+ +Heksadesimal atau sistem bilangan basis 16 adalah sebuah sistem bilangan yang menggunakan 16 simbol. Berbeda dengan sistem bilangan desimal, simbol yang digunakan dari sistem ini adalah angka 0 sampai 9, ditambah dengan 6 simbol lainnya dengan menggunakan huruf A hingga F. Sistem bilangan ini digunakan untuk menampilkan nilai alamat memori dalam pemrograman komputer.
+/subsection {contoh perkalian biner}
+Perkalian dengan 3:
+Dari Tabel 1 dapat ditentukan
+Satuan Hasil Perkalian dengan 3 (SHP3)
+k 0 2 4 6 8
+SHP3 0 6 2 8 4
+Jika k genap maka:
+SHP3 = Nilai satuan pada : 2 (10- k)
+k 1 3 5 7 9
+SHP3 3 9 5 1 7
+Jika k ganjil maka:
+SHP3 = Nilai satuan pada : 2 (10- k) + 5
+Sehingga cara mudah menentukan hasil
+perkalian bilangan n digit dengan 3 :
+1. Untuk angka terkanan =
+Nilai satuan pada : 2 (10- k), k genap
+Nilai satuan pada : 2 (10- k) + 5,
+k ganjil
+Jika memuat puluhan simpan sebagai
+”simpanan”
+2. Untuk angka di sebelah kirinya =
+Nilai satuan pada : 2 (9- k), k genap
+Nilai satuan pada : 2 (9- k) + 5,
+k ganjil, ditambah ”s” dari
+Jurnal Matematika Vol. 11, No.1, April 2008:38-42
+40
+tetangganya.
+Jika dari langkah 1 diperoleh
+“simpanan” maka “simpana’ yang ada
+ditambahkan pula.
+Jika hasilnya memuat puluhan simpan
+sebagai ”simpanan”
+3. Ulangi langkah 2 sampai digit ke n
+4. Untuk digit ke (n+1) =
+”s” dari digit ke n + ”simpanan”
+dikurangi 2
+Dengan demikian jika bilangan yang
+dikalikan n digit diperlukan (n+1) langkah
+Contoh:
+( 1 ) 9876 X 3 = ?
+Penyelesaian : Pandang 09876
+Langkah 1 : 2 (10-6) = 2 (4) = 8
+Langkah 2 : 2 (9-7)+5+”s” dari 6
+= 2 (2)+5+3=4+5+3 = 12
+= 2 simpan 1
+Langkah 3 : 2 (9-8)+
+”s” dari 7+”simpanan”
+= 2(1)+3+1=2+3+1= 6
+Langkah 4 : 2 (9-9)+5+”s” dari 8
+= 2 (0)+5+4=0+5+4 = 9
+Langkah 5 : “s” dari 9 – 2 = 4-2 = 2
+Maka : 9876 X 3 = 29628.
+Atau dikerjakan dengan cara lain :
+( 2 ) 41692573 X 3 = ?
+C = ”simpanan”, H = hasil
+k OPERASI C H
+3 2(10-3)+5 = 19 1 9
+7 2(9-7)+5+1+1 1 1
+5 2(9-5)+5+3+1 1 7
+2 2(9-2)+2+1 1 7
+9 2(9-9)+5+1+1 0 7
+6 2(9-6)+4+0 1 0
+1 2(9-1)+5+3+1 2 5
+4 2(9-4)+0+2 1 2
+0 2+1-2 0 1
+Jadi 41692573 X 3 = 125077719
