@@ -32,7 +32,7 @@ Satu digit heksadesimal mewakili nibble (4 bit), yang merupakan setengah dari ok
 nilai mulai dari 00000000 sampai 11111111 dalam bentuk biner, tapi ini mungkin lebih mudah direpresentasikan sebagai 00 sampai FF dalam heksadesimal.
 Dalam konteks non-pemrograman, subskrip biasanya digunakan untuk memberi radix, misalnya nilai desimal 10.995 akan dinyatakan dalam heksadesimal 
 sebagai 2AF316. Beberapa notasi digunakan untuk mendukung representasi heksadesimal dari konstanta dalam bahasa pemrograman, biasanya melibatkan 
-awalan atau akhiran. Awalan \"0x\" digunakan dalam bahasa C dan bahasa terkait, di mana nilai ini dapat dinotasikan sebagai 0x2AF3.
+awalan atau akhiran. Awalan 0x digunakan dalam bahasa C dan bahasa terkait, di mana nilai ini dapat dinotasikan sebagai 0x2AF3.
 
 \subsection {contoh perkalian biner}
 
@@ -54,22 +54,22 @@ Nilai satuan pada : 2 (10- k), k genap
 Nilai satuan pada : 2 (10- k) + 5,
 k ganjil
 Jika memuat puluhan simpan sebagai
-\”simpanan\”
+simpanan
 2. Untuk angka di sebelah kirinya =
 Nilai satuan pada : 2 (9- k), k genap
 Nilai satuan pada : 2 (9- k) + 5,
-k ganjil, ditambah \”s\” dari
+k ganjil, ditambah s dari
 Jurnal Matematika Vol. 11, No.1, April 2008:38-42
 40
 tetangganya.
 Jika dari langkah 1 diperoleh
-\“simpanan\” maka \“simpana\" yang ada
+simpanan maka simpana yang ada
 ditambahkan pula.
 Jika hasilnya memuat puluhan simpan
-sebagai \”simpanan\”
+sebagai simpanan
 3. Ulangi langkah 2 sampai digit ke n
 4. Untuk digit ke (n+1) =
-\”s\” dari digit ke n + ”simpanan”
+s dari digit ke n + ”simpanan”
 dikurangi 2
 Dengan demikian jika bilangan yang
 dikalikan n digit diperlukan (n+1) langkah
@@ -81,15 +81,15 @@ Langkah 2 : 2 (9-7)+5+”s” dari 6
 = 2 (2)+5+3=4+5+3 = 12
 = 2 simpan 1
 Langkah 3 : 2 (9-8)+
-”s” dari 7+\”simpanan\”
+”s” dari 7 + simpanan
 = 2(1)+3+1=2+3+1= 6
 Langkah 4 : 2 (9-9)+5+”s” dari 8
 = 2 (0)+5+4=0+5+4 = 9
-Langkah 5 : \“s\” dari 9 – 2 = 4-2 = 2
+Langkah 5 : s dari 9 – 2 = 4-2 = 2
 Maka : 9876 X 3 = 29628.
 Atau dikerjakan dengan cara lain :
 ( 2 ) 41692573 X 3 = ?
-C = \”simpanan\”, H = hasil
+C = simpanan, H = hasil
 k OPERASI C H
 3 2(10-3)+5 = 19 1 9
 7 2(9-7)+5+1+1 1 1
@@ -101,6 +101,11 @@ k OPERASI C H
 4 2(9-4)+0+2 1 2
 0 2+1-2 0 1
 Jadi 41692573 X 3 = 125077719
+
+\begin{figure}[ht]
+	\centerline{\includegrapichs[width=1\textwidth]{figures/perkalianbiner.JPEG}}
+	\caption{gambar dari perkalian biner.}
+	\label{perkalian}
 
 \subsubsection {Perkalian dengan 4}
 Dari Tabel 1 dapat ditentukan
@@ -119,24 +124,24 @@ perkalian bilangan n digit dengan 4 :
 Nilai satuan di : 10 - k, k = genap
 Nilai satuan di : 15 - k, k = ganjil
 Jika memuat puluhan simpan sebagai
-\”simpanan\”
+simpanan
 2. Untuk angka di sebelah kirinya =
-Nilai satuan pada : (9- k)+\”s\” dari
+Nilai satuan pada : (9- k)+ s dari
 tetangganya, k genap
-Nilai satuan pada : (9- k) + \“s\” dari
+Nilai satuan pada : (9- k) + s dari
 tetangganya + 5, k ganjil
 Jika dari langkah 1 diperoleh
-\“simpanan\” maka \“simpana\’ yang ada
+simpanan maka simpana yang ada
 ditambahkan pula.
 Jika hasilnya memuat puluhan simpan
-sebagai \”simpanan\”
+sebagai simpanan
 3. Ulangi langkah 2 sampai digit ke n
 4. Untuk digit ke (n+1) =
-\”s\” dari digit ke n + ”simpanan”-1
+ s dari digit ke n + ”simpanan”-1
 Contoh :
 ( 1 ) 4765 X 4 = ?
 Penyelesaian :
-C = \”simpanan\”, H = hasil
+C = simpanan , H = hasil
 k OPERASI C H
 5 15-5 1 0
 6 (9-6)+2+1 0 6
@@ -146,7 +151,7 @@ k OPERASI C H
 Jadi 4765 X 4 = 19060
 ( 2 ) 87645912 X 4 = ?
 Penyelesaian :
-C = \”simpanan\”, H = hasil
+C = simpanan , H = hasil
 k OPERASI C H
 2 10-2 0 8
 1 (9-1)+1+5+0 1 4
@@ -191,8 +196,8 @@ perkalian bilangan n digit dengan 5 :
 1. Untuk angka terkanan = 0, k genap
 5, k ganjil
 2. Untuk angka di sebelah kirinya =
-0+\”s\” dari tetangganya, k genap
-5+ \“s\” dari tetangganya + 5, k ganjil
+0+ s dari tetangganya, k genap
+5+ s dari tetangganya + 5, k ganjil
 3. Ulangi langkah 2 sampai selesai
 Contoh:
 ( 1 ) 7896 X 5 = ?
@@ -300,8 +305,8 @@ x
 
 \subsection {Perkalian Decimal}
 Untuk mengalikan dua angka desimal berganda, pertama Anda harus tahu bagaimana mengalikan dua angka desimal satu digit. Ini memerlukan penghafalan 100 fakta, 
-atau 55 fakta jika Anda mengecualikan fakta komutatif atau \"perputaran\". Fakta ini biasanya diwakili dalam \"tabel perkalian,\" juga dikenal sebagai \"tabel 
-waktu.\" 
+atau 55 fakta jika Anda mengecualikan fakta komutatif atau perputaran. Fakta ini biasanya diwakili dalam tabel perkalian, juga dikenal sebagai tabel 
+waktu. 
 Contoh fakta adalah 2 x 9 = 18, 9 x 7 = 63, dan 1 x 6 = 6.
 
 
