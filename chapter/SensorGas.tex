@@ -27,21 +27,21 @@ Alat dan bahan:
 \begin{enumerate}
 \item Arduino Uno
 \item Sensor MQ
-\item Jumper
+\item Led
 \end{enumerate}
 Kode
 \begin{verbatim}
 int redLed = 12;
-int greenLed = 11;
-int buzzer = 10;
+int redLed = 11;
+int redLed = 10;
 int smokeA0 = A5;
 // Your threshold value
 int sensorThres = 400;
 
 void setup() {
   pinMode(redLed, OUTPUT);
-  pinMode(greenLed, OUTPUT);
-  pinMode(buzzer, OUTPUT);
+  pinMode(redLed, OUTPUT);
+  pinMode(redLed, OUTPUT);
    pinMode(smokeA0, INPUT);
   Serial.begin(9600);
 }
@@ -55,14 +55,14 @@ void loop() {
   if (analogSensor > sensorThres)
   {
     digitalWrite(redLed, HIGH);
-    digitalWrite(greenLed, LOW);
-    digitalWrite(buzzer, HIGH);
+    digitalWrite(redLed, LOW);
+    digitalWrite(redLed, HIGH);
   }
   else
   {
     digitalWrite(redLed, LOW);
-    digitalWrite(greenLed, HIGH);
-    digitalWrite(buzzer, LOW);
+    digitalWrite(redLed, HIGH);
+    digitalWrite(redLed, LOW);
   }
   delay(100);
 }
