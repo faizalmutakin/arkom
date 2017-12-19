@@ -17,12 +17,7 @@ range konsentrasi gas yang bisa diukur:
 \end{itemize}
 
 \subsection{hardware yang digunakan}
-Perangkat Keras Sistem pengukuran kami terdiri dari beberapa bagian seperti yang ditunjukkan pada Gambar \ref{hardware} Kami menggunakan modul sensor MQ-2 untuk merasakan asap. Komunikasi digital dimungkinkan melalui antarmuka RS232 board. Arduino Uno board terhubung ke modul sensor gas MQ2 dan terhubung melalui USB ke sistem komputer untuk mencatat data real-time dari sensor. Semua bagian praktikum ini termasuk modul sensor dan arduino mudah didapat dengan harga murah. Hal ini penting untuk mendapatkan penerimaan yang luas terhadap sistem pemantauan asap.
-\begin{figure}[ht]
-	\centerline{\includegraphics[width=1\textwidth]{figures/hardware.jpg}}
-	\caption{Hardware yang digunakan.}
-	\label{hardware}
-	\end{figure}
+Perangkat Keras Sistem pengukuran kami terdiri dari beberapa bagian. Kami menggunakan modul sensor MQ-2 untuk merasakan gas. Komunikasi digital dimungkinkan melalui antarmuka RS232 board. Arduino Uno board terhubung ke modul sensor gas MQ2 dan terhubung melalui USB ke sistem komputer untuk mencatat data real-time dari sensor. Semua bagian praktikum ini termasuk modul sensor dan arduino mudah didapat dengan harga murah. Hal ini penting untuk mendapatkan penerimaan yang luas terhadap sistem pemantauan asap.
 	
 \subsection{Koneksi Sensor Modul}
 Sambungan modul sensor Modul sensor gas MQ2 terhubung ke papan Arduino menggunakan kabel jumper. Pin Analog pada sensor terhubung ke pin analog 0 pada papan arduino, sedangkan pin + 5 V dan GND pada modul sensor terhubung ke pin 5V Vcc dan GND (ground) masing-masing pada papan arduino. Arduino Uno board kemudian dihubungkan ke sistem komputer dengan menggunakan koneksi USB dan antarmuka RS232.
@@ -88,7 +83,7 @@ Keadaan sensor jika mendeteksi gas ada pada gambar \ref{terditeksi} dua lampu ak
 	
 Setelah Codingan Berhasil di jalankan maka akan munjul Serial Monitor seperti gambar  \ref{SerialMonitor}
 \begin{figure}[ht]
-	\centerline{\includegraphics[width=1\textwidth]{figures/SerialMonitor.PNG}}
+	\centerline{\includegraphics[width=1\textwidth]{figures/SerialMonitor.png}}
 	\caption{Serial Monitor Pada Sensor Gas}
 	\label{SerialMonitor}
 	\end{figure}
