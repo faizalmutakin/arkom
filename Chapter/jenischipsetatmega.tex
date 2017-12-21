@@ -6,6 +6,15 @@
 	\subsection{Chipset ATMEGA 8535}
 		Mikrokontroler sebagai sebuah “one chip solution” pada dasarnya adalah rangkaian terintregrasi (Integrated Circuit-IC) yang telah mengandung secara lengkap berbagai komponen pembentuk sebuah komputer. Berbeda dengan penggunaan mikroprosesor yang masih memerlukan komponen luar tambahan seperti RAM, ROM, Timer, dan sebagainya untuk sistem mikrokontroler, tambahan komponen diatas secara praktis hampir tidak dibutuhkan lagi. Hal ini disebabkan semua komponen penting tersebut telah ditanam bersama dengan sistem prosesor ke dalam IC tunggal mikrokontroler bersangkutan. Dengan alasan itu sistem mikrokontroler dikenal juga dengan istilah populer the real Computer On a Chip (komputer utuh dalam keping tunggal), sedangkan sistem mikroprosesor dikenal dengan istilah yang 	lebih terbatas yaitu Computer On a Chip (komputer dalam keping tunggal).
 		Mikrokontroler AVR memiliki arsitektur RISC 8 bit, dimana semua instruksi dikemas dalam kode 16-bit (16-bits word) dan sebagian besar instruksi dieksekusi dalam 1 (satu) siklus clock, berbeda dengan instruksi MCS51 yang membutuhkan 12 siklus clock. Tentu saja itu terjadi karena kedua jenis mikrokontroler tersebut memiliki arsitektur yang berbeda. AVR berteknologi RISC (Reduced Instruction Set Computing), sedangkan seri MCS51 berteknologi CISC (Complex Instruction Set Computing). Secara umum, AVR dapat dikelompokkan menjadi empat kelas, yaitu keluarga ATtiny, keluarga AT90Sxx, keluarga ATMega dan AT86RFxx. Pada dasarnya yang membedakan masing-masing kelas adalah memori, peripheral dan fungsinya. Dari segi arsitektur dan instruksi yang digunakan, mereka bisa dikatakan hampir sama.
+		
+		\subsection{Konfigurasi Pin ATmega8535}
+		Konfigurasi pin ATmega8535 bisa dilihat pada gambar 2.6, Dari gambar tersebut dapat dijelaskan secara fungsional konfigurasi pin ATmega8535 sebagai berikut :
+		\begin{itemize}
+			\item VCC merupakan pin yang berfungsi sebagai pin masukan catu daya
+			\item GND merupakan pin ground.
+			\item Port A (PA0..PA7) merupakan pin I/O dua arah dan pin masukan ADC
+			\item Port A (PA0..PA7) merupakan pin I/O dua arah dan pin masukan ADC
+		\end{itemize}
 
 \section{ATmega8}
 
