@@ -34,6 +34,12 @@ Bab ini berfokus pada bagaimana menghubungkan Arduino dengan switch mekanis, ele
 
 Arduino Mega adalah papan mikrokontroler berdasarkan ATmega1280 (datasheet). Ini memiliki 54 pin input atau output digital, 16 input analog, 4 UART (port serial perangkat keras), osilator kristal 16 MHz, koneksi USB, colokan listrik, header ICSP, dan tombol reset. Ini berisi semua yang dibutuhkan untuk mendukung mikrokontroler; cukup hubungkan ke komputer dengan kabel USB atau nyalakan dengan adaptor AC-ke-DC atau baterai untuk memulai. Mega kompatibel dengan kebanyakan perisai yang dirancang untuk Arduino Duemilanove atau Diecimila.
 
+\subsubsubsection{Power}
+Arduino Mega dapat bertenaga melalui koneksi USB atau dengan catu daya eksternal. Sumber daya dipilih secara otomatis.
+
+Daya eksternal (non-USB) bisa datang baik dari adaptor AC-ke-DC (kutil dinding) atau baterai. Adaptor dapat dihubungkan dengan memasang steker positif pusat 2.1mm ke soket daya board. Memimpin dari baterai dapat dimasukkan ke dalam header pin Gnd dan Vin pada konektor POWER.
+
+Papan dapat beroperasi pada suplai eksternal 6 sampai 20 volt. Jika dipasok dengan kurang dari 7V, pin 5V dapat memasok kurang dari lima volt dan board mungkin tidak stabil. Jika menggunakan lebih dari 12V, regulator tegangan mungkin terlalu panas dan merusak board. Kisaran yang disarankan adalah 7 sampai 12 volt.
 \subsubsection{Sensor DHT 11}
 Sensor ini merupakan sensor dengan kalibrasi sinyal digital yang mampu memberikan informasi suhu dan kelembaban. Sensor ini tergolong komponen yang memiliki tingkat stabilitas yang sangat baik. Sensor ini termasuk elemen resistif dan perangkat pengukur suhu NTC.
 Memiliki kualitas yang sangat baik, respon cepat, dan dengan harga yang
