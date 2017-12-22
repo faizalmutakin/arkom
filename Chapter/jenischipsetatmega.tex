@@ -43,6 +43,8 @@
 		AVR dapat dikelompokkan menjadi empat kelas, yaitu keluarga Attiny, keluarga AT902xx, keluarga Atmega, dan keluarga AT86RFxx. Pada dasarnya yang membedakan masing-masing kelas adalah memori, peripheral, dan fungsinya. Silahkan buka www.atmel.com untuk informasi lebih lanjut tentang berbagai variasi AVR. Untuk mikrokontroler AVR yang berukuran lebih kecil, silahkan mencoba Atmega8, Attiny2313 dengan ukuran Flash Memory 2KB dengan dua input analog.
 	\subsection{Peta Memori ATMega16}
 		Memori Program    Arsitektur ATMega16 mempunyai dua memori utama, yaitu memori data dan memori program.  Selain itu, ATMega16 memiliki memori EEPROM untuk menyimpan data.  ATMega16 memiliki 16K byte On-chip In-System Reprogrammable Flash Memory untuk menyimpan program.  Instruksi ATMega16 semuanya memiliki format 16 atau 32 bit, maka memori flash diatur dalam 8K x 16 bit.  Memori flash dibagi kedalam dua bagian, yaitu bagian program boot dan aplikasi. Bootloader adalah program kecil yang bekerja pada saat sistem dimulai yang dapat memasukkan seluruh program aplikasi ke dalam memori prosesor.
+	\subsection{Memori Data ATMega16}
+		Memori data AVR ATMega16 terbagi menjadi 3 bagian, yaitu 32 register umum, 64 buah register I/O dan 1 Kbyte SRAM internal.  General purpose register menempati alamat data terbawah, yaitu $00 sampai $1F.  Sedangkan memori I/O menempati 64 alamat berikutnya mulai dari $20 hingga $5F.  Memori I/O merupakan register yang khusus digunakan untuk mengatur fungsi terhadap berbagai fitur mikrokontroler seperti kontrol register, timer/counter, fungsi-fungsi I/O, dan sebagainya.  1024 alamat berikutnya mulai dari $60 hingga $45F digunakan untuk SRAM internal.
 
 \section{Mikrokontroler ATMega328}
 	\subsection{Penjelasan}
