@@ -50,6 +50,14 @@ Arduino Mega dapat bertenaga melalui koneksi USB atau dengan catu daya eksternal
 Daya eksternal (non-USB) bisa datang baik dari adaptor AC-ke-DC (kutil dinding) atau baterai. Adaptor dapat dihubungkan dengan memasang steker positif pusat 2.1mm ke soket daya board. Memimpin dari baterai dapat dimasukkan ke dalam header pin Gnd dan Vin pada konektor POWER.
 
 Papan dapat beroperasi pada suplai eksternal 6 sampai 20 volt. Jika dipasok dengan kurang dari 7V, pin 5V dapat memasok kurang dari lima volt dan board mungkin tidak stabil. Jika menggunakan lebih dari 12V, regulator tegangan mungkin terlalu panas dan merusak board. Kisaran yang disarankan adalah 7 sampai 12 volt.
+
+Pin Power adalah sebagai berikut:
+\begin{enumerate}
+\item VIN. Tegangan masukan ke papan Arduino saat menggunakan sumber daya eksternal (berlawanan dengan 5 volt dari koneksi USB atau sumber daya yang diatur lainnya). Anda bisa mensuplai voltase melalui pin ini, atau jika mensuplai voltase melalui colokan listrik, akseslah melalui pin ini.
+\item 5V. Catu daya yang diatur digunakan untuk menyalakan mikrokontroler dan komponen lainnya di papan tulis. Ini bisa datang baik dari VIN melalui regulator onboard, atau disediakan oleh USB atau suplai 5V yang diatur lainnya.
+\item 3V3 Pasokan 3,3 volt dihasilkan oleh chip FTDI onboard. Hasil maksimum saat ini adalah 50 mA.
+\item GND. Ground pin
+\end{enumerate}
 \subsubsection{Sensor DHT 11}
 Sensor ini merupakan sensor dengan kalibrasi sinyal digital yang mampu memberikan informasi suhu dan kelembaban. Sensor ini tergolong komponen yang memiliki tingkat stabilitas yang sangat baik. Sensor ini termasuk elemen resistif dan perangkat pengukur suhu NTC.
 Memiliki kualitas yang sangat baik, respon cepat, dan dengan harga yang
