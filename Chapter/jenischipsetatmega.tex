@@ -34,8 +34,10 @@
 		
 	\subsection{Mikrokontroler ATmega8}
 		ATMega8 merupakan mikrokontroler keluarga AVR 8 bit yang banyak digunakan oleh pemula seperti saya. Seperti yang terbaca pada datasheet, mikrokontroler yang kita gunakan ini memiliki ukuran flash memori sebesar 8KB, SRAM sebesar 1KB, dan memori EEPROM sebesar 512 Bytes. Bingung apa bedanya dari ketiga memori tersebut. Baik, saya akan jelaskan sedikit tentang perbedaannya.
+	\subsection{Jenis dan ukuran memori ATmega8}
+		Flash memori merupakan lokasi penyimpanan program yang kita buat. File hex hasil kompilasi program nantinya akan dimasukkan ke mikrokontroler melalui alat yang disebut downloader/programmer. Nah, file hex tersebut nantinya akan disimpan pada sebuah memori yang disebut flash memori. Pada saat melakukan proses pemograman (coding) biasanya kita memerlukan apa yang disebut dengan variabel atau tempat menampung data.
 		
-	\subsection{ATMega16}
+\section{ATMega16}
 		AVR ATMega16 merupakan seri mikrokontroler CMOS 8-bit buatan Atmel,berbasis arsitektur RISC (Reduced Instruction Set Computer). Hampir semua instruksi dieksekusi dalam satu siklus clock. AVR mempunyai 32 register general-purpose, timer/counter fleksibel dengan mode compare, interrupt internal dan eksternal, serial UART, programmable Watchdog Timer, dan mode power saving, ADC dan PWM internal. AVR juga mempunyai In-System Programmable Flash on-chip yang mengijinkan memori program untuk diprogram ulang dalam sistem menggunakan hubungan serial SPI. ATMega16. ATMega16 mempunyai throughput mendekati 1 MIPS per MHz membuat disainer sistem untuk mengoptimasi konsumsi daya versus kecepatan proses.
 	\subsection{Pembagian Kelas ATMega16}
 		AVR dapat dikelompokkan menjadi empat kelas, yaitu keluarga Attiny, keluarga AT902xx, keluarga Atmega, dan keluarga AT86RFxx. Pada dasarnya yang membedakan masing-masing kelas adalah memori, peripheral, dan fungsinya. Silahkan buka www.atmel.com untuk informasi lebih lanjut tentang berbagai variasi AVR. Untuk mikrokontroler AVR yang berukuran lebih kecil, silahkan mencoba Atmega8, Attiny2313 dengan ukuran Flash Memory 2KB dengan dua input analog.
