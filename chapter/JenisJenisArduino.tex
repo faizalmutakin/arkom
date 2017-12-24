@@ -74,6 +74,20 @@ Sistem pemantauan dan pengukuran jarak jauh terdiri dari 2 buah modul
 Xbee Proyang sama yang sebelumnya telah diprogram sebagai sebuah receiver-transmiter maupun transmiter-receiver. Ada beberapa bentuk topologi yang biasa digunakan antara lain topologi mesh, peer, star, dan cluster Tree.
 Topologi pair merupakan jaringan yang sederhana dengan hanya menggunakan dua buah xbeeatau node. Satu node harus menjadi coordinator sehingga jaringan dapat dibentuk. Dan yang lain dikonfigurasikan sebagai routeratau perangkat akhir.
 
+Cara yang saat ini banyak digunakan  dalam topologi jaringan adalah bus, token ring, dan star yaitu:
+1. Topologi BUS 
+Topologi bus terlihat pada Gambar 2. Media penghantar untuk jenis topologi BUS adalah kabel Koaksial. Topologi BUS menggunakan metode unicast, multicastdan broadcast. Unicastadalah komu- nikasi antara satu pengirim 
+dengan satu penerima di jaringan. Multicastadalah komunikasi antara satu pengirim dengan banyak penerima di jaringan. Sedangkan pada Broadcast, setiap titik akan menerima dan menyimpan frameyang disalurkan/dihantarkan.
+
+2. Topologi Token RING 
+Topologi Token RING adalah. Metode token-ring(sering disebut ringsaja) menghu-bungkan komputer sehingga ber-bentuk ring (lingkaran). Setiap 
+simpul mempunyai tingkatan yang sama. Jaringan akan disebut sebagai loop, data dikirimkan kesetiap simpul dan setiap informasi yang diterima simpul diperiksa alamatnya apakah data itu untuknya atau bukan.
+
+3. Topologi STAR 
+Topologi ini merupakan kontrol terpusat, semua link harus melewati pusat yang menyalurkan data tersebut kesemua simpul atau clientyang dipilihnya. Simpul pusat dinamakan stasiun primer atau 
+server dan lainnya dinamakan 
+stasiun sekunder atau client server.Setelah hubungan jaringan dimulai oleh servermaka setiap client serversewaktu-waktu dapat menggu-nakan hubungan jaringan ter-sebut tanpa menunggu perintah dari server.
+
 \subsubsection {Arduino 1.0.1 dan XCTU}
 Arduino merupakan perangkatpemrograman mikrokontroller jenis Atmel yang tersedia secara bebas (open-source)
 dengan menggunakan bahasapemrograman C. Untuk menyelesaikan rangkaian agar bisa bekerja, maka langkah selanjutnya adalah membuat program yang
