@@ -59,7 +59,13 @@ yang dipertukarkan atau dikirimkan antara sketch dengan arduino pada port serial
  
 \subsection{Sketch}
 \begin{itemize}
-\item Verify/Compile berfungsi untuk mengecek apakah sketch yang kamu buat ada kekeliruan dari segi sintaks atau tidak. Jika tidak 
+\item Verify/Compile berfungsi untuk mengecek apakah sketch yang kamu buat ada kekeliruan dari segi sintaks atau tidak. Jika tidak  ada kesalahan, maka sintaks yang kamu buat akan dikompile kedalam bahasa mesin.
+\item Upload berfungsi mengirimkan program yang sudah dikompilasi ke Arduino Board.
+\item Uplad Using Programmer menu ini berfungsi untuk menuliskan bootloader kedalam IC Mikrokontroler Arduino. Pada kasus ini kamu membutuhkan perangkat tambahan seperti USBAsp untuk menjembatani penulisan program bootloader ke IC Mikrokontroler.
+\item Export Compiled Binary berfungsi untuk menyimpan file dengan ekstensi .hex, dimana file ini dapat disimpan sebagai arsip untuk di upload ke board lain menggunakan tools yang berbeda.
+\end{itemize}
+
+
 
 
 %%%%TARUH DIATAS JANGAN TARUH DIATAS%%%%%
