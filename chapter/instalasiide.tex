@@ -10,7 +10,25 @@
 \section{Pengertiani}
 
 
-IDE merupakan singkatan dari Integrated Development Environment atau lingkungan terintegrasi yang digunakan untuk melakukan pengembangan. Dikatakan sebagai lingkungan karena melalui software inilah dilakukan pemrograman Arduino untuk melakukan fungsi - fungsi yang ditanamkan melalui sintaks pemrograman. IDE ini disediakan gratis dan bisa didapatkan secara langsung pada halaman resmi arduino yang bersifat        
+IDE merupakan singkatan dari Integrated Development Environment atau lingkungan terintegrasi yang digunakan untuk melakukan pengembangan. Dikatakan sebagai lingkungan karena melalui software inilah dilakukan pemrograman Arduino untuk melakukan fungsi - fungsi yang ditanamkan melalui sintaks pemrograman. IDE ini disediakan gratis dan bisa didapatkan secara langsung pada halaman resmi arduino yang bersifat open source. IDE ini juga sudah mendukung berbagai sistem operasi populer saat ini seperti Windows, Mac, dan Linux. Arduino menggunakan bahasa pemrograman sendiri yang menyerupai bahasa C. Pada bahasa pemrograman Arduino (Sketch) telah dilakukan beberapa perubahan untuk memudahkan para pemula dalam melakukan pemrograman dari bahasa aslinya. Sebelum dijual ke pasaran, IC microcontroller Arduino telah ditanamkan suatu program bernama Bootlader yang berfungsi sebagai penengah antara compiler Arduino dengan microcontroller.
+Arduino IDE dibuat dari bahasa pemrograman Java dan dilengkapi library C/C++.  Arduino IDE ini dikembangkan dari software Processing yang dirubah menjadi Arduino IDE khusus untuk pemrograman dengan Arduino. IDE Arduino terdiri dari:
+
+\begin{itemize}
+
+\item Editor merupakan  jendela yang digunakan oleh pengguna untuk mengubah dan menulis suatu program atau kode – kode dalam bahasa Processing.
+\item Compiler merupakan sebuah modul yang mengubah kode program (bahasa Processing) menjadi kode biner. Bagaimanapun juga sebuah microcontroller tidak akan bisa memahami bahasa. Yang bisa dipahami oleh microcontroller hanya kode biner. Itulah penyebab mengapa compiler diperlukan.
+\item Uploader merupakan sebuah modul yang berisi kode - kode biner atau sketch dari komputer ke dalam memory yang ada di dalam papan Arduino.
+ 
+ \end{itemize}
+ 
+Program yang ditulis dengan menggunaan Arduino Software (IDE) disebut sebagai sketch. Sketch ditulis dalam suatu editor teks dan disimpan dalam file dengan ekstensi .ino. Teks editor pada Arduino Software memiliki beberapa fitur seperti cutting atau paste dan seraching atau replacing sehingga memudahkan kita dalam menulis kode program.
+
+Pada Arduino IDE, terdapat semacam message box berwarna hitam yang berfungsi untuk menampilkan status, seperti pesan error, compile, dan upload program sedangkan pada bagian bawah paling kanan Arduino IDE, menunjukan board yang terkonfigurasi beserta COM Ports yang digunakan.
+
+\subsection{Verify}
+Verify berfungsi untuk melakukan memeriksa kode - kode program yang telah kita buat apakah sudah sesuai dengan kaidah pemrograman yang ada atau belum.
+\subsection{Upload}
+Upload berfungsi untuk melakukan kompilasi program atau kode - kode yang telah kita buat sebelumnya menjadi bahasa yang dapat dipahami oleh mesin atau Arduino.
 \subsection{New}
 New berfungsi untuk membuat Sketch baru.
 \subsection{Open}
@@ -18,10 +36,7 @@ Open berfungsi untuk membuka kembali sketch yang telah dibuat sebelumnya untuk d
 \subsection{Save}
 Save berfungsi untuk menyimpan Sketch yang telah kita buat.
 \subsection{Serial Monitor}
-Serial Monitor berfungsi untuk membuka serial monitor. Serial monitor merupakan jendela yang menampilkan data yang dipertukarkan atau dikirimkan antara sketch dengan arduino pada port serialnya. Serial Monitor ini sangat berguna apabila kita ingin melakukan debugging atau
-
-
-yang dipertukarkan atau dikirimkan antara sketch dengan arduino pada port serialnya. Serial Monitor ini sangat berguna apabila kita ingin melakukan debugging atau membuat suatu program tanpa menggunakan LCD pada Arduino sebagai penampil nilai. Serial monitor ini dapat digunakan untuk menampilkan nilai dari proses dan pembacaan, serta pesan error.
+Serial Monitor berfungsi untuk membuka serial monitor. Serial monitor merupakan jendela yang menampilkan data yang dipertukarkan atau dikirimkan antara sketch dengan arduino pada port serialnya. Serial Monitor ini sangat berguna apabila kita ingin melakukan debugging atau yang dipertukarkan atau dikirimkan antara sketch dengan arduino pada port serialnya. Serial Monitor ini sangat berguna apabila kita ingin melakukan debugging atau membuat suatu program tanpa menggunakan LCD pada Arduino sebagai penampil nilai. Serial monitor ini dapat digunakan untuk menampilkan nilai dari proses dan pembacaan, serta pesan error.
 
 \subsection{File}
 \begin{itemize}
@@ -37,7 +52,7 @@ yang dipertukarkan atau dikirimkan antara sketch dengan arduino pada port serial
 \item Print berfungsi untuk mengirimkan file sketch ke mesin cetak untuk dicetak.
 \item Preferences disini kita dapat merubah tampilan interface IDE Arduino.
 \item Quit berfungsi untuk menutup semua jendela Arduino IDE.
-\end{itemsize}
+\end{itemize}
 
 \subsection{Edit}
 \begin{itemize}
@@ -63,13 +78,22 @@ yang dipertukarkan atau dikirimkan antara sketch dengan arduino pada port serial
 \item Upload berfungsi mengirimkan program yang sudah dikompilasi ke Arduino Board.
 \item Uplad Using Programmer menu ini berfungsi untuk menuliskan bootloader kedalam IC Mikrokontroler Arduino. Pada kasus ini kamu membutuhkan perangkat tambahan seperti USBAsp untuk menjembatani penulisan program bootloader ke IC Mikrokontroler.
 \item Export Compiled Binary berfungsi untuk menyimpan file dengan ekstensi .hex, dimana file ini dapat disimpan sebagai arsip untuk di upload ke board lain menggunakan tools yang berbeda.
-\end{itemize}
+\item Show Sketch Folder, berfungsi membuka folder sketch yang saat ini dikerjakan.
+\item Include Library, berfunsi menambahkan library/pustaka kedalam sketch yang dibuat dengan menyertakan sintaks #include di awal kode. Selain itu kamu juga bisa menambahkan library eksternal dari file .zip kedalam Arduino IDE.
+\item Add File…, berfungsi untuk menambahkan file kedalam sketch arduino (file akan dikopikan dari drive asal). 
+
+
+
+
+
+
 
 
 
 
 %%%%TARUH DIATAS JANGAN TARUH DIATAS%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{itemize}
 \section{Proses Instalasi}
 
 \begin{enumerate}
