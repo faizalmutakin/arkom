@@ -62,6 +62,13 @@
 			\item TOSC1 (PB6) dan TOSC2 (PB7) dapat difungsikan sebagai sumber clock external untuk timer.
 			\item XTAL1 (PB6) dan XTAL2 (PB7) merupakan sumber clock utama mikrokontroler.
 		\end{itemize}
+		
+	\item Port C
+		Port C merupakan jalur data 7 bit yang dapat difungsikan sebagai input/output digital. Fungsi alternatif PORTC antara lain sebagai berikut.
+		\begin {itemize}
+			\item ADC6 channel (PC0,PC1,PC2,PC3,PC4,PC5) dengan resolusi sebesar 10 bit. ADC dapat kita gunakan untuk mengubah input yang berupa tegangan analog menjadi data digital
+			\item I2C (SDA dan SDL) merupakan salah satu fitur yang terdapat pada PORTC. I2C digunakan untuk komunikasi dengan sensor atau device lain yang memiliki komunikasi data tipe I2C seperti sensor kompas, accelerometer nunchuck. 
+		\end {itemize}
 
 	\end{enumerate}
 \section{ATMega128}
