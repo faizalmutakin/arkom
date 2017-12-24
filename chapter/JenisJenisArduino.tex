@@ -66,12 +66,20 @@ Daya eksternal (non-USB) bisa datang baik dari adaptor AC-ke-DC (kutil dinding) 
 Papan dapat beroperasi pada suplai eksternal 6 sampai 20 volt. Jika dipasok dengan kurang dari 7V, pin 5V dapat memasok kurang dari lima volt dan board mungkin tidak stabil. Jika menggunakan lebih dari 12V, regulator tegangan mungkin terlalu panas dan merusak board. Kisaran yang disarankan adalah 7 sampai 12 volt.
 
 Pin Power adalah sebagai berikut:
-\begin{enumerate}
+\begin{itemize}
 \item VIN. Tegangan masukan ke papan Arduino saat menggunakan sumber daya eksternal (berlawanan dengan 5 volt dari koneksi USB atau sumber daya yang diatur lainnya). Anda bisa mensuplai voltase melalui pin ini, atau jika mensuplai voltase melalui colokan listrik, akseslah melalui pin ini.
 \item 5V. Catu daya yang diatur digunakan untuk menyalakan mikrokontroler dan komponen lainnya di papan tulis. Ini bisa datang baik dari VIN melalui regulator onboard, atau disediakan oleh USB atau suplai 5V yang diatur lainnya.
 \item 3V3 Pasokan 3,3 volt dihasilkan oleh chip FTDI onboard. Hasil maksimum saat ini adalah 50 mA.
 \item GND. Ground pin
-\end{enumerate}
+\end{itemize}
+
+\subsubsubsection{communication}
+
+Arduino Mega memiliki sejumlah fasilitas untuk berkomunikasi dengan komputer, Arduino lain, atau mikrokontroler lainnya. ATmega1280 menyediakan empat perangkat keras UART untuk komunikasi serial TTL (5V). FTDI FT232RL di papan saluran salah satu dari ini melalui USB dan driver FTDI (disertakan dengan perangkat lunak Arduino) menyediakan port com virtual untuk perangkat lunak pada komputer. Perangkat lunak Arduino mencakup monitor serial yang memungkinkan data tekstual sederhana dikirim ke dan dari dewan Arduino. LED RX dan TX di papan akan berkedip saat data dikirimkan melalui chip FTDI dan koneksi USB ke komputer (tapi tidak untuk komunikasi serial pada pin 0 dan 1).
+
+Sebuah perangkat lunak Serial library memungkinkan komunikasi serial pada salah satu pin digital Mega.
+
+ATmega1280 juga mendukung komunikasi I2C (TWI) dan SPI. Perangkat lunak Arduino mencakup perpustakaan Wire untuk menyederhanakan penggunaan bus I2C; lihat dokumentasi di situs Wiring untuk rinciannya. Untuk menggunakan komunikasi SPI, silakan lihat datasheet ATmega1280.
 \subsubsection{Sensor DHT 11}
 Sensor ini merupakan sensor dengan kalibrasi sinyal digital yang mampu memberikan informasi suhu dan kelembaban. Sensor ini tergolong komponen yang memiliki tingkat stabilitas yang sangat baik. Sensor ini termasuk elemen resistif dan perangkat pengukur suhu NTC.
 Memiliki kualitas yang sangat baik, respon cepat, dan dengan harga yang
