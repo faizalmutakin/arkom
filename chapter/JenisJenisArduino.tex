@@ -54,6 +54,15 @@ Ini tidak mahal, sekitar 30 dollar per papan dan dilengkapi dengan perangkat lun
 Perangkat lunak / perangkat keras sangat mudah diakses dan sangat fleksibel untuk disesuaikan dan diperluas. Arduino didukung
 oleh komunitas online yang berkembang, banyak sumber sudah tersedia.
 
+\subsubsection{Arduino berinteraksi dengan Softwares}
+Arduino dapat \"berbicara\", (mentransmisikan atau menerima data) melalui saluran serial, jadi perangkat lain dengan serial
+Kemampuan bisa berkomunikasi dengan Arduino. Tidak masalah bahasa program / pemrograman apa yang sedang mengemudi
+perangkat lainnya Anda bisa menggunakan port serial \"utama\" Arduino, yang digunakan saat Anda \"berbicara\" dengannya
+program itu, atau Anda dapat meninggalkan saluran yang didedikasikan untuk pemrograman (dan serial lingkungan pengembangan
+monitor), dan gunakan dua pin lainnya untuk link serial tambahan yang didedikasikan untuk perangkat eksternal. Beberapa program (seperti
+Flash) tidak memiliki kemampuan serial asli. Mereka masih bisa berkomunikasi dengan Arduino melalui perantara
+yang, seperti \"penerjemah\", memungkinkan mereka berbicara satu sama lain.
+
 \subsubsection{Arduino Mega}
 
 Arduino Mega adalah papan mikrokontroler berdasarkan ATmega1280 (datasheet). Ini memiliki 54 pin input atau output digital, 16 input analog, 4 UART (port serial perangkat keras), osilator kristal 16 MHz, koneksi USB, colokan listrik, header ICSP, dan tombol reset. Ini berisi semua yang dibutuhkan untuk mendukung mikrokontroler; cukup hubungkan ke komputer dengan kabel USB atau nyalakan dengan adaptor AC-ke-DC atau baterai untuk memulai. Mega kompatibel dengan kebanyakan perisai yang dirancang untuk Arduino Duemilanove atau Diecimila.
