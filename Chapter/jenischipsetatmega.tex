@@ -111,6 +111,19 @@
 		\item e. JTAG (IEEE std. 1149.1 Compliant) Interface
 				1) Kemampuan batas scan Menurut JTAG Standar
 				2) Luas On-chip Debug Support 3) Pemrograman Flash, EEPROM, Sekering dan Lock Bits melalui  JTAG Interface
+\section{lanjutan yang semlam}
+12 V yang dipasok ke pin RESET dalam mode Pemrograman Paralel digunakan untuk pemrograman
+memungkinkan saja, dan tidak ada arus signifikansi yang ditarik oleh pin ini. Serial
+Mode pemrograman menyediakan cara mudah untuk mendownload program dan data ke dalam
+ATmega103 (L) di dalam sistem pengguna.
+Array memori Program Flash pada ATmega103 (L) diatur sebagai 512 halaman
+Masing masing 256 byte. Saat memprogram Flash, data Program dilekatkan pada halaman
+penyangga. Hal ini memungkinkan satu halaman data program diprogram secara bersamaan
+Mode Pemrograman.
+Array memori Data EEPROM pada ATmega103 (L) diprogram byte-by-byte di
+baik mode Pemrograman. Siklus auto-erase disediakan dalam waktu yang ditentukan sendiri
+EEPROM menulis instruksi dalam mode Pemrograman Serial.
+
 
 		\end{itemize}
 
