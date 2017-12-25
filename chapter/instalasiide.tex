@@ -55,24 +55,23 @@ Menurut F. Djuandi dalam bukunya yang berjudul "Pengenalan Arduino" \cite{djuand
 
 \section{Fitur-Fitur IDE Arduino}
 
-Arduino IDE dibuat dari bahasa pemrograman Java dan dilengkapi library C/C++.  Arduino IDE ini dikembangkan dari software Processing yang dirubah menjadi Arduino IDE khusus untuk pemrograman dengan Arduino. IDE Arduino terdiri dari:
+Arduino IDE dibuat dengan menggunakan bahasa pemrograman Java serta dilengkapi library C/C++. Arduino IDE merupakan hasil pengembangan dari software Processing yang kemudian diubah menjadi Arduino IDE khusus pemrograman dengan Arduino. IDE Arduino terdiri dari:
 
 \begin{itemize}
 
-\item Editor merupakan  jendela yang digunakan oleh pengguna untuk mengubah dan menulis suatu program atau kode – kode dalam bahasa Processing.
-\item Compiler merupakan sebuah modul yang mengubah kode program (bahasa Processing) menjadi kode biner. Bagaimanapun juga sebuah microcontroller tidak akan bisa memahami bahasa. Yang bisa dipahami oleh microcontroller hanya kode biner. Itulah penyebab mengapa compiler diperlukan.
+\item Editor merupakan jendela yang digunakan oleh pengguna untuk mengubah dan menulis suatu program atau kode – kode dalam bahasa Processing.
+\item Compiler merupakan sebuah modul untuk mengubah kode-kode program menjadi kode biner dikarenakan sebuah microcontroller tidak dapat memahami bahasa pemrograman dan yang hanya bisa memahami kode biner Saja. Oleh karena itu, compiler diperlukan dalam pemrograman.
 \item Uploader merupakan sebuah modul yang berisi kode - kode biner atau sketch dari komputer ke dalam memory yang ada di dalam papan Arduino.
- 
 \end{itemize}
- 
-Program yang ditulis dengan menggunakan Arduino Software (IDE) disebut sebagai sketch. Sketch ditulis dalam suatu editor teks dan disimpan dalam file dengan ekstensi .ino. Teks editor pada Arduino Software memiliki beberapa fitur seperti cutting atau paste dan seraching atau replacing sehingga memudahkan kita dalam menulis kode program.
 
-Pada Arduino IDE, terdapat semacam message box berwarna hitam yang berfungsi untuk menampilkan status, seperti pesan error, compile, dan upload program sedangkan pada bagian bawah paling kanan Arduino IDE, menunjukan board yang terkonfigurasi beserta COM Ports yang digunakan.
+Program yang dibuat dengan menggunakan IDE Arduino disebut sebagai sketch. Sebuah sketch dibuat dalam suatu editor teks dan disimpan dengan ekstensi .ino. Teks editor pada Arduino Software memiliki beberapa fitur seperti cutting atau paste dan seraching atau replacing sehingga memudahkan kita dalam menulis kode program.
+
+Pada Arduino IDE juga, terdapat semacam kotak pesan berwarna hitam yang berfungsi untuk menampilkan status program, seperti proses kompilasi, unggah program, dan pesan error. Pada bagian bawah paling kanan Arduino IDE, terdapat board yang terkonfigurasi beserta COM Ports yang digunakan.
 
 \subsection{Verify}
 Verify berfungsi untuk melakukan memeriksa kode - kode program yang telah kita buat apakah sudah sesuai dengan kaidah pemrograman yang ada atau belum.
 \subsection{Upload}
-Upload berfungsi untuk melakukan kompilasi program atau kode - kode yang telah kita buat sebelumnya menjadi bahasa yang dapat dipahami oleh mesin atau Arduino.
+Upload berfungsi untuk melakukan kompilasi kode - kode atau program yang telah kita buat sebelumnya menjadi kode biner agar dapat dipahami Arduino.
 \subsection{New}
 New berfungsi untuk membuat Sketch baru.
 \subsection{Open}
@@ -80,7 +79,7 @@ Open berfungsi untuk membuka kembali sketch yang telah dibuat sebelumnya untuk d
 \subsection{Save}
 Save berfungsi untuk menyimpan Sketch yang telah kita buat.
 \subsection{Serial Monitor}
-Serial Monitor berfungsi untuk membuka serial monitor. Serial monitor merupakan jendela yang menampilkan data yang dipertukarkan atau dikirimkan antara sketch dengan arduino pada port serialnya. Serial Monitor ini sangat berguna apabila kita ingin melakukan debugging atau yang dipertukarkan atau dikirimkan antara sketch dengan arduino pada port serialnya. Serial Monitor ini sangat berguna apabila kita ingin melakukan debugging atau membuat suatu program tanpa menggunakan LCD pada Arduino sebagai penampil nilai. Serial monitor ini dapat digunakan untuk menampilkan nilai dari proses dan pembacaan, serta pesan error.
+Serial Monitor berfungsi untuk menampilkan data yang dipertukarkan atau dikirimkan antara sketch dengan arduino yang terhubung dengan port serialnya. Serial Monitor ini sangat berguna apabila kita ingin melakukan debugging atau yang dipertukarkan atau dikirimkan antara sketch dengan arduino pada port serialnya. Serial Monitor ini sangat berguna apabila kita ingin melakukan debugging atau membuat suatu program tanpa menggunakan LCD pada Arduino sebagai penampil nilai. Serial monitor ini dapat digunakan untuk menampilkan nilai dari proses dan pembacaan, serta pesan error.
 \subsection{File}
 Di dalam tab File berisi.
 \begin{itemize}
@@ -104,77 +103,102 @@ Di dalam tab Edit berisi.
 \item Undo atau Redo berfungsi untuk mengembalikan perubahan yang telah dilakukan pada Sketch beberapa langkah mundur dengan Undo dan beberapa langkah maju dengan Redo.
 \item Cut berfungsi untuk meremove teks yang terpilih pada editor dan menempatkan teks tersebut pada clipboard.
 \item Copy berfungsi untuk menduplikasi teks yang terpilih ke dalam editor dan menempatkan teks tersebut pada clipboard.
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+
+
 \item Copy for Forum berfungsi untuk melakukan copy kode dari editor dan melakukan formating agar sesuai untuk ditampilkan dalam forum, sehingga kode tersebut bisa digunakan sebagai bahan diskusi dalam forum.
 \item Paste berfungsi untuk menyalin data - data yang terdapat dalam clipboard, kedalam editor.
 \item Select All berfungsi untuk melakukan pemilihan kode atau teks dalam halaman editor.
 \item Comment atau Uncomment berfungsi untukmemberikan atau menghilangkan tanda // pada kode atau teks, dimana tanda tersebut menjadikan suatu baris kode sebagai komen dan tidak disertakan pada tahap kompilasi.
 \item Increase atau Decrease Indent berfungsi untuk mengurangi atau menambahkan indentasi pada baris kode tertentu. Indentasi adalah “tab”.
 \item Find berfungsi untuk memanggil jendela window find and replace, dimana kita bisa menggunakannya untuk menemukan variabel atau kata tertentu dalam program atau menemukan serta menggantikan kata tersebut dengan kata lain.
-\item Find Next berfungsi untuk menemukan kata setelahnya dari kata pertama yang berhasil ditemukan.
-\item Find Previous berfungsi untuk menemukan kata sebelumnya dari kata pertama yang berhasil ditemukan.
-\end{itemize}	
+\item Find Next berfungsi untuk mencari kata setelahnya dari hasil kata pertama yang ditemukan.
+\item Find Previous berfungsi untuk mencari kata sebelumnya dari hasil kata pertama yang ditemukan.
+\end{itemize} 
 
- 
 \subsection{Sketch}
 Di dalam tab Sketch berisi.
 \begin{itemize}
-\item Verify/Compile berfungsi untuk mengecek apakah sketch yang kamu buat ada kekeliruan dari segi sintaks atau tidak. Jika tidak  ada kesalahan, maka sintaks yang kamu buat akan dikompile kedalam bahasa mesin.
+\item Verify/Compile berfungsi untuk mengecek apakah sketch yang kamu buat ada kekeliruan dari segi sintaks atau tidak. Jika tidak ada kesalahan, maka sintaks yang kamu buat akan dikompile kedalam bahasa mesin.
 \item Upload berfungsi mengirimkan program yang sudah dikompilasi ke Arduino Board.
 \item Uplad Using Programmer menu ini berfungsi untuk menuliskan bootloader kedalam IC Mikrokontroler Arduino. Pada kasus ini kamu membutuhkan perangkat tambahan seperti USBAsp untuk menjembatani penulisan program bootloader ke IC Mikrokontroler.
 \item Export Compiled Binary berfungsi untuk menyimpan file dengan ekstensi .hex, dimana file ini dapat disimpan sebagai arsip untuk di upload ke board lain menggunakan tools yang berbeda.
 \item Show Sketch Folder, berfungsi membuka folder sketch yang saat ini dikerjakan.
-\item Include Library, berfunsi menambahkan library/pustaka kedalam sketch yang dibuat dengan menyertakan sintaks \#include di awal kode. Selain itu kamu juga bisa menambahkan library eksternal dari file .zip kedalam Arduino IDE.
+\item Include Library, berfunsi menambahkan library/pustaka kedalam sketch yang dibuat dengan menyertakan sintaks \#include di awal kode. Selain itu kita juga dapat menambahkan library eksternal dari file .zip kedalam Arduino IDE.
 \item Add File…, berfungsi untuk menambahkan file kedalam sketch arduino (file akan dikopikan dari drive asal). 
 File akan muncul sebagai tab baru dalam jendela sketch.
 \end{itemize}
- 
 \subsection{Tools}
 Di dalam tab Tools berisi.
 \begin{itemize}
-\item Auto Format, berfungsi melakukan pengatran format kode pada jendela editor
-\item Archive Sketch, berfungsi menyimpan sketch kedalam file .zip
-\item Fix Encoding \& Reload, berfungsi memperbaiki kemungkinan perbedaan antara pengkodean peta karakter editor danpeta karakter sistem operasi yang lain.
-\item Serial Monitor, berungsi membuka jendela serial monitor untuk melihat pertukaran data.
-\item Board, berfungsi memilih dan melakukan konfigurasi board yang digunakan.
-\item Port, memilih port sebbagai kanal komunikasi antara software dengan hardware.
-\item Programmer, menu ini digunakan ketika kamu hendak melakukan pemrograman chip mikrokontroller tanpa menggunakan koneksi Onboard USB-Serial.  Biasanya digunakan pada proses burning bootloader.
-\item Burn Bootloader, mengizinkan kamu untuk mengkopikan program bootloader kedalam IC mikrokontroler.
+\item Auto Format berfungsi melakukan pengatran format kode pada jendela editor
+\item Archive Sketch berfungsi menyimpan sketch kedalam file .zip
+\item Fix Encoding \& Reload berfungsi memperbaiki kemungkinan perbedaan antara pengkodean peta karakter editor dan peta karakter sistem operasi yang lain.
+\item Serial Monitor berfungsi menampilkan jendela serial monitor agar dapat melihat proses pertukaran data.
+\item Board berfungsi mengkonfigurasi dan memilih board yang kita gunakan.
+\item Port memilih port sebagai kanal komunikasi antara software dengan hardware.
+\item Programmer menu ini digunakan ketika kamu hendak melakukan pemrograman chip mikrokontroller tanpa menggunakan koneksi Onboard USB-Serial. Biasanya digunakan pada proses burning bootloader.
+\item Burn Bootloader berfungsi mengizinkan kita mengcopykan program bootloader ke dalam IC mikrokontroler.
 \end{itemize}
 
 \subsection{Help}
-Disini kamu bisa mendapatkan bantuan terhadap kegalauanmu mengenai pemrograman. Menu help berisikan file-file dokumentasi yang berkaitan dengan masalah yang sering muncul, serta penyelesaiannya. Selain itu pada menu help juga diberikan link untuk menuju Arduino Forum guna menanyakan serta mendiskusikan berbagai masalah yang ditemukan.
+Menu help berisikan file-file dokumentasi yang berkaitan dengan masalah yang sering muncul, serta penyelesaiannya. Selain dokumentasi yang telah disediakan kita juga diberikan link untuk menuju Arduino Forum. Forum tersebut membahas berbagai masalah yang ditemukan mengenai Arduino.
 
 \subsection{Sketchbook}
-Arduino Software IDE, menggunakan konsep sketchbook, dimana sketchbook menjadi standar peletakan dan penyimpanan file program. Sketch yang telah kamu buat dapat dibuka dengan dari File - Sketchbook, atau dengan menu Open.
+Arduino Software IDE menggunakan konsep sketchbook. Sketchbook merupakan standar penyimpanan dan peletakan file program. Sketch yang telah kita buat dapat dibuka dari File - Sketchbook, atau dengan menu Open.
 
 \subsection{Tabs, Multiple Files, dan Compilations}
-Mekanisme ini mengijinkan kamu untuk melakukan menejemen sketch, dimana lebih dari satu file dibuka dalam tab yang berbeda.
+Mekanisme ini mengizinkan kita dalam melakukan manajemen sketch, dimana lebih dari satu file dibuka dalam tab yang berbeda.
 
 \subsection{Uploading}
-Merupakan mekanisme untuk mengkopikan file .hex atau file hasil kompilasi kedalam IC mikrokontroler Arduino. Sebelum melakukan uploading, yang perlu kamu pastikan adalah jenis board yang kamu gunakan dan COM Ports dimana keduanya terletak pada menu Tools - Board dan Tools - Port.
+Mekanisme untuk mengcopykan file hasil kompilasi program ke dalam IC mikrokontroler Arduino. Sebelum melakukan uploading, yang perlu kita pastikan sebelumnya adalah jenis board yang kita gunakan dan COM Ports dimana keduanya terletak pada menu Tools - Board dan Tools - Port.
 
 \subsection{Library}
-Library/ Pustaka merupakan file yang memberikan fungsi ekstra dari sketch yang kamu buat, semisal agar Arduino dapat bekerja dengan hardware tertentu dan melakukan proses manipulasi data. Untuk menginstal Library pihak ketiga alias Librarybukan dari Arduino, dapat dilakukan dengan Library Manager, Import file .zip, atau kopi paste secara manual di folder libraries pada Documents di platform Windows.
+Library merupakan file yang memberikan fungsi ekstra dari sketch yang kita buat. Untuk menginstal Library pihak ketiga alias Library bukan dari Arduino, maka dapat dilakukan dengan Library Manager, Import file .zip, atau copy paste secara manual di folder libraries pada Documents di platform Windows.
 
+\subsection{Serial Monitor}
 
+Serial monitor merupakan sebuah jendela yang digunakan untuk menunjukan data yang dipertukarkan antara komputer dan arduino selama beroperasi. Dengan adanya serial monitor ini kita dapat melihat nilai hasil operasi atau pesan debugging. Selain melihat data, kita juga bisa mengirimkan data ke Arduino melalui serial monitor ini, caranya dengan memasukkan data pada text box dan menekan tombol send untuk mengirimkan data. Hal penting yang harus kita perhatikan adalah menyamakan baudrate antara serial monitor dengan Arduino board. Untuk menggunakan kemampuan komunikasi serial ini, pada Arduino, di bagian fungsi void setup(), diawali dengan instruksi Serial.begin diikuti dengan nilai baudrate.
 
 
 \subsection{Preferences}
-Preferences mengatur tentang beberapa hal dalam penggunaan Arduino Software IDE, seperti ukuran font, lokasi dimana menyimpan sketcbook, bahasa yang digunakan pada Arduino Software IDE, dan masih banyak lagi. Kamu bisa mengatur preferences pada menu file yang dapat dijumpai pada platform Windows dan Linux.
-\subsection{Language Support}
+Preferences digunakan untuk mengatur beberapa hal dalam penggunaan Arduino Software IDE, seperti lokasi dimana penyimpanan sketchbook, bahasa yang digunakan pada Arduino Software IDE, ukuran font, dan lain sebagainya. Kita dapat mengatur preferences pada menu file yang dapat dijumpai pada platform Windows dan Linux.
 
-Language Support merupakan pilihan bahasa yang dapat disesuaikan pada Software Arduino IDE. Bahasa Indonesia sudah ada loh. Language Support ini dapat ditemukan pada menu file -> preferences atau dengan menekan Ctrl+Comma.
+\subsection{Language Support}
+Language Support merupakan pilihan bahasa yang dapat disesuaikan pada Software Arduino IDE. Language Support dapat ditemukan dengan menekan Ctrl + Comma atau pada menu file - preferences.
 
 \subsection{Boards}
-Pemilihan board pada Arduino Software IDE, berdampak pada dua parameter yaitu kecepatan CPU dan baudrate yang digunakan ketika melakukan kompilasi dan meng-upload sketch. Beberapa contoh board yang dapat digunakan dengan Arduino Software IDE adalah:
-\begin{itemize}
-\item Arduino Yùn 
-Menggunkana ATmega32u4 dan berjalan pada clock 16 MHz dengan auto-reset, memiliki 12 Input Analog , 20 Digital I/O serta 7 PWM.
-\item Arduino/Genuino Uno 
-Menggunakan ATmega328 dan berjalan pada clock 16 MHz dengan auto-reset, memiliki 6 Input Analog , 14 Digital I/O serta 7 PWM.
-\item Arduino Diecimila or Duemilanove w/ ATmega168
-Menggunakan ATmega168 dan berjalan pada clock 16 MHz dengan auto-reset.
-\item Arduino Nano w/ ATmega328 
-Menggunakan ATmega328 dan berjalan pada clock 16 MHz dengan auto-reset. memiliki 6 Input Analog.
-\item Arduino/Genuino Mega 2560 
-Menggunakan ATmega2560 dan berjalan pada clock 16 MHz dengan auto-reset, memiliki 16 Input Analog, 54 Digital I/O dan 15 PWM.
+Pemilihan board pada Arduino Software IDE, berdampak pada dua parameter yaitu kecepatan CPU dan baudrate yang digunakan ketika melakukan kompilasi dan meng-upload sketch. Beberapa contoh board yang dapat digunakan dengan Arduino Software IDE dapat dilihat pada tabel \ref{table:boardarduino}.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{ |l|l| }
+\hline
+Arduino Yùn & Menggunakan ATmega32u4 dan berjalan pada \\
+& clock 16 MHz dengan auto-reset, memiliki 12 Input \\
+& Analog , 20 Digital I/O serta 7 PWM.\\
+\hline
+Arduino/ Genuino Uno & Menggunakan ATmega328 dan berjalan pada \\
+& clock 16 MHz dengan auto-reset, memiliki 6 Input \\
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%% KERJAKAN DIATAS %%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\hline
+\end{tabular}
+\caption{Board Arduino.}
+\label{table:boardarduino}
+\end{table}
