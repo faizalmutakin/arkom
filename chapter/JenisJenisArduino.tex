@@ -98,6 +98,17 @@ ATmega1280 juga mendukung komunikasi I2C (TWI) dan SPI. Perangkat lunak Arduino 
 Panjang maksimum dan lebar PCB Mega masing-masing adalah 4 dan 2,1 inci, dengan konektor USB dan colokan listrik melampaui dimensi sebelumnya. Tiga lubang sekrup memungkinkan papan dipasang pada permukaan atau kotak. Perhatikan bahwa jarak antara pin 7 dan 8 digital adalah 160 mil (0,16 "), bukan kelipatan jarak 100 mil dari pin lainnya.
 
 Mega dirancang agar kompatibel dengan sebagian besar perisai yang dirancang untuk Diecimila atau Duemilanove. Pin digital 0 sampai 13 (pin AREF dan GND yang berdekatan), input analog 0 sampai 5, soket daya, dan header ICSP semuanya berada pada lokasi yang setara. Selanjutnya, UART utama (port serial) terletak pada pin yang sama (0 dan 1), seperti halnya interupsi eksternal 0 dan 1 (pin 2 dan 3 masing-masing). SPI tersedia melalui header ICSP pada Mega dan Duemilanove / Diecimila. Harap dicatat bahwa I2C tidak terletak pada pin yang sama pada Mega (20 dan 21) sebagai Duemilanove / Diecimila (input analog 4 dan 5).
+
+\subsection{Sensor}
+Sensor adalah perangkat elektronik yang mengukur kualitas fisik seperti cahaya atau
+suhu dan mengubahnya menjadi tegangan. Proses ini mengubah satu bentuk energi
+ke yang lain disebut transduksi. Seringkali, sensor juga disebut sebagai transduser.
+Sensor dapat diklasifikasikan secara luas dalam dua kategori: sensor digital dan sensor analog.
+Output sensor digital hanya bisa berada di salah satu dari dua keadaan yang mungkin terjadi. Ini adalah ON (1)
+sering + 5V, atau OFF (0), 0V. Sebagian besar sensor digital bekerja dengan ambang batas. Apakah yang masuk
+Pengukuran di bawah ambang batas, sensor akan mengeluarkan satu keadaan, apakah berada di atas
+Ambang batas, sensor akan menampilkan keadaan yang lain.
+
 \subsubsection{Sensor DHT 11}
 Sensor ini merupakan sensor dengan kalibrasi sinyal digital yang mampu memberikan informasi suhu dan kelembaban. Sensor ini tergolong komponen yang memiliki tingkat stabilitas yang sangat baik. Sensor ini termasuk elemen resistif dan perangkat pengukur suhu NTC.
 Memiliki kualitas yang sangat baik, respon cepat, dan dengan harga yang
