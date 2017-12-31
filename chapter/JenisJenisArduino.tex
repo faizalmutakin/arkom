@@ -211,7 +211,11 @@ G a l i l e o adalah papan mikrokontroler berdasarkanIntel ® Quark SoC X10
 
 G a l i l e o dirancang untuk mendukung shield yang beroperasi di kedua tegangan  3.3V atau 5V.Tegangan operasi inti Galileo adalah 3.3V. Namun,jumper di board memungkinkan terjemahantegangan 5V di pin I / O. Hal ini memberikandukungan untuk 5V shield Uno dan perilaku default. Dengan beralih posisi jumper, terjemahantegangan dapat dinonaktifkan untuk menyediakan operasi 3.3V di pin I / O. 
 
-Tentu saja, board  Galileo juga perangkat lunak yang cocok dengan Arduino Software Development Environment (IDE), yang membuatkegunaan dan pengenalan snap. Selain hardwareArduino dan kompatibilitas software, arduino
+Tentu saja, board  G a l i l e o juga perangkat lunak yang cocok dengan Arduino Software Development Environment (IDE), yang membuatkegunaan dan pengenalan snap. Selain hardwareArduino dan kompatibilitas software, arduino
 
 G a l i l e o memiliki beberapa industri PC standar I / O portdan fitur untuk memperluas penggunaan asli dan kemampuan luar ekosistem perisai Arduino.Sebuah ukuran penuh Slot mini-PCI Express, pelabuhan 100Mb Ethernet, slot Micro-SD, RS-232 port serial, port host USB, port USB Client, dan8MByte NOR Flash .
 
+/subsection{Arduino Pro Micro AT} 
+Arduino Mikro adalah board mikrokontroler berdasarkan ATmega32u4 (lihat datasheet), yang dikembangkan bersama dengan Adafruit. Ini memiliki 20 digital pin input / output (yang 7 dapat digunakan sebagai output PWM dan 12 input analog sebagai), osilator 16 MHz kristal, koneksi USB mikro, header ICSP, dan tombol reset. Ini berisi semua yang diperlukan untuk mendukung mikrokontroler; hanya menghubungkannya ke komputer dengan kabel USB mikro untuk memulainya. Dengan  memiliki faktor bentuk yang memungkinkannya untuk dapat dengan mudah ditempatkan pada papan tempat memotong roti :D. 
+
+Arduino Micro mirip dengan Arduino Leonardo in bahwa ATmega32u4 telah built-in USB komunikasi,Dengan menghilangkan kebutuhan untuk prosesor sekunder. Hal ini memungkinkan Micro muncul ke komputer yang terhubung sebagai mouse dan keyboard, selain virtual (CDC) serial / COM port. Ini juga memiliki implikasi lain untuk pemanfaatan board .
