@@ -17,12 +17,74 @@ Sistem Testing (pengujian)
 \end{figure}
 \ref{arduino}
 
-dalam \cite{evans2013arduino} Pengujian perangkat lunak (bahasa Inggris: software testing) merupakan suatu investigasi yang dilakukan untuk mendapatkan informasi mengenai kualitas dari produk atau layanan yang sedang diuji (under test).Pengujian perangkat lunak juga memberikan pandangan mengenai perangkat lunak secara obyektif dan independen, yang bermanfaat dalam operasional bisnis untuk memahami tingkat risiko pada implementasinya. Teknik-teknik pengujian mencakup, namun tidak terbatas pada, proses mengeksekusi suatu bagian program atau keseluruhan aplikasi dengan tujuan untuk menemukan bug perangkat lunak (kesalahan atau cacat lainnya).
+Dalam \cite{evans2013arduino} Pengujian perangkat lunak (bahasa Inggris: software testing) merupakan suatu investigasi yang dilakukan untuk mendapatkan informasi mengenai kualitas dari produk atau layanan yang sedang diuji (under test).Pengujian perangkat lunak juga memberikan pandangan mengenai perangkat lunak secara obyektif dan independen, yang bermanfaat dalam operasional bisnis untuk memahami tingkat risiko pada implementasinya. Teknik-teknik pengujian mencakup, namun tidak terbatas pada, proses mengeksekusi suatu bagian program atau keseluruhan aplikasi dengan tujuan untuk menemukan bug perangkat lunak (kesalahan atau cacat lainnya).
 Dalam dunia software perubahan requiretment adalah hal yang sangat biasa dan sulit ditebak maupun dihindari, dapat dipastikan karena adanya kesalahan-kesalahan pada software maupun pengguna dalam menganalisis objek yang ada. Sebuah metodelogi dalam pengembangan perangkat lunak yang dirancang untuk kondisi yang serba dinamis dan tidak terprediksi seperti masalah perubahan requiretment pada intinya akan kembali pada cara agar pengembangan sofware testing kode dapat berjalan dengan baik dan memberi feedback yang sesuai agar kesalahan yang ada dapat di minimalisir.
 Secara sederhana, sketch yang ada dalam program Arduino dikelompokkan menjadi 3 blok 
 1.	Header	: Bagian header ini biasanya ditulis dengan definisi-definisi penting yang akan digunakan dalam program, misalnya pada penggunaan library dan pendefinisian variable. Code dalam blok ini dijalankan hanya sekali pada waktu.
 2.	Setup	: Di sinilah awal program Arduino berjalan, yaitu ketika power on Arduino board. Biasanya di blok ini diisi penentuan apakah suatu pin digunakan sebagai input atau output, menggunakan perintah pinMode. Initialisasi variable juga bisa dilakukan di blok ini
 3.	Loop	: bagian ini akan dicoba secara terus menerus. Apabila program sudah sampai pada tahap akhir blok, maka dilanjutkan dengan mengulang percobaan dari awal blok. Program akan berhenti apabila tombol Arduino di matikan. fungsi utama program Arduino berada.
+
+\subsection {Cara Merakit Sensor Pir}
+
+Alat yang diperlukan:
+1. Arduino Uno.
+2. Sensor Pir.
+3. Lampu Led (warna bebas).
+4. Kabel Jumper Male to Female (3 buah warna).
+5. Kabel USB.
+6. PC.
+
+Cara Merakit:
+Gabungkan kabel jumper male to female berwarna orange dari VCC sensor pir ke pin 5 arduino.
+
+\ref{kabelvcc}
+
+\begin{figure} {ht}
+\centerline{\includegraphics{width=1\textwidth}{figures/kabelvcc.JPG}}
+\caption{gambar kabelvcc.}
+\label{kabelvcc.JPG}
+\end{figure}
+
+
+Gabungkan kabel jumper male to female berwarna merah dari OUPUT sensor pir ke pin 3 arduino.
+
+\ref{kabeloutput}
+\begin{figure} {ht}
+\centerline{\includegraphics{width=1\textwidth}{figures/kabeloutput.JPG}}
+\caption{gambar kabeloutput.}
+\label{kabeloutput.JPG}
+\end{figure}
+
+
+Gabungkan kabel jumper male to female berwarna coklate dari GND sensor pir ke GND arduino.
+
+\ref{kabelgnd}
+\begin{figure} {ht}
+\centerline{\includegraphics{width=1\textwidth}{figures/kabelgnd.JPG}}
+\caption{gambar kabelgnd.}
+\label{kabelgnd.JPG}
+\end{figure}
+
+
+Pasang lampu led berwarna biru ke pin 13 arduino.
+
+\ref{led}
+\begin{figure} {ht}
+\centerline{\includegraphics{width=1\textwidth}{figures/led.JPG}}
+\caption{gambar led.}
+\label{led.JPG}
+\end{figure}
+
+
+Pasang kabel USB dari arduino ke PC.
+
+\ref{kabelusb}
+\begin{figure} {ht}
+\centerline{\includegraphics{width=1\textwidth}{figures/kabelusb.JPG}}
+\caption{gambar kabelusb.}
+\label{kabelusb.JPG}
+\end{figure}
+
 
 Process software testing merupakan process yang sangat penting dalam dunia perangkat lunak. karena dengan kita menerapkan process ini di dalam alur pengembangan software kita, maka dengan ini kita dapat menjamin kualitas dari software yang kita buat (setidaknya dalam hal pemenuhan functional requirement). Lalu, apa saja process software testing yang harus kita lakukan? software developer dan baca-baca buku tentang software development, setidaknya ada 3 jenis testing yang dapat kita lakukan yaitu: Unit Testing, Integration Testing dan User Acceptance Testing (UAT)
 
