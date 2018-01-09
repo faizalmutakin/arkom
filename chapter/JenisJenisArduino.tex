@@ -20,21 +20,19 @@ Arduino Uno R3
 Arduino Uno R3 adalah boardsistem minimum berbasis mikrokontroller ATmega328P jenis AVR. Arduino Uno R3 memiliki 14 digital input/output (6
 diantaranya dapat digunakan untuk PWM output), 6 analog input, 16 MHz osilator kristal, USB connection, power jack, ICSP header dan tombol reset. Skema dari Arduino Uno R3 dengan
 karekteristik sebagai berikut:
-• Operating voltage 5 VDC.
-• Rekomendasi input voltage 7-12
-  VDC
-• Batas input voltage 6-20 VDC.
-• Memiliki 14 buah input/output
-  digital.
-• Memiliki 6 buah input analog.
-• DC Current setiap I/O Pin sebesar
-  40mA.
-• DC Current untuk 3.3V Pin sebesar
-  50mA.
-• Flash memory 32 KB.
-• SRAM sebesar 2 KB.
-• EEPROM sebesar 1 KB.
-• 11 Clock Speed 16 MHz.
+\begin{itemize}
+\item Operating voltage 5 VDC.
+\item Rekomendasi input voltage 7-12 VDC
+\item Batas input voltage 6-20 VDC.
+\item Memiliki 14 buah input/output digital.
+\item Memiliki 6 buah input analog.
+\item DC Current setiap I/O Pin sebesar 40mA.
+\item DC Current untuk 3.3V Pin sebesar 50mA.
+\item Flash memory 32 KB.
+\item SRAM sebesar 2 KB.
+\item EEPROM sebesar 1 KB.
+\item 11 Clock Speed 16 MHz.
+\end{itemize}
 
 \subsection{Kerja Arduino}
 Dengan beberapa dasar-dasar listrik, Arduino, dan robot.
@@ -133,18 +131,20 @@ Xbee Proyang sama yang sebelumnya telah diprogram sebagai sebuah receiver-transm
 Topologi pair merupakan jaringan yang sederhana dengan hanya menggunakan dua buah xbeeatau node. Satu node harus menjadi coordinator sehingga jaringan dapat dibentuk. Dan yang lain dikonfigurasikan sebagai routeratau perangkat akhir.
 
 Cara yang saat ini banyak digunakan  dalam topologi jaringan adalah bus, token ring, dan star yaitu:
-1. Topologi BUS 
+\begin{itemize}
+\item Topologi BUS 
 Topologi bus terlihat pada Gambar 2. Media penghantar untuk jenis topologi BUS adalah kabel Koaksial. Topologi BUS menggunakan metode unicast, multicastdan broadcast. Unicastadalah komu- nikasi antara satu pengirim 
 dengan satu penerima di jaringan. Multicastadalah komunikasi antara satu pengirim dengan banyak penerima di jaringan. Sedangkan pada Broadcast, setiap titik akan menerima dan menyimpan frameyang disalurkan/dihantarkan.
 
-2. Topologi Token RING 
+\item Topologi Token RING 
 Topologi Token RING adalah. Metode token-ring(sering disebut ringsaja) menghu-bungkan komputer sehingga ber-bentuk ring (lingkaran). Setiap 
 simpul mempunyai tingkatan yang sama. Jaringan akan disebut sebagai loop, data dikirimkan kesetiap simpul dan setiap informasi yang diterima simpul diperiksa alamatnya apakah data itu untuknya atau bukan.
 
-3. Topologi STAR 
+\item Topologi STAR 
 Topologi ini merupakan kontrol terpusat, semua link harus melewati pusat yang menyalurkan data tersebut kesemua simpul atau clientyang dipilihnya. Simpul pusat dinamakan stasiun primer atau 
 server dan lainnya dinamakan 
 stasiun sekunder atau client server.Setelah hubungan jaringan dimulai oleh servermaka setiap client serversewaktu-waktu dapat menggu-nakan hubungan jaringan ter-sebut tanpa menunggu perintah dari server.
+\end{itemize}
 
 \subsection {Arduino 1.0.1 dan XCTU}
 Arduino merupakan perangkatpemrograman mikrokontroller jenis Atmel yang tersedia secara bebas (open-source)
