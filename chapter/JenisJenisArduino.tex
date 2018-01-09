@@ -24,16 +24,14 @@ diantaranya dapat digunakan untuk PWM output), 6 analog input, 16 MHz osilator k
 karekteristik sebagai berikut:
 \begin{itemize}
 \item Operating voltage 5 VDC.
+
 \item Rekomendasi input voltage 7-12
 VDC
 \item Batas input voltage 6-20 VDC.
-\item Memiliki 14 buah input/output
-digital.
+\item Memiliki 14 buah input/output digital.
 \item Memiliki 6 buah input analog.
-\item DC Current setiap I/O Pin sebesar
-40mA.
-\item DC Current untuk 3.3V Pin sebesar
-50mA.
+\item DC Current setiap I/O Pin sebesar 40mA.
+\item DC Current untuk 3.3V Pin sebesar 50mA.
 \item Flash memory 32 KB.
 \item SRAM sebesar 2 KB.
 \item EEPROM sebesar 1 KB.
@@ -59,7 +57,7 @@ Ini tidak mahal, sekitar 30 dollar per papan dan dilengkapi dengan perangkat lun
 Perangkat lunak / perangkat keras sangat mudah diakses dan sangat fleksibel untuk disesuaikan dan diperluas. Arduino didukung
 oleh komunitas online yang berkembang, banyak sumber sudah tersedia.
 
-\subsubsection{Arduino berinteraksi dengan Softwares}
+\subsection{Arduino berinteraksi dengan Softwares}
 Arduino dapat \"berbicara\", (mentransmisikan atau menerima data) melalui saluran serial, jadi perangkat lain dengan serial
 Kemampuan bisa berkomunikasi dengan Arduino. Tidak masalah bahasa program / pemrograman apa yang sedang mengemudi
 perangkat lainnya Anda bisa menggunakan port serial \"utama\" Arduino, yang digunakan saat Anda \"berbicara\" dengannya
@@ -96,7 +94,9 @@ Pin Power adalah sebagai berikut:
 \item GND. Ground pin
 \end{itemize}
 
+
 \subsubsection{communication}
+
 Arduino Mega memiliki sejumlah fasilitas untuk berkomunikasi dengan komputer, Arduino lain, atau mikrokontroler lainnya. ATmega1280 menyediakan empat perangkat keras UART untuk komunikasi serial TTL (5V). FTDI FT232RL di papan saluran salah satu dari ini melalui USB dan driver FTDI (disertakan dengan perangkat lunak Arduino) menyediakan port com virtual untuk perangkat lunak pada komputer. Perangkat lunak Arduino mencakup monitor serial yang memungkinkan data tekstual sederhana dikirim ke dan dari dewan Arduino. LED RX dan TX di papan akan berkedip saat data dikirimkan melalui chip FTDI dan koneksi USB ke komputer (tapi tidak untuk komunikasi serial pada pin 0 dan 1).
 
 Sebuah perangkat lunak Serial library memungkinkan komunikasi serial pada salah satu pin digital Mega.
@@ -104,11 +104,13 @@ Sebuah perangkat lunak Serial library memungkinkan komunikasi serial pada salah 
 ATmega1280 juga mendukung komunikasi I2C (TWI) dan SPI. Perangkat lunak Arduino mencakup perpustakaan Wire untuk menyederhanakan penggunaan bus I2C; lihat dokumentasi di situs Wiring untuk rinciannya. Untuk menggunakan komunikasi SPI, silakan lihat datasheet ATmega1280.
 
 \subsubsection{Karakteristik Fisik dan Kompatibilitas}
+
 Panjang maksimum dan lebar PCB Mega masing-masing adalah 4 dan 2,1 inci, dengan konektor USB dan colokan listrik melampaui dimensi sebelumnya. Tiga lubang sekrup memungkinkan papan dipasang pada permukaan atau kotak. Perhatikan bahwa jarak antara pin 7 dan 8 digital adalah 160 mil (0,16 "), bukan kelipatan jarak 100 mil dari pin lainnya.
 
 Mega dirancang agar kompatibel dengan sebagian besar perisai yang dirancang untuk Diecimila atau Duemilanove. Pin digital 0 sampai 13 (pin AREF dan GND yang berdekatan), input analog 0 sampai 5, soket daya, dan header ICSP semuanya berada pada lokasi yang setara. Selanjutnya, UART utama (port serial) terletak pada pin yang sama (0 dan 1), seperti halnya interupsi eksternal 0 dan 1 (pin 2 dan 3 masing-masing). SPI tersedia melalui header ICSP pada Mega dan Duemilanove / Diecimila. Harap dicatat bahwa I2C tidak terletak pada pin yang sama pada Mega (20 dan 21) sebagai Duemilanove / Diecimila (input analog 4 dan 5).
 
 \subsubsection{Perlindungan Overcurrent USB}
+
 Arduino Mega memiliki polibak yang dapat disetel ulang yang melindungi port USB komputer Anda dari celana pendek dan arus lebih. Meskipun kebanyakan komputer menyediakan perlindungan internal mereka sendiri, sekering menyediakan lapisan perlindungan ekstra. Jika lebih dari 500 mA diterapkan ke port USB, sekering akan secara otomatis memutus koneksi sampai pendek atau overload dilepaskan.
 \subsection{Sensor}
 Sensor adalah perangkat elektronik yang mengukur kualitas fisik seperti cahaya atau
@@ -120,26 +122,26 @@ sering + 5V, atau OFF (0), 0V. Sebagian besar sensor digital bekerja dengan amba
 Pengukuran di bawah ambang batas, sensor akan mengeluarkan satu keadaan, apakah berada di atas
 Ambang batas, sensor akan menampilkan keadaan yang lain.
 
-\subsubsection{Sensor DHT 11}
+\subsection{Sensor DHT 11}
 Sensor ini merupakan sensor dengan kalibrasi sinyal digital yang mampu memberikan informasi suhu dan kelembaban. Sensor ini tergolong komponen yang memiliki tingkat stabilitas yang sangat baik. Sensor ini termasuk elemen resistif dan perangkat pengukur suhu NTC.
 Memiliki kualitas yang sangat baik, respon cepat, dan dengan harga yang
 terjangkau. DHT11 memiliki fitur kalibrasi yang sangat akurat. Koefisien kalibrasi ini disimpan dalam OTP program memory,sehingga ketika internal sensor mendeteksi sesuatu, maka module ini membaca koefisien sensor tersebut. produk ini cocok digunakan untuk banyak aplikasi-aplikasi pengukuran suhu dan kelembaban.
 
-\subsubsection{Perekam Data (Data Logger)}
+\subsection{Perekam Data (Data Logger)}
 Perekam Data disebut juga data logger. Secara umum perekam data sederhana terdiri dari mikrokontroller,sensor dan media penyimpanan.
 Mikrokontroller merupakan bagian dari perekam data yang mengatur komunikasi antar perangkat. Sensor berfungsi untuk mengubah sinyal analog manjadi sinyal digital. Media penyimpanan berfungsi untuk menyimpan data Dalam sistem telemetri ini terdapat fitur data logger,yaitu fitur yang berfungsi sebagai penyimpanan semua data-data kondisi dari suhu dan kelembaban yang diukur. Kemudian Data ini nantinya akan
 tersimpan didalam media penyimpanan yaitu memory card. Pada perancangan ini jenis memory card yang akan digunakan adalah micro SD 
 (Secure Digital) dengan kapasitas 4 GB.
 
-\subsubsection{Topologi Jaringan}
+\subsection{Topologi Jaringan}
 Sistem pemantauan dan pengukuran jarak jauh terdiri dari 2 buah modul 
 Xbee Proyang sama yang sebelumnya telah diprogram sebagai sebuah receiver-transmiter maupun transmiter-receiver. Ada beberapa bentuk topologi yang biasa digunakan antara lain topologi mesh, peer, star, dan cluster Tree.
 Topologi pair merupakan jaringan yang sederhana dengan hanya menggunakan dua buah xbeeatau node. Satu node harus menjadi coordinator sehingga jaringan dapat dibentuk. Dan yang lain dikonfigurasikan sebagai routeratau perangkat akhir.
 
 Cara yang saat ini banyak digunakan  dalam topologi jaringan adalah bus, token ring, dan star yaitu:
-\begin{enumerate}
+\begin{itemize}
 \item Topologi BUS 
-Topologi bus adalah Media penghantar untuk jenis topologi BUS adalah kabel Koaksial. Topologi BUS menggunakan metode unicast, multicastdan broadcast. Unicastadalah komu- nikasi antara satu pengirim 
+Topologi bus terlihat pada Gambar 2. Media penghantar untuk jenis topologi BUS adalah kabel Koaksial. Topologi BUS menggunakan metode unicast, multicastdan broadcast. Unicastadalah komu- nikasi antara satu pengirim 
 dengan satu penerima di jaringan. Multicastadalah komunikasi antara satu pengirim dengan banyak penerima di jaringan. Sedangkan pada Broadcast, setiap titik akan menerima dan menyimpan frameyang disalurkan/dihantarkan.
 
 \item Topologi Token RING 
@@ -150,8 +152,10 @@ simpul mempunyai tingkatan yang sama. Jaringan akan disebut sebagai loop, data d
 Topologi ini merupakan kontrol terpusat, semua link harus melewati pusat yang menyalurkan data tersebut kesemua simpul atau clientyang dipilihnya. Simpul pusat dinamakan stasiun primer atau 
 server dan lainnya dinamakan 
 stasiun sekunder atau client server.Setelah hubungan jaringan dimulai oleh servermaka setiap client serversewaktu-waktu dapat menggu-nakan hubungan jaringan ter-sebut tanpa menunggu perintah dari server.
+
 \end{enumerate}
 \subsubsection {Arduino 1.0.1 dan XCTU}
+
 Arduino merupakan perangkatpemrograman mikrokontroller jenis Atmel yang tersedia secara bebas (open-source)
 dengan menggunakan bahasapemrograman C. Untuk menyelesaikan rangkaian agar bisa bekerja, maka langkah selanjutnya adalah membuat program yang
 akan diupload ke board Arduino.Penelitian ini menggunakan software Arduino 1.0.1untuk membuat program pada sketch Arduino kemudian diverify
@@ -159,16 +163,16 @@ untuk memastikan program sudah benar,selanjutnya program di upload. Setelah prog
 maka akan tampil done uploading. Untuk mengaplikasikan program pada sistem telemetri ini maka dibutuhkan perangkat lunak yang untuk men-setting atau pun pemberian alamat pada Xbee Pro untuk melakukan komunikasi antara unit pengirim dan unit penerima. Adapun
 perangkat lunak yang di gunakan adalah perangkat lunak X-CTU, yaitu perangkat lunak dari produk Xbee Pro
 
-\subsubsection  {I/O Expansion Shield Arduino}
+\subsection  {I/O Expansion Shield Arduino}
 I/O Expansion Shield untuk Arduino adalah perangkat tambahan yang digunakan untuk interface beberapa modul yang compatible dengan board arduino. Board I/O expansion ini memiliki inputtegangan 5 VDC. Modul- modul yang cocok dan sesuai dengan board Arduino dapat mendukung RS485. Xbee Pro, APC220, SD Card dan Bloetooth.
 
-\subsubsection {Xbee Pro}
+\subsection {Xbee Pro}
 Xbee Pro merupakan modul yang memungkinkan Arduino Uno untuk berkomunikasi secara wireless
 mengunakan protocol ZigBee. ZigBee beroperasi menggunakan pada spesifikasi IEEE 802.15.4 beroperasi pada frekuensi
 2.4 GHz, 900 dan 868 MHz. XBee Pro dapat digunakan sebagai pengganti kabel serial.Xbee Pro diharapkan dapat memperkecil biaya dan menjadi
 konektivitas berdaya rendah untuk peralatan yang memerlukan baterai untuk hidup selama beberapa bulan sampai beberapa tahun, tetapi tidak memerlukan kecepatan transfer data tinggi. Xbee Pro memungkinkan komunikasi wireless dalam jangkauan hingga 100 meter indoor dan 1500 meter outdoor.
 
-\subsubsection {JENIS JENIS ARDUINO USB}
+\subsection {JENIS JENIS ARDUINO USB}
 Menggunakan USB sebagai antar muka pemrograman atau komunikasi komputer. Contoh:
 \begin{itemize} 
 \item Arduino Uno
@@ -182,6 +186,7 @@ Menggunakan USB sebagai antar muka pemrograman atau komunikasi komputer. Contoh:
 
 \subsubsection {ARDUINO NANO DAN ARDUINO MINI}
 Papan berbentuk kompak dan digunakan bersama breadboard. Contohnya adalah Arduino Nano 3.0, Arduino Nano 2.x dan Arduino Mini 04, Arduino Mini 03, Arduino Stamp 02
+
 
 \subsection {ARDUINO SERIAL}
 Menggunakan RS232 sebagai antar muka pemrograman atau komunikasi komputer. contohnya adalah Arduino Serial dan Arduino Serial v2.0  
@@ -212,13 +217,14 @@ Hal ini memungkinkan Arduino Leonardo untuk tampil ke komputer yang terhubung se
 Arduino Red Board di program menggunakan kabel USB dari mini-B dengan bantuan dari Arduino IDE Software.
 
 \subsection{Arduino Intel galileo}
-G a l i l e o adalah papan mikrokontroler berdasarkanIntel ® Quark SoC X1000 Application Processor,32-bit sistem Pentium-kelas Intel pada sebuah chip(datasheet). Ini adalah board pertama berdasarkan arsitektur Intel ® dirancang untuk menjadihardware dan software pin-kompatibel denganperisai Arduino dirancang untuk Uno R3. Digital pin0-13 (dan AREF berdekatan dan pin GND), Analoginput 0 sampai 5, header listrik, ICSP header, danpin port UART (0 dan 1), semua di lokasi yang sama seperti pada Arduino Uno R3. Hal ini juga dikenal sebagai Arduino 1.0 pinout. 
+Galileo adalah papan mikrokontroler berdasarkanIntel ® Quark SoC X1000 Application Processor,32-bit sistem Pentium-kelas Intel pada sebuah chip(datasheet). Ini adalah board pertama berdasarkan arsitektur Intel ® dirancang untuk menjadihardware dan software pin-kompatibel denganperisai Arduino dirancang untuk Uno R3. Digital pin0-13 (dan AREF berdekatan dan pin GND), Analoginput 0 sampai 5, header listrik, ICSP header, danpin port UART (0 dan 1), semua di lokasi yang sama seperti pada Arduino Uno R3. Hal ini juga dikenal sebagai Arduino 1.0 pinout. 
 
-G a l i l e o dirancang untuk mendukung shield yang beroperasi di kedua tegangan  3.3V atau 5V.Tegangan operasi inti Galileo adalah 3.3V. Namun,jumper di board memungkinkan terjemahantegangan 5V di pin I / O. Hal ini memberikandukungan untuk 5V shield Uno dan perilaku default. Dengan beralih posisi jumper, terjemahantegangan dapat dinonaktifkan untuk menyediakan operasi 3.3V di pin I / O. 
+Galileo dirancang untuk mendukung shield yang beroperasi di kedua tegangan  3.3V atau 5V.Tegangan operasi inti Galileo adalah 3.3V. Namun,jumper di board memungkinkan terjemahantegangan 5V di pin I / O. Hal ini memberikandukungan untuk 5V shield Uno dan perilaku default. Dengan beralih posisi jumper, terjemahantegangan dapat dinonaktifkan untuk menyediakan operasi 3.3V di pin I / O. 
 
-Tentu saja, board  G a l i l e o juga perangkat lunak yang cocok dengan Arduino Software Development Environment (IDE), yang membuatkegunaan dan pengenalan snap. Selain hardwareArduino dan kompatibilitas software, arduino
+Tentu saja, board  Galileo juga perangkat lunak yang cocok dengan Arduino Software Development Environment (IDE), yang membuatkegunaan dan pengenalan snap. Selain hardwareArduino dan kompatibilitas software, arduino
 
-G a l i l e o memiliki beberapa industri PC standar I / O portdan fitur untuk memperluas penggunaan asli dan kemampuan luar ekosistem perisai Arduino.Sebuah ukuran penuh Slot mini-PCI Express, pelabuhan 100Mb Ethernet, slot Micro-SD, RS-232 port serial, port host USB, port USB Client, dan8MByte NOR Flash .
+Galileo memiliki beberapa industri PC standar I / O portdan fitur untuk memperluas penggunaan asli dan kemampuan luar ekosistem perisai Arduino.Sebuah ukuran penuh Slot mini-PCI Express, pelabuhan 100Mb Ethernet, slot Micro-SD, RS-232 port serial, port host USB, port USB Client, dan8MByte NOR Flash .
+
 
 \subsection{Arduino Pro Micro AT} 
 Arduino Mikro adalah board mikrokontroler berdasarkan ATmega32u4 (lihat datasheet), yang dikembangkan bersama dengan Adafruit. Ini memiliki 20 digital pin input / output (yang 7 dapat digunakan sebagai output PWM dan 12 input analog sebagai), osilator 16 MHz kristal, koneksi USB mikro, header ICSP, dan tombol reset. Ini berisi semua yang diperlukan untuk mendukung mikrokontroler; hanya menghubungkannya ke komputer dengan kabel USB mikro untuk memulainya. Dengan  memiliki faktor bentuk yang memungkinkannya untuk dapat dengan mudah ditempatkan pada papan tempat memotong roti :D. 
