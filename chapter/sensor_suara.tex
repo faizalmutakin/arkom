@@ -70,14 +70,73 @@ Spesifikasi dari modul sensor suara seperti contoh pada gambar \ref{sssensorsuar
 
 \hspace{4mm} Bahan-bahan yang diperlukan untuk mengakses sensor suara, yaitu :
 
-\begin{itemize}
-\item Arduino Uno R3
-\item Komputer + Software IDE Arduino
-\item Modul Sensor Suara
-\item Kabel Jumper
-\item Lampu LED
-\item Kabel USB
-\end{itemize}
+\subsection{Arduino Uno R3}
+\begin{figure}[ht]
+\centerline{\includegraphics[width=0.4\textwidth]{figures/arduinounor3.jpg}}
+\caption{Arduino UNO R3.}
+\label{arduinounor3}
+\end{figure}
+Arduino UNO \ref{arduinounor3} adalah sebuah board mikrokontroler yang didasarkan pada ATmega328 (datasheet). Arduino UNO mempunyai 14 pin digital input/output (6 diantaranya dapat digunakan sebagai output PWM), 6 input analog, sebuahosilator Kristal 16 MHz, sebuah koneksi USB, sebuah power jack, sebuah ICSP header, dan sebuat tombol reset.Arduino UNO memuat semua yang dibutuhkan untuk menunjang mikrokontroler, mudah menghubungkannya ke sebuah computer dengan sebuah kabel USB atau mensuplainya dengan sebuah adaptor AC ke DC atau menggunakan baterai untuk memulainya.
+Arduino Uno berbeda dari semua board Arduino sebelumnya, Arduino UNO tidak menggunakan chip driver FTDI USB-to-serial. Sebaliknya, fitur-fitur Atmega16U2 (Atmega8U2 sampai ke versi R2) diprogram sebagai sebuah pengubah USB ke serial. Revisi 2 dari board Arduino Uno mempunyai sebuah resistor yang menarik garis 8U2 HWB ke ground, yang membuatnya lebih mudah untuk diletakkan ke dalam DFU mode.
+\subsection{Komputer + Software IDE Arduino}
+\begin{figure}[ht]
+\centerline{\includegraphics[width=0.4\textwidth]{figures/aride11.png}}
+\caption{Arduino IDE.}
+\label{aide}
+\end{figure}
+Menurut F. Djuandi dalam bukunya yang berjudul "Pengenalan Arduino" \cite{djuandi2011pengenalan} IDE merupakan singkatan dari Integrated Development Environment atau lingkungan terintegrasi yang digunakan untuk melakukan pengembangan. Dikatakan sebagai lingkungan karena melalui software inilah dilakukan pemrograman Arduino untuk melakukan fungsi - fungsi yang ditanamkan melalui sintaks pemrograman.Tampilan IDE ini bisa dilihat pada gambar \ref{aide}. IDE ini disediakan gratis dan bisa didapatkan secara langsung pada halaman resmi arduino yang bersifat open source. IDE ini juga sudah mendukung berbagai sistem operasi populer saat ini seperti Windows, Mac, dan Linux. Arduino menggunakan bahasa pemrograman sendiri yang menyerupai bahasa C. Pada bahasa pemrograman Arduino (Sketch) telah dilakukan beberapa perubahan untuk memudahkan para pemula dalam melakukan pemrograman dari bahasa aslinya. Sebelum dijual ke pasaran, IC microcontroller Arduino telah ditanamkan suatu program bernama Bootlader yang berfungsi sebagai penengah antara compiler Arduino dengan microcontroller.
+
+\subsection{Modul Sensor Suara}
+\begin{figure}[ht]
+\centerline{\includegraphics[width=0.4\textwidth]{figures/sssensorsuara.png}}
+\caption{Modul Sensor Suara}
+\label{sssensorsuara}
+\end{figure}
+Sensor suara merupakan sensor yang mensensing besaran suara untuk diubah menjadi besaran listrik. Sensor ini bekerja berdasarkan besar kecilnya kekuatan gelombang suara yang diterima. Dimana gelombang suara tersebut mengenai membran sensor, yang menyebabkan bergeraknya membran sensor yang memiliki kumparan kecil sehingga menghasilkan besaran listrik. Kecepatan bergeraknya kumparan kecil tersebut menentukan kuat lemahnya gelombang listrik yang akan dihasilkan. Salah satu contoh komponen yang termasuk dalam sensor ini adalah condeser microphone atau mic. Bentuk fisik dari condeser mic yaitu berbentuk bulat dan memiliki kaki dua seperti contoh pada gambar \ref{sssensorsuara}.
+\subsection{Kabel Jumper}
+\begin{figure}[ht]
+\centerline{\includegraphics[width=0.4\textwidth]{figures/kabeljumper.jpg}}
+\caption{Kabel Jumper.}
+\label{kabeljumper}
+\end{figure}
+Kabel jumper seperti contoh pada gambar \ref{kabeljumper} adalah komponen yang wajib ada saat belajar rangkaian elektronika dan komponen penghubung rangkaian Arduino dengan breadboard. Hal-hal yang jadi masalah pada kabel jumper antara lain jumlahnya tidak punya banyak atau kabel jumper gampang rusak karena saat beli kualitas tidak diperhitungkan.
+Kabel jumper memang banyak dijual dengan harga tertentu tergantung dengan kualitasnya, tetapi kabel jumper juga bisa dibuat sendiri dengan harga modal yang lebih murah dan menghasilkan jumlah kabel yang banyak meski tampilan berbeda dengan buatan pabrik. Tapi setidaknya secara fungsi, kabel jumper buatan sendiri masih akan berfungsi sebagaimana mestinya.
+
+\subsection{Lampu LED}
+\begin{figure}[ht]
+\centerline{\includegraphics[width=0.4\textwidth]{figures/led.jpg}}
+\caption{Lampu LED.}
+\label{led}
+\end{figure}
+Light Emitting Diode atau sering disingkat dengan LED seperti contoh pada gambar \ref{led} adalah komponen elektronika yang dapat memancarkan  cahaya monokromatik ketika diberikan tegangan maju. LED merupakan keluarga Dioda yang terbuat dari bahan semikonduktor. Warna-warna Cahaya yang dipancarkan oleh LED tergantung pada jenis bahan semikonduktor yang dipergunakannya.
+Untung mengetahui polaritas terminal Anoda (+) dan Katoda (-) pada LED. Kita dapat melihatnya secara fisik. Ciri-ciri Terminal Anoda pada LED adalah kaki yang lebih panjang dan juga Lead Frame yang lebih kecil. Sedangkan ciri-ciri Terminal Katoda adalah Kaki yang lebih pendek dengan Lead Frame yang besar serta terletak di sisi yang Flat.
+\subsection{Kabel USB}
+\begin{figure}[ht]
+\centerline{\includegraphics[width=0.4\textwidth]{figures/usb.jpg}}
+\caption{Kabel USB.}
+\label{usb}
+\end{figure}
+Kabel USB seperti contoh pada gambar \ref{usb} converter pada arduino ini berfungsi sebagai kabel untuk menghidupkan atau menjalankan arduino dan juga kabel ini berfungsi sebagai media transfer untuk menguploadbarisan coding yang kita buat pada software arduino
+
+\subsection{Bread Board}
+\begin{figure}[ht]
+\centerline{\includegraphics[width=0.4\textwidth]{figures/breadboard.jpg}}
+\caption{Bread Board.}
+\label{breadboard}
+\end{figure}
+Project Board atau yang sering disebut sebagai BreadBoard seperti contoh pada gambar \ref{breadboard} adalah dasar konstruksi sebuah sirkuit elektronik dan merupakan prototipe dari suatu rangkaian elektronik. Di zaman modern istilah ini sering digunakan untuk merujuk pada jenis tertentu dari papan tempat merangkai komponen, dimana papan ini tidak memerlukan proses menyolder ( langsung tancap ).
+Karena papan ini solderless alias tidak memerlukan solder sehingga dapat digunakan kembali, dan dengan demikian dapat digunakan untuk prototipe sementara serta membantu dalam bereksperimen desain sirkuit elektronika. Berbagai sistem elektronik dapat di prototipekan dengan menggunakan breadboard, mulai dari sirkuit analog dan digital kecil sampai membuat unit pengolahan terpusat (CPU).
+
+\subsection{Resistor}
+\begin{figure}[ht]
+\centerline{\includegraphics[width=0.4\textwidth]{figures/resistor.jpg}}
+\caption{Resistor.}
+\label{resistor}
+\end{figure}
+Resistor seperti contoh pada gambar \ref{resistor} merupakan komponen elektronik yang memiliki dua pin dan didesain untuk mengatur tegangan listrik dan arus listrik, dengan resistansi tertentu (tahanan) dapat memproduksi tegangan listrik di antara kedua pin, nilai tegangan terhadap resistansi berbanding lurus dengan arus yang mengalir, berdasarkan hukum Ohm.
+Resistor digunakan sebagai bagian dari rangkaian elektronik dan sirkuit elektronik, dan merupakan salah satu komponen yang paling sering digunakan. Resistor dapat dibuat dari bermacam-macam komponen dan film, bahkan kawat resistansi (kawat yang dibuat dari paduan resistivitas tinggi seperti nikel-kromium).
+
+
 
 \subsection{Proses Instalasi IDE}
 
@@ -123,40 +182,66 @@ Spesifikasi dari modul sensor suara seperti contoh pada gambar \ref{sssensorsuar
 \begin{enumerate}
 
 \item  Pertama, pasang kabel jumper bagian female ke masing-masing pin modul sensor suara. Kabel jumper berwarna putih ke pin Analog Output (AO). Kabel jumper berwarna abu-abu ke pin Ground (G). Kabel jumper berwarna hitam ke pin Voltage Common Collector (VCC)/+.
-\break
+\break\\
 \centerline{\includegraphics[width=0.9\textwidth]{figures/ss4.jpeg}}
-\break
+\break\\
 \centerline{\includegraphics[width=0.9\textwidth]{figures/ss5.jpeg}}
-\break
+\break\\
 \centerline{\includegraphics[width=0.9\textwidth]{figures/ss6.jpeg}}
 \item Setelah semuanya terpasang, lalu sambungkan kabel jumper bagian male ke arduino. Kabel jumper berwarna putih ke slot A2. Kabel jumper berwarna abu-abu ke slot GND. Kabel jumper berwarna hitam ke slot 5V.
-\break
+\break\\
 \centerline{\includegraphics[width=0.9\textwidth]{figures/ss1.jpeg}}
-\break
+\break\\
 \centerline{\includegraphics[width=0.9\textwidth]{figures/ss2.jpeg}}
-\break
+\break\\
 \centerline{\includegraphics[width=0.9\textwidth]{figures/ss3.jpeg}}
 \item Setelah semua terhubung, lalu sambungkan kabel USB ke arduino dan ke komputer.
-\break
+\break\\
 \centerline{\includegraphics[width=0.9\textwidth]{figures/ss8.jpeg}}
-\break
+\break\\
 \centerline{\includegraphics[width=0.9\textwidth]{figures/ss7.jpeg}}
 \item Lalu pasang lampu LED ke arduino. Pin yang lebih panjang pasang ke slot 13, sedangkan pin yang pendek pasang ke slot GND.
-\break
+\break\\
 \centerline{\includegraphics[width=0.9\textwidth]{figures/ss9.jpeg}}
 \item  Kemudian buat program yang nantinya digunakan untuk mengetes sensor menggunakan IDE Arduino.
-\break
+\break\\
 \centerline{\includegraphics[width=0.9\textwidth]{figures/ss10.png}}
+\break \textbf{Program Sensor Suara :}
+\begin{verbatim}
+//Inisialisasi pin
+int ledPin=13; //untuk LED
+int soundPin=A2; //output dari sensor
+int compareSensor=27; //ambang batas suara
+
+void setup(){
+  //Inisialisasi I/O
+  Serial.begin(9600);
+  pinMode(ledPin, OUTPUT); //mengeluarkan keluaran
+  pinMode(soundPin, INPUT); //menerima masukan
+}
+void loop(){
+  int soundValue=analogRead(soundPin); //membaca sensor analog pin
+    if(soundValue>compareSensor){ //pembanding dan indikator
+    digitalWrite(ledPin,HIGH); //lampu menyala
+    Serial.print("Nilai pembacaan sensor: ");
+    Serial.println(soundValue); //menampilkan nilai pembacaan sensor di serial monitor
+    delay(10); //jeda 1 detik
+  }
+  else{
+    digitalWrite(ledPin,LOW); //lampu mati
+  }
+}
+\end{verbatim}
 \item Lalu setelah program selesai dibuat, unggah program tersebut ke arduino.
-\break
+\break\\
 \centerline{\includegraphics[width=0.9\textwidth]{figures/ss11.png}}
 \item Terakhir cek apakah sensor berkerja dengan semestinya.
-\break
+\break\\
 \centerline{\includegraphics[width=0.9\textwidth]{figures/ss12.jpeg}}
-\break
+\break\\
 \centerline{\includegraphics[width=0.9\textwidth]{figures/ss13.jpeg}}
 \item Untuk mengecek nilai yang ditangkap oleh sensor, cek pada Serial Monitor.
-\break
+\break\\
 \centerline{\includegraphics[width=0.9\textwidth]{figures/ss14.png}}
 
 \end{enumerate}
