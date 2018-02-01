@@ -32,7 +32,7 @@ Sensor suara merupakan sensor yang mensensing besaran suara untuk diubah menjadi
 \label{condesermicscheme}
 \end{figure}
 
-Condenser mic bekerja berdasarkan diafragma atau susunan backplate yang harus tercatu oleh listrik membentuk sound-sensitive capacitor. Gelombang suara yang masuk ke microphone akan menggetarkan komponen diafragma ini. Letak dari diafragma ditempatkan di depan sebuah backplate. Susunan dari elemen ini membentuk sebuah kapasitor yang biasa disebut juga kondenser. Kapasitor memiliki kemampuan untuk menyimpan muatan maupun tegangan. Ketika elemen tersebut terisi dengan muatan, medan listrik akan terbentuk di antara diafragma dan backplate, yang dimana besarnya itu proporsional terhadap ruang yang terbentuk diantaranya. Variasi akan lebar space antara diafragma dengan backplate terjadi dikarenakan adanya pergerakan diafragma relatif terhadap backplate yang disebabkan oleh adanya tekanan suara yang mengenai diafragma. Hal ini akan menghasilkan sinyal elektrik dari gelombang suara yang masuk ke condenser microphone seperti contoh pada gambar \ref{condesermicscheme}.
+Condenser mic biasanya bekerja berdasarkan susunan backplate atau diafragma yang harus terhubung dengan listrik dan membentuk kapasitor sound - sensitive. Gelombang suara yang tercipta akan masuk ke microphone dan akan menggetarkan komponen diafragma ini. Letak dari diafragma ditempatkan di depan sebuah backplate. Susunan dari elemen - elemen tersebut akan membentuk sebuah kapasitor yang sering disebut juga sebagai kondenser. Kapasitor memiliki kemampuan untuk menyimpan muatan maupun tegangan. Ketika elemen tersebut terisi dengan muatan, medan listrik akan terbentuk di antara diafragma dan backplate, yang dimana besarnya itu proporsional terhadap ruang yang terbentuk diantaranya. Macam - macam lebar dari jarak antara backplate dengan diafragma yang terjadi disebabkan karena adanya pergerakan oleh diafragma relatif terhadap backplate yang dikarenakan adanya tekanan suara yang mengenai diafragma. Hal ini akan menghasilkan sinyal elektrik dari gelombang suara yang masuk ke condenser microphone seperti contoh pada gambar \ref{condesermicscheme}.
 
 \section{Karakteristik dari Condeser Microphone}
 
@@ -76,15 +76,15 @@ Spesifikasi dari modul sensor suara seperti contoh pada gambar \ref{sssensorsuar
 \caption{Arduino UNO R3.}
 \label{arduinounor3}
 \end{figure}
-Arduino UNO \ref{arduinounor3} adalah sebuah board mikrokontroler yang didasarkan pada ATmega328 (datasheet). Arduino UNO mempunyai 14 pin digital input/output (6 diantaranya dapat digunakan sebagai output PWM), 6 input analog, sebuahosilator Kristal 16 MHz, sebuah koneksi USB, sebuah power jack, sebuah ICSP header, dan sebuat tombol reset.Arduino UNO memuat semua yang dibutuhkan untuk menunjang mikrokontroler, mudah menghubungkannya ke sebuah computer dengan sebuah kabel USB atau mensuplainya dengan sebuah adaptor AC ke DC atau menggunakan baterai untuk memulainya.
-Arduino Uno berbeda dari semua board Arduino sebelumnya, Arduino UNO tidak menggunakan chip driver FTDI USB-to-serial. Sebaliknya, fitur-fitur Atmega16U2 (Atmega8U2 sampai ke versi R2) diprogram sebagai sebuah pengubah USB ke serial. Revisi 2 dari board Arduino Uno mempunyai sebuah resistor yang menarik garis 8U2 HWB ke ground, yang membuatnya lebih mudah untuk diletakkan ke dalam DFU mode.
+Arduino UNO \ref{arduinounor3} adalah sebuah board mikrokontroler yang didasarkan pada ATmega328 (datasheet). Arduino UNO mempunyai 14 pin digital input/output (6 diantaranya dapat digunakan sebagai output PWM), 6 input analog, sebuah osilator Kristal 16 MHz, sebuah koneksi USB, sebuah power jack, sebuah ICSP header, dan sebuat tombol reset. Arduino UNO mempunyai komponen - komponen yang diperlukan untuk membuat sebuah mikrokontroler, mudah untuk menghubungkannya ke komputer melalui sebuah kabel USB atau menggunakan baterai atau menyuplainya dengan sebuah adaptor AC ke DC untuk memulainya.
+Arduino Uno berbeda dari semua board Arduino sebelumnya, Arduino UNO tidak menggunakan chip driver FTDI USB-to-serial. Sebaliknya, fitur-fitur Atmega16U2 (Atmega8U2 sampai ke versi R2) diprogram sebagai sebuah pengubah USB ke serial. Versi ke-2 dari papan Arduino Uno memiliki satu buah resistor yang dapat menarik garis - garis 8U2 HWB ke ground serta mempermudahkannya untuk ditaruh ke mode DFU.
 \subsection{Komputer + Software IDE Arduino}
 \begin{figure}[ht]
 \centerline{\includegraphics[width=0.4\textwidth]{figures/aride11.png}}
 \caption{Arduino IDE.}
 \label{aide}
 \end{figure}
-Menurut F. Djuandi dalam bukunya yang berjudul "Pengenalan Arduino" \cite{djuandi2011pengenalan} IDE merupakan singkatan dari Integrated Development Environment atau lingkungan terintegrasi yang digunakan untuk melakukan pengembangan. Dikatakan sebagai lingkungan karena melalui software inilah dilakukan pemrograman Arduino untuk melakukan fungsi - fungsi yang ditanamkan melalui sintaks pemrograman.Tampilan IDE ini bisa dilihat pada gambar \ref{aide}. IDE ini disediakan gratis dan bisa didapatkan secara langsung pada halaman resmi arduino yang bersifat open source. IDE ini juga sudah mendukung berbagai sistem operasi populer saat ini seperti Windows, Mac, dan Linux. Arduino menggunakan bahasa pemrograman sendiri yang menyerupai bahasa C. Pada bahasa pemrograman Arduino (Sketch) telah dilakukan beberapa perubahan untuk memudahkan para pemula dalam melakukan pemrograman dari bahasa aslinya. Sebelum dijual ke pasaran, IC microcontroller Arduino telah ditanamkan suatu program bernama Bootlader yang berfungsi sebagai penengah antara compiler Arduino dengan microcontroller.
+Menurut F. Djuandi dalam bukunya yang berjudul "Pengenalan Arduino" \cite{djuandi2011pengenalan} IDE merupakan singkatan dari Integrated Development Environment atau lingkungan terintegrasi yang digunakan untuk melakukan pengembangan. Melalui software inilah dilakukan pengembangan pemrograman Arduino yang nantinya melakukan fungsi - fungsi yang sudah ditanamkan melalui sintaks pemrograman. Tampilan IDE ini bisa dilihat pada gambar \ref{aide}. IDE ini disediakan gratis dan bisa didapatkan secara langsung pada halaman resmi arduino yang bersifat open source. IDE ini juga sudah mendukung berbagai sistem operasi populer saat ini seperti Windows, Mac, dan Linux. Arduino menggunakan bahasa pemrograman sendiri yang menyerupai bahasa C. Pada bahasa pemrograman Arduino (Sketch) telah dilakukan beberapa perubahan untuk memudahkan para pemula dalam melakukan pemrograman dari bahasa aslinya. Sebelum diperjualbelikan ke pasaran, IC microcontroller Arduino sebelumnya telah ditanamkan sebuah program yang bernama Bootlader yang memiliki fungsi sebagai penengah antara compiler Arduino dengan microcontroller.
 
 \subsection{Modul Sensor Suara}
 \begin{figure}[ht]
@@ -100,7 +100,7 @@ Sensor suara merupakan sensor yang mensensing besaran suara untuk diubah menjadi
 \label{kabeljumper}
 \end{figure}
 Kabel jumper seperti contoh pada gambar \ref{kabeljumper} adalah komponen yang wajib ada saat belajar rangkaian elektronika dan komponen penghubung rangkaian Arduino dengan breadboard. Hal-hal yang jadi masalah pada kabel jumper antara lain jumlahnya tidak punya banyak atau kabel jumper gampang rusak karena saat beli kualitas tidak diperhitungkan.
-Kabel jumper memang banyak dijual dengan harga tertentu tergantung dengan kualitasnya, tetapi kabel jumper juga bisa dibuat sendiri dengan harga modal yang lebih murah dan menghasilkan jumlah kabel yang banyak meski tampilan berbeda dengan buatan pabrik. Tapi setidaknya secara fungsi, kabel jumper buatan sendiri masih akan berfungsi sebagaimana mestinya.
+Kabel jumper memang banyak dijual dengan harga tertentu tergantung dengan kualitasnya, tetapi kabel jumper juga bisa dibuat sendiri dengan harga modal yang lebih murah dan menghasilkan jumlah kabel yang banyak meski tampilan berbeda dengan buatan pabrik tetapi secara fungsi, kabel jumper yang dibuat sendiri masih dapat berfungsi sebagaimana mestinya.
 
 \subsection{Lampu LED}
 \begin{figure}[ht]
@@ -108,15 +108,21 @@ Kabel jumper memang banyak dijual dengan harga tertentu tergantung dengan kualit
 \caption{Lampu LED.}
 \label{led}
 \end{figure}
-Light Emitting Diode atau sering disingkat dengan LED seperti contoh pada gambar \ref{led} adalah komponen elektronika yang dapat memancarkan  cahaya monokromatik ketika diberikan tegangan maju. LED merupakan keluarga Dioda yang terbuat dari bahan semikonduktor. Warna-warna Cahaya yang dipancarkan oleh LED tergantung pada jenis bahan semikonduktor yang dipergunakannya.
-Untung mengetahui polaritas terminal Anoda (+) dan Katoda (-) pada LED. Kita dapat melihatnya secara fisik. Ciri-ciri Terminal Anoda pada LED adalah kaki yang lebih panjang dan juga Lead Frame yang lebih kecil. Sedangkan ciri-ciri Terminal Katoda adalah Kaki yang lebih pendek dengan Lead Frame yang besar serta terletak di sisi yang Flat.
+Light Emitting Diode atau sering disingkat dengan LED seperti contoh pada gambar \ref{led} adalah komponen elektronika yang dapat memancarkan  cahaya monokromatik ketika diberikan tegangan maju. LED termasuk ke dalam jenis dioda yang dibuat dari bahan - bahan semikonduktor. Warna-warna yang dipancarkan oleh cahaya LED tergantung dari jenis bahan - bahan semikonduktor yang dipergunakannya.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+Untuk membedakan yang mana terminal Katoda (-) dan terminal Anoda (+) pada LED, kita dapat mengetahuinya secara langsung. Ciri - ciri dari terminal Anoda (+) pada LED yaitu kakinya lebih panjang dan juga Lead Framenya lebih kecil. Sedangkan ciri-ciri Terminal Katoda ( - ) adalah kakinya lebih pendek dan juga Lead Framenya lebih besar serta terletak di sisi yang Flat.
 \subsection{Kabel USB}
 \begin{figure}[ht]
 \centerline{\includegraphics[width=0.4\textwidth]{figures/usb.jpg}}
 \caption{Kabel USB.}
 \label{usb}
 \end{figure}
-Kabel USB seperti contoh pada gambar \ref{usb} converter pada arduino ini berfungsi sebagai kabel untuk menghidupkan atau menjalankan arduino dan juga kabel ini berfungsi sebagai media transfer untuk menguploadbarisan coding yang kita buat pada software arduino
+Kabel USB ( Universal Serial Bus ) seperti contoh pada gambar \ref{usb} merupakan pengkonversi pada arduino yang memiliki fungsi sebagai kabel untuk menghidupkan atau menjalankan arduino dan juga kabel ini memiliki fungsi sebagai media transfer untuk mengupload barisan kode - kode yang telah dibuat pada software arduino IDE.
 
 \subsection{Bread Board}
 \begin{figure}[ht]
@@ -124,8 +130,8 @@ Kabel USB seperti contoh pada gambar \ref{usb} converter pada arduino ini berfun
 \caption{Bread Board.}
 \label{breadboard}
 \end{figure}
-Project Board atau yang sering disebut sebagai BreadBoard seperti contoh pada gambar \ref{breadboard} adalah dasar konstruksi sebuah sirkuit elektronik dan merupakan prototipe dari suatu rangkaian elektronik. Di zaman modern istilah ini sering digunakan untuk merujuk pada jenis tertentu dari papan tempat merangkai komponen, dimana papan ini tidak memerlukan proses menyolder ( langsung tancap ).
-Karena papan ini solderless alias tidak memerlukan solder sehingga dapat digunakan kembali, dan dengan demikian dapat digunakan untuk prototipe sementara serta membantu dalam bereksperimen desain sirkuit elektronika. Berbagai sistem elektronik dapat di prototipekan dengan menggunakan breadboard, mulai dari sirkuit analog dan digital kecil sampai membuat unit pengolahan terpusat (CPU).
+Project Board atau yang sering disebut sebagai BreadBoard seperti contoh pada gambar \ref{breadboard} adalah dasar konstruksi sebuah sirkuit elektronik dan merupakan prototipe dari suatu rangkaian elektronik. Di zaman modernisasi istilah ini sering dipergunakan untuk merujuk pada jenis tertentu dari papan tempat merangkai komponen, dimana papan ini tidak memerlukan proses menyolder ( langsung tancap ).
+Karena papan ini solderless alias tidak memerlukan solder sehingga dapat digunakan kembali, dan dengan demikian dapat digunakan untuk prototipe sementara serta membantu dalam bereksperimen desain sirkuit elektronika. Banyak dari sistem elektronik yang dibuatkan prototipe dengan mempergunakan project board atau breadboard, seperti digital kecil dan sirkuit analog serta CPU (Central Prossesing Unit).
 
 \subsection{Resistor}
 \begin{figure}[ht]
@@ -134,11 +140,13 @@ Karena papan ini solderless alias tidak memerlukan solder sehingga dapat digunak
 \label{resistor}
 \end{figure}
 Resistor seperti contoh pada gambar \ref{resistor} merupakan komponen elektronik yang memiliki dua pin dan didesain untuk mengatur tegangan listrik dan arus listrik, dengan resistansi tertentu (tahanan) dapat memproduksi tegangan listrik di antara kedua pin, nilai tegangan terhadap resistansi berbanding lurus dengan arus yang mengalir, berdasarkan hukum Ohm.
-Resistor digunakan sebagai bagian dari rangkaian elektronik dan sirkuit elektronik, dan merupakan salah satu komponen yang paling sering digunakan. Resistor dapat dibuat dari bermacam-macam komponen dan film, bahkan kawat resistansi (kawat yang dibuat dari paduan resistivitas tinggi seperti nikel-kromium).
+Resistor digunakan sebagai bagian dari rangkaian elektronik dan sirkuit elektronik, dan merupakan salah satu komponen yang paling sering digunakan. Resistor terbuat dari berbagai macam komponen - komponen, seperti kawat resistansi atau kawat yang terbuat dari campuran resistivitas tinggi, contohnya nikel-kromium.
 
 
 
 \subsection{Proses Instalasi IDE}
+
+Berikut ini adalah proses instalasi IDE Arduino :
 
 \begin{enumerate}
 \item Pertama unduh terlebih dahulu installer IDE Arduino di https://www.arduino.cc/en/Main/Software. Pada halaman tersebut ada tiga macam installer yang dapat diunduh sesuai dengan Operating System yang kita pakai.
@@ -178,6 +186,8 @@ Resistor digunakan sebagai bagian dari rangkaian elektronik dan sirkuit elektron
 \end{enumerate}
 
 \subsection{Proses Perakitan}
+
+Berikut ini adalah langkah - langkah proses perakitan modul sensor suara dengan Arduino UNO :
 
 \begin{enumerate}
 
@@ -245,5 +255,6 @@ void loop(){
 \centerline{\includegraphics[width=0.9\textwidth]{figures/ss14.png}}
 
 \end{enumerate}
+
 
 %\end{document}
