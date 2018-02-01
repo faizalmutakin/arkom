@@ -10,6 +10,10 @@
 
 	
 	\section{Kernel}
+Kernel merupakan sebuah perangkat lunak yang menjadi bagian utama dlam sebuah system operasi computer, yaitu untuk membantu macam-macam program aplikasi untuk mengakses hardware. 
+Dengan kata lain, kernel adalah mediator antara software dan hardware yang menyediakan pengaturan input-output, pengaturan fila dan yang lainnya. 
+Yang sering kita kenal itu adalah kernel linux. Pengertian secara garis besarnya sama saja. Kernel linux ini penemunya yaitu  murid Ilmu Komputer berkebangsaan Finlandia, Linus Torvalds pada tahun 1991.
+
 	 Kernel adalah program komputer yang merupakan inti dari sistem operasi komputer, dengan kontrol penuh atas segala hal yang ada di sistem. Pada kebanyakan sistem, ini adalah salah satu program pertama yang dimuat
 	 saat start-up (setelah bootloader). 
 	 Ini menangani sisa start-up serta permintaan input / output dari perangkat lunak, menerjemahkannya ke dalam instruksi pengolahan data untuk unit pemrosesan pusat. Ini menangani memori dan periferal seperti keyboard, 
@@ -17,16 +21,18 @@
 	 Kernel menghubungkan perangkat lunak aplikasi ke perangkat keras komputer.
 	 Kode kritis kernel biasanya dimuat ke dalam area lindung memori, yang mencegahnya ditimpa oleh aplikasi atau komponen lain yang lebih kecil dari sistem operasi. Kernel menjalankan tugasnya, seperti menjalankan proses 
 	 dan penanganan interupsi, di dalam ruang kernel. 
-	 Sebaliknya, semua yang dilakukan pengguna ada di ruang pengguna: menulis teks di editor teks, menjalankan program di GUI, dll. Pemisahan ini mencegah data pengguna dan data kernel tidak saling mengganggu dan menyebabkan 
+	 Sebaliknya, semua yang dilakukan pengguna ada di ruang pengguna, menulis teks di editor teks, menjalankan program di GUI, dll. Pemisahan ini mencegah data pengguna dan data kernel tidak saling mengganggu dan menyebabkan 
 	 ketidakstabilan dan kelambatan. 
 	 Antarmuka kernel adalah lapisan abstraksi tingkat rendah. Ketika sebuah proses membuat permintaan dari kernel, itu disebut system call. Desain kernel berbeda dalam cara mereka mengatur panggilan dan sumber sistem ini. 
-	 Kernel monolitik menjalankan semua instruksi sistem operasi di ruang alamat yang sama untuk kecepatan. Sebuah mikrokernel menjalankan sebagian besar proses di ruang pengguna, untuk modularitas. contoh gambar kernel \ref{kernel}
+	 Kernel monolitik menjalankan semua instruksi sistem operasi di ruang alamat yang sama untuk kecepatan. Sebuah mikrokernel menjalankan sebagian besar proses di ruang pengguna, untuk modularitas. 
 	
-\begin{figure}[ht]
-	\centerline{\includegrapichs[width=1\textwidth]{figures/kernel.JPEG}}
-	\caption{gambar dari kernel.}
-	\label{kernel}
-\end{figure}
+	contoh gambar kernel \ref{kernel}
+
+	\begin{figure}[ht]
+		\centerline{\includegraphics[width=1\textwidth]{figures/Kernel.jpg}}
+		\caption{gambar kernel.}
+		\label{kernel}
+	\end{figure}
 
 		\subsection{Sejarah Kernel}
 		 Kernel merupakan program komputer yang mengatur semua permintaan akan input/output dari perangkat lunak atau software.
