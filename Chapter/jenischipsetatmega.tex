@@ -1,98 +1,97 @@
 \section{Mikrokontroler ATmega8535}
 
 	\subsection{Mikrokontroler}
-		Mikrokontroler merupakan suatu komponen elektronika yang didalamnya terdapat rangkaian mikroprosesor, memori (RAM/ROM) dan I/O, rangkaian tersebut terdapat dalam level chip atau biasa disebut single chip microcomputer. Pada mikrokontroler sudah terdapat komponen-komponen mikroprosesor dengan bus-bus internal yang saling berhubungan. Komponen–komponen tersebut adalah RAM, ROM, Timer, komponen I/O paralel dan serial, dan interrupt controller. Dengan harga yang terjangkau memungkinkan mikrokontroler digunakan pada berbagai sistem elektronis, seperti pada robot, sistem alarm, peralatan telekomunikasi, hingga sistem automasi industri.
+		Mikrokontroler adalah komponen elektronik yang berisikan rangkaian mikroprosesor, memori (RAM/ROM) dan I/O, rangkaian tersebut terdapat dalam level chip atau yang biasa disebut single chip mikrokomputer. Pada mikrokontroler sudah ada komponen-komponen mikroprosesor dengan beberapa bus internal yang saling berhubungan. Komponen – komponen tersebut adalah RAM, ROM, Timer, I/O paralel, serial, dan interrupt controller. Dikarenakan harganya yang terjangkau, mikrokontroler ini pun digunakan pada banyak sistem elektronik, seperti di robot, sistem alarm, peralatan telekomunikasi, sampai ke sistem automasi industri.
 		
 	\subsection{Chipset ATMEGA 8535}
-		Mikrokontroler sebagai sebuah “one chip solution” pada dasarnya adalah rangkaian terintregrasi (Integrated Circuit-IC) yang telah mengandung secara lengkap berbagai komponen pembentuk sebuah komputer. Berbeda dengan penggunaan mikroprosesor yang masih memerlukan komponen luar tambahan seperti RAM, ROM, Timer, dan sebagainya untuk sistem mikrokontroler, tambahan komponen diatas secara praktis hampir tidak dibutuhkan lagi. Hal ini disebabkan semua komponen penting tersebut telah ditanam bersama dengan sistem prosesor ke dalam IC tunggal mikrokontroler bersangkutan. Dengan alasan itu sistem mikrokontroler dikenal juga dengan istilah populer the real Computer On a Chip (komputer utuh dalam keping tunggal), sedangkan sistem mikroprosesor dikenal dengan istilah yang 	lebih terbatas yaitu Computer On a Chip (komputer dalam keping tunggal).
-		Mikrokontroler AVR memiliki arsitektur RISC 8 bit, dimana semua instruksi dikemas dalam kode 16-bit (16-bits word) dan sebagian besar instruksi dieksekusi dalam 1 (satu) siklus clock, berbeda dengan instruksi MCS51 yang membutuhkan 12 siklus clock. Tentu saja itu terjadi karena kedua jenis mikrokontroler tersebut memiliki arsitektur yang berbeda. AVR berteknologi RISC (Reduced Instruction Set Computing), sedangkan seri MCS51 berteknologi CISC (Complex Instruction Set Computing). Secara umum, AVR dapat dikelompokkan menjadi empat kelas, yaitu keluarga ATtiny, keluarga AT90Sxx, keluarga ATMega dan AT86RFxx. Pada dasarnya yang membedakan masing-masing kelas adalah memori, peripheral dan fungsinya. Dari segi arsitektur dan instruksi yang digunakan, mereka bisa dikatakan hampir sama.
+		Mikrokontroler sebagai sebuah \"one chip solution\" dasarnya adalah rangkaian yang terintregrasi (Integrated Circuit-IC) yang secara lengkap mengandung banyak komponen yang membentuk sebuah komputer. Berbeda halnya dengan menggunakan mikroprosesor yang memerlukan komponen luar tambahan seperti RAM, ROM, Timer, dan lain - lain untuk sistem mikrokontroler, komponen - komponen diatas hampir tidak perlu ditambahkan lagi. Karena semua komponen - komponen penting diatas sudah ditanam bersamaan dengan sistem prosesor ke dalam IC tunggal mikrokontroler tersebut. Karena hal tersebut sistem mikrokontroler biasa disebut dengan istilah the real Computer On a Chip (komputer utuh dalam kepingan tunggal), sedangkan sistem mikroprosesor biasa disebut dengan istilah yang terbatas yaitu Computer On a Chip (komputer dalam kepingan tunggal).
+		Arsitektur yang digunakan oleh mikrokontroler AVR adalah RISC 8 bit, yang instruksinya dibungkus atau dikemas dalam kode 16-bit dan hampir setiap instruksi dieksekusi dalam 1 siklus clock, hal ini berbeda dengan instruksi MCS51 yang membutuhkan 12 siklus clock. Itu terjadi karena kedua jenis mikrokontroler tersebut memiliki arsitektur yang berbeda. Teknologi yang digunakan AVR adalah RISC (Reduced Instruction Set Computing), sedangkan seri MCS51 berteknologi CISC (Complex Instruction Set Computing). Umumnya ada empat kelompok AVR , yaitu AT90Sxx, ATMega, ATtiny dan AT86RFxx. Pada dasarnya yang membedakan setiap kelas adalah memorinya, peripheralnya dan fungsinya. Dari segi arsitektur dan instruksi yang digunakan, mereka dapat dikatakan hampir sama.
 		
 		\subsection{Konfigurasi Pin ATmega8535}
-		Konfigurasi pin ATmega8535 bisa dilihat pada gambar 2.6, Dari gambar tersebut dapat dijelaskan secara fungsional konfigurasi pin ATmega8535 sebagai berikut :
+		 Kita dapat melihat konfigurasi pin ATmega8535 pada gambar 2.6, Dari gambar itu dapat dijelaskan secara fungsinya konfigurasi pin ATmega8535 sebagai berikut :
 		\begin{itemize}
-			\item VCC merupakan pin yang berfungsi sebagai pin masukan catu daya
-			\item GND merupakan pin ground.
-			\item Port A (PA0..PA7) merupakan pin I/O dua arah dan pin masukan ADC
-			\item Port A (PA0..PA7) merupakan pin I/O dua arah dan pin masukan ADC
-			\item Port C (PC0..PC7) merupakan pin I/O dua arah dan pin fungsi khusus, yaitu TWI, komparator analog dan Timer Oscilator
-			\item Port D (PD0..PD7) merupakan pin I/O dua arah dan pin fungsi khusus, yaitu komparator analog, interupsi eksternal dan komunikasi serial
-			\item RESET merupakan pin yang digunakan untuk me-reset mikrokontroler
-			\item XTAL1 dan XTAL2 merupakan pin masukan clock eksternal
-			\item AVCC merupakan pin masukan tegangan untuk ADC
-			\item AREF merupakan pin masukan tegangan referensi ADC
+			\item VCC adalah pin yang digunakan untuk memasukan catu daya.
+			\item GND madalah pin ground.
+			\item Port A (PA0..PA7) adalah pin I/O dua arah dan pin masukan ADC.
+			\item Port A (PA0..PA7) adalah pin I/O dua arah dan pin masukan ADC.
+			\item Port C (PC0..PC7) adalah pin I/O dua arah dan pin fungsi khusus, yaitu TWI, komparator analog dan Timer Oscilator.
+			\item Port D (PD0..PD7) merupakan pin I/O dua arah dan pin fungsi khusus, yaitu komparator analog, interupsi eksternal dan komunikasi serial.
+			\item RESET adalah pin yang fungsinya untuk me-reset mikrokontroler.
+			\item XTAL1 dan XTAL2 adalah pin masukan clock eksternal.
+			\item AVCC adalah pin masukan tegangan untuk ADC.
+			\item AREF adalah pin masukan tegangan referensi ADC.
 		\end{itemize}
 
 \section{ATmega8}
 
 	\subsection{Penjelasan}
-		Kali ini saya akan membahas lebih dalam tentang ATMega8. Disini saya fokuskan pada pembahasan tentang fungsi pin, clock, fuse bit, dll.
-		Sedikit saya ulas tentang pembahasan saya pada tulisan sebelumnya, bahwa mikrokontroler ATMega8 merupakan mikrokontroler keluarga AVR 8bit. Beberapa tipe mikrokontroler yang “berkeluarga” sama dengan ATMega8 ini antara lain ATMega8535, ATMega16, ATMega32, ATmega328, dll. Yang membedakan antara mikrokontroler yang saya sebutkan tadi antara lain adalah, ukuran memori, banyaknya GPIO (pin input/output), peripherial (USART, timer, counter, dll).Dari segi ukuran fisik, ATMega8 memiliki ukuran fisik lebih kecil dibandingkan dengan beberapa mikrokontroler yang saya sebutkan diatas. Namun untuk segi memori dan periperial lainnya ATMega8 tidak kalah dengan yang lainnya karena ukuran memori dan periperialnya relatif sama dengan ATMega8535, ATMega32, dll, hanya saja jumlah GPIO lebih sedikit dibandingkan mikrokontroler yang saya sebutkan diatas. Untuk pemahaman lebih lanjut akan saya bahas di bawah ini.
+		Sekarang kami akan membahas tentang ATMega8. Kami akan membahas tentang fungsi pin, clock, fuse bit, dll. mikrokontroler ATMega8 merupakan mikrokontroler keluarga AVR 8bit. Beberapa tipe mikrokontroler yang satu jenis dengan ATMega8 ini adalah ATMega8535, ATMega16, ATMega32, ATmega328, dll. Yang membedakan antara mikrokontroler yang tadi adalah, ukuran memori, banyaknya GPIO (pin input/output), peripherial (USART, timer, counter, dll).Dari segi ukuran fisik, ATMega8 memiliki ukuran yang lebih kecil dari pada mikrokontroler yang telah disebutkan diatas. Tetapi walaupun ukurannya kecil ATMega8 tidak kalah dengan yang lainnya karena ukuran memori dan bagian lainnya relatif sama dengan ATMega32, ATMega8535, atau yang lainnya. Hanya saja jumlah GPIO nya lebih sedikit dibandingkan mikrokontroler yang telah disebutkan. Untuk penjelasan lebih lanjut akan dibahas di bawah ini.
 	
 	\subsection{Fungsi dan Kebutuhan Pin}
-		Pinout IC mikrokontroler ATMega8 yang berpackage DIP dapat dilihat di bawah ini.
-		Seperti yang kita lihat ATMega8 memiliki 3 buah PORT utama yaitu PORTB, PORTC, dan PORTD dengan total pin input/output sebanyak 23 pin. PORT tersebut dapat difungsikan sebagai input/output digital atau difungsikan sebagai periperial lainnya.
+		Pinout dari IC mikrokontroler ATMega8 yang berpackage DIP dapat dilihat di bawah ini.
+		Dari gambar yang kita lihat dapat kita simpulkan bahwa ada 3 PORT utama dari ATMega8 yaitu PORTB, PORTC, dan PORTD dengan jumlah seluruh pin input/output nya sebanyak 23 pin. PORT tersebut berfungsi sebagai input/output digital atau juga berfungsi sebagai periperial lainnya.
 		
 	\subsection{Mikrokontroler ATmega8}
-		ATMega8 merupakan mikrokontroler keluarga AVR 8 bit yang banyak digunakan oleh pemula seperti saya. Seperti yang terbaca pada datasheet, mikrokontroler yang kita gunakan ini memiliki ukuran flash memori sebesar 8KB, SRAM sebesar 1KB, dan memori EEPROM sebesar 512 Bytes. Bingung apa bedanya dari ketiga memori tersebut. Baik, saya akan jelaskan sedikit tentang perbedaannya.
+		ATMega8 adalah mikrokontroler keluarga AVR 8 bit yang biasa digunakan oleh pemula. Seperti yang terbaca, mikrokontroler ini mempunyai flash memori yang berukuran sebesar 8KB, SRAM yang berukuran sebesar 1KB, dan memori EEPROM sebesar 512 Bytes. Dibawah ini akan di jelaskan sedikit tentang perbedaan dari ketiga itu.
 	\subsection{Jenis dan ukuran memori ATmega8}
-		Flash memori merupakan lokasi penyimpanan program yang kita buat. File hex hasil kompilasi program nantinya akan dimasukkan ke mikrokontroler melalui alat yang disebut downloader/programmer. Nah, file hex tersebut nantinya akan disimpan pada sebuah memori yang disebut flash memori. Pada saat melakukan proses pemograman (coding) biasanya kita memerlukan apa yang disebut dengan variabel atau tempat menampung data.
-		Pada saat program dijalankan oleh mikrokontroler, kemudian terdapat proses yang melibatkan variabel tersebut ( misalnya operasi aritmatika ) maka data dari variabel tersebut akan disimpan pada memori yang bernama SRAM. Kemudian jika ingin menyimpan sebuah data seperti halnya pada flashdisk ( data tidak hilang ketika tidak ada aliran listrik ) dimanakah kita harus menyimpan data tersebut? Jawabannya adalah pada sebuah memori yang bernama EEPROM. EEPROM sama halnya seperti hardisk, flashdisk yang ada pada komputer yaitu sebagai tempat penyimpanan data yang tidak terpengaruh terhadap aliran listrik.
+		Flash memori adalah tempat dimana kita  menyimpan program yang kita buat. Setelah kita mengompilasi program, kita akan mendapatkan file hex yang akan dimasukkan ke dalam  mikrokontroler. File hex itu nantinya akan disimpan di memori yang disebut flash memori. Saat melakukan proses pemograman (coding), biasanya kita memerlukan sesuatu yang disebut dengan variabel atau tempat menampung data.
+		Saat mikrokontroler menjalankan suatu program, terdapat proses yang melibatkan variabel (seperti aritmatika). Maka data dari variabel tersebut akan disimpan di memori yang bernama SRAM. Lalu jika ingin menyimpan data seperti halnya pada flashdisk (data tidak hilang ketika tidak ada aliran listrik), kita dapat menyimpannya pada sebuah memori yang bernama EEPROM. EEPROM mirip dengan hardisk, flashdisk yang biasa digunakan pada komputer yaitu sebagai tempat penyimpanan data yang tidak terpengaruh terhadap aliran listrik.
 	\subsection{Kebutuhan supply ATMega8}
-		Sekarang kita masuk ke bagian kebutuhan supply. Pada datasheet ditulisakan seperti pada gambar dibawah ini:
-		Sudah tau belum maksudnya apa ? Disitu tertulis operating voltages 2.7 – 5.5 volt (ATMega8L) dan 4.5 – 5.5 volt (ATMega8).). Lalu tegangan yang bakal kita gunakan berapa ? Di situ terdapat dua jenis operating voltages, yang pertama untuk ATMega8L yang kedua untuk ATMega8. Apa sih bedanya ? terus kita menggunakan yang mana ? Sebenarnya ATMega8 dan ATMega8L boleh dibilang sama, namun terdapat beberapa perbedaan antara keduanya. ATMega8L lebih ditujukan pada aplikasi yang membutuhkan suplly tegangan rendah (low voltages). Oleh karena itu pada ATMega8L tertulis operating voltagenya antara 2.7-5.5 volt.
-		Selain itu frekuensi maksimal yang boleh digunakan pada ATMega8L hanya 8MHz, berbeda dengan ATMega8 yang memiliki frekuensi maksimal 16MHz. Karena minimum system yang akan kita buat nanti menggunakan mikrokontroler ATMega8 maka kita akan menggunakan tegangan suplly dari 4.5 – 5.5 volt.
+		Sekarang kita masuk ke kebutuhan supply. Di dalam datasheet tertulis seperti pada gambar dibawah ini:
+		Didalam gambar tersebut tertulis \"operating voltages 2.7 – 5.5 volt (ATMega8L)\" dan \"4.5 – 5.5 volt (ATMega8).)\". Dan di situ terdapat dua jenis operating voltages, yang pertama adalah untuk ATMega8L dan  yang kedua adalah untuk ATMega8. ATMega8 dan ATMega8L dapat dikatakan sama, tetapi terdapat beberapa perbedaan diantara keduanya, yaitu  jika kita ingin mengaplikasikan sesuatu yang membutuhkan suplly tegangan rendah atau low voltages maka kita akan menggunakan ATMega8L. Karena pada ATMega8L operating voltagenya adalah antara 2.7-5.5 volt.
+		Selain itu juga, frekuensi maksimal yang dapat digunakan pada ATMega8L hanya sebesar 8MHz, berbeda dengan ATMega8 yang frekuensi maksimalnya sebesar 16MHz. Jika minimum system yang akan kalian buat nanti menggunakan mikrokontroler ATMega8 maka kalian akan menggunakan tegangan suplly dari 4.5 – 5.5 volt.
 
 \section{ATMega16}
-		AVR ATMega16 merupakan seri mikrokontroler CMOS 8-bit buatan Atmel,berbasis arsitektur RISC (Reduced Instruction Set Computer). Hampir semua instruksi dieksekusi dalam satu siklus clock. AVR mempunyai 32 register general-purpose, timer/counter fleksibel dengan mode compare, interrupt internal dan eksternal, serial UART, programmable Watchdog Timer, dan mode power saving, ADC dan PWM internal. AVR juga mempunyai In-System Programmable Flash on-chip yang mengijinkan memori program untuk diprogram ulang dalam sistem menggunakan hubungan serial SPI. ATMega16. ATMega16 mempunyai throughput mendekati 1 MIPS per MHz membuat disainer sistem untuk mengoptimasi konsumsi daya versus kecepatan proses.
+		AVR ATMega16 adalah mikrokontroler CMOS 8-bit yang dibuat oleh Atmel, yang basisnya adalah arsitektur RISC atau Reduced Instruction Set Computer. Hampir semua instruksinya dieksekusi dalam satu siklus clock. AVR mempunyai 32 register general-purpose, timer/counter fleksibel dengan mode compare, interrupt internal dan eksternal, serial UART, programmable Watchdog Timer, dan mode power saving, ADC dan PWM internal. Di dalam AVR terdapat sesuatu yang dinamakan In-System Programmable Flash on-chip yang berfungsi untuk memrogram ulang memori program dalam sistem menggunakan hubungan serial SPI. ATMega16. ATMega16 mempunyai throughput mendekati 1 MIPS per MHz membuat disainer sistem untuk mengoptimasi konsumsi daya versus kecepatan proses.
 	\subsection{Pembagian Kelas ATMega16}
-		AVR dapat dikelompokkan menjadi empat kelas, yaitu keluarga Attiny, keluarga AT902xx, keluarga Atmega, dan keluarga AT86RFxx. Pada dasarnya yang membedakan masing-masing kelas adalah memori, peripheral, dan fungsinya. Silahkan buka www.atmel.com untuk informasi lebih lanjut tentang berbagai variasi AVR. Untuk mikrokontroler AVR yang berukuran lebih kecil, silahkan mencoba Atmega8, Attiny2313 dengan ukuran Flash Memory 2KB dengan dua input analog.
+		AVR dibagi lagi menjadi empat kelas, yaitu AT902xx, Attiny, AT86RFxx, dan Atmega. Umumnya yang membedakan setiap kelas adalah memorinya, peripheral, dan fungsinya. Silahkan buka website official dari atmel  untuk informasi yang lebih lanjut dalam hal berbagai variasi AVR. Kalian juga dapat mencoba Atmega8, Attiny2313 dengan ukuran Flash Memory 2KB dengan dua input analog, untuk mikrokontroler AVR yang berukuran lebih kecil.
 	\subsection{Peta Memori ATMega16}
-		Memori Program    Arsitektur ATMega16 mempunyai dua memori utama, yaitu memori data dan memori program.  Selain itu, ATMega16 memiliki memori EEPROM untuk menyimpan data.  ATMega16 memiliki 16K byte On-chip In-System Reprogrammable Flash Memory untuk menyimpan program.  Instruksi ATMega16 semuanya memiliki format 16 atau 32 bit, maka memori flash diatur dalam 8K x 16 bit.  Memori flash dibagi kedalam dua bagian, yaitu bagian program boot dan aplikasi. Bootloader adalah program kecil yang bekerja pada saat sistem dimulai yang dapat memasukkan seluruh program aplikasi ke dalam memori prosesor.
+		Memori Program dari ATMega16 mempunyai dua memori utama, yaitu memori data dan memori program. Selain itu, ATMega16 memiliki memori EEPROM untuk menyimpan data. Untuk menyimpan program ATMega16 memiliki 16K byte On-chip In-System Reprogrammable Flash Memory. Semua instruksi ATMega16 memiliki format 16 atau 32 bit, karna itu memori flash diatur dalam 8K x 16 bit. Memori flash dibagi lagi kedalam dua bagian, yaitu bagian program boot dan bagian aplikasi. Bootloader adalah program kecil yang bekerja pada saat sistem dimulai atau biasa disebut booting yang dapat memasukkan seluruh program aplikasi ke dalam memori prosesor.
 	\subsection{Memori Data ATMega16}
-		Memori data AVR ATMega16 terbagi menjadi 3 bagian, yaitu 32 register umum, 64 buah register I/O dan 1 Kbyte SRAM internal.  General purpose register menempati alamat data terbawah, yaitu $00 sampai $1F.  Sedangkan memori I/O menempati 64 alamat berikutnya mulai dari $20 hingga $5F.  Memori I/O merupakan register yang khusus digunakan untuk mengatur fungsi terhadap berbagai fitur mikrokontroler seperti kontrol register, timer/counter, fungsi-fungsi I/O, dan sebagainya.  1024 alamat berikutnya mulai dari $60 hingga $45F digunakan untuk SRAM internal.
+		 Ada 3 bagian dari memori data ATMega16, yaitu 32 register umum, 64 buah register I/O dan 1 Kbyte SRAM internal. Yang pertama, Register umum menempati alamat data terbawah, yaitu $00 sampai $1F. Yang ke dua, memori I/O bertempat di 64 alamat berikutnya yang dimulai dari $20 hingga $5F dan juga sebagai register yang hanya digunakan untuk mengatur fungsi dari berbagai fitur mikrokontroler seperti timer atau counter, kontrol register, fungsi - fungsi I/O, dan lain - lain.  Yang ke tiga, 1024 alamat berikutnya mulai dari $60 hingga $45F digunakan untuk SRAM internal.
 	\subsection{Memori Data EEPROM}
-		ATMega16 terdiri dari 512 byte memori data EEPROM 8 bit, data juga dapat ditulis atau dibaca dari memori ini, ketika catu daya dimatikan, data terakhir yang ditulis pada memori EEPROM masih tersimpan pada memori ini, atau dengan kata lain memori EEPROM bersifat nonvolatile.  Alamat dari EEPROM mulai dari $000 sampai $1FF.
+		ATMega16 ini terdiri dari 512 byte memori data EEPROM 8 bit, dari memori ini kita juga dapat menulis atau membaca data, ketika daya dimatikan, data terakhir yang ditulis pada memori EEPROM masih tersimpan pada memori ini, atau dapat dikatakan memori EEPROM ini bersifat nonvolatile. Alamat dari memori EEPROM mulai dari $000 sampai $1FF.
 	\subsection{Port ATMega16}
-		ATMega16 mempunyai empat buah port yang bernama  PortA, PortB, PortC, dan PortD. Keempat port tersebut merupakan jalur  bidirectional dengan pilihan  internal pull-up. Tiap port mempunyai tiga buah register bit, yaitu DDxn, PORTxn, dan PINxn. Huruf ‘x’mewakili nama huruf dari port sedangkan huruf ‘n’ mewakili nomor bit. Bit DDxn terdapat pada I/O address DDRx, bit PORTxn terdapat pada I/O address PORTx, dan bit PINxn terdapat pada I/O address PINx. Bit DDxn dalam register DDRx (Data Direction Register) menentukan arah pin. Bila DDxn diset 1 maka  Px berfungsi sebagai pin output. Bila DDxn diset 0 maka Px berfungsi sebagai pin input. Bila PORTxn diset 1 pada saat pin terkonfigurasi sebagai pin input, maka resistor pull-up akan diaktifkan. Untuk mematikan resistor  pull-up, PORTxn harus diset 0 atau pin dikonfigurasi sebagai pin output. Pin port adalah  tri-state setelah kondisi reset.
+		Terdapat empat buah port di ATMega16, yaitu PortA, PortB, PortC, dan PortD. Keempat port ini merupakan jalur  bidireksional dengan pilihan  internal pull-up. Setiap port mempunyai tiga buah register bit, yaitu DDxn, PORTxn, dan PINxn. Huruf \"x\" mewakili nama huruf dari port sedangkan huruf \"n\" mewakili nomor bit. Di I/O address DDRx terdapat Bit DDxn, di I/O address PORTx terdapat bit PORTxn, dan di I/O address PINx terdapat bit PINxn. Bit DDxn dalam register DDRx (Data Direction Register) menentukan arah pin. Bila DDxn diset 1 maka  Px berfungsi sebagai pin output. Px berfungsi sebagai pin input bila DDxn diset 0. Resistor pull-up akan diaktifkan, bila PORTxn diset 1 pada saat pin terkonfigurasi sebagai pin input. Untuk mematikan resistor  pull-up, PORTxn harus diset 0 atau pin dikonfigurasi sebagai pin output. Pin port adalah  tri-state setelah kondisi reset.
 
 \section{Mikrokontroler ATMega328}
 	\subsection{Penjelasan}
-	ATMega328 merupakan mikrokontroler keluarga AVR 8 bit. Beberapa tipe mikrokontroler yang sama dengan ATMega8 ini antara lain ATMega8535, ATMega16, ATMega32, ATmega328, yang membedakan antara mikrokontroler antara lain adalah, ukuran memori, banyaknya GPIO (pin input/output), peripherial (USART, timer, counter, dll). Dari segi ukuran fisik, ATMega328 memiliki ukuran fisik lebih kecil dibandingkan dengan beberapa mikrokontroler diatas. Namun untuk segi memori dan periperial lainnya ATMega328 tidak kalah dengan yang lainnya karena ukuran memori dan periperialnya relatif sama dengan ATMega8535, ATMega32, hanya saja jumlah GPIO lebih sedikit dibandingkan mikrokontroler diatas.
+	ATMega328 juga merupakan mikrokontroler dari keluarga AVR 8 bit. Tipe - tipe mikrokontroler yang sama dengan ATMega8 ini adalah ATMega32, ATMega8535, ATMega16, ATmega328, yang membedakan mereka antara lain adalah, ukuran memori, banyaknya pin input atau output, peripherialnya (timer, USART, counter, dll). Dari segi fisik, ATMega328 memiliki ukuran yang lebih kecil dibandingkan dengan mikrokontroler - mikrokontroler diatas. Tetapi dalam segi memori dan periperial lainnya ATMega328 tidak kalah dengan yang lainnya karena ukuran memori dan periperialnya relatif sama dengan ATMega8535, ATMega32, hanya saja jumlah GPIO lebih sedikit dibandingkan mikrokontroler diatas.
 
-	ATMega328 memiliki 3 buah PORT utama yaitu PORT B, PORT C, dan PORT D dengan total pin input/output sebanyak 23 pin. PORT tersebut dapat difungsikan sebagai input/output digital atau difungsikan sebagai periperal lainnya.
+	Ada 3 buah PORT utama dari ATMega328 ini yaitu PORT B, PORT C, dan PORT D dengan jumlah semua pin input atau output sebanyak 23 pin. PORT tersebut dapat difungsikan sebagai input atau output digital atau difungsikan sebagai periperal lainnya.
 	\begin{enumerate}
 	\item Port B 
-		Port B merupakan jalur data 8 bit yang dapat difungsikan sebagai input/output. Selain itu PORTB juga dapat memiliki fungsi alternatif seperti di bawah ini.
+		Port B madalah jalur data 8 bit yang berfungsi sebagai input atau output. Selain itu, PORT B juga memiliki fungsi alternatif seperti di bawah ini :
 		\begin{itemize}
-			\item ICP1 (PB0), berfungsi sebagai Timer Counter 1 input capture pin. 
-			\item OC1A (PB1), OC1B (PB2) dan OC2 (PB3) dapat difungsikan sebagai keluaran PWM (Pulse Width Modulation).
-			\item MOSI (PB3), MISO (PB4), SCK (PB5), SS (PB2) merupakan jalur komunikasi SPI.
-			\item Selain itu pin ini juga berfungsi sebagai jalur pemograman serial (ISP).
-			\item TOSC1 (PB6) dan TOSC2 (PB7) dapat difungsikan sebagai sumber clock external untuk timer.
-			\item XTAL1 (PB6) dan XTAL2 (PB7) merupakan sumber clock utama mikrokontroler.
+			\item ICP1 (PB0), fungsinya yaitu sebagai Timer Counter 1 input capture pin. 
+			\item OC1A (PB1), OC1B (PB2) dan OC2 (PB3) dapat berfungsi sebagai keluaran PWM (Pulse Width Modulation).
+			\item MOSI (PB3), MISO (PB4), SCK (PB5), SS (PB2) adalah jalur yang digunakan untuk komunikasi SPI.
+			\item Selain itu, pin ini juga berfungsi sebagai jalur pemograman serial (ISP).
+			\item TOSC1 (PB6) dan TOSC2 (PB7) dapat berfungsi sebagai sumber clock external untuk timer.
+			\item XTAL1 (PB6) dan XTAL2 (PB7) adalah sumber clock utama dari mikrokontroler.
 		\end{itemize}
 		
 	\item Port C
-		Port C merupakan jalur data 7 bit yang dapat difungsikan sebagai input/output digital. Fungsi alternatif PORTC antara lain sebagai berikut.
+		Port C adalah jalur data 7 bit yang dapat berfungsi sebagai input atau output digital. Fungsi lain atau alternatif dari PORT C antara lain sebagai berikut :
 		\begin {itemize}
-			\item ADC6 channel (PC0,PC1,PC2,PC3,PC4,PC5) dengan resolusi sebesar 10 bit. ADC dapat kita gunakan untuk mengubah input yang berupa tegangan analog menjadi data digital
-			\item I2C (SDA dan SDL) merupakan salah satu fitur yang terdapat pada PORTC. I2C digunakan untuk komunikasi dengan sensor atau device lain yang memiliki komunikasi data tipe I2C seperti sensor kompas, accelerometer nunchuck. 
+			\item ADC6 channel (PC0,PC1,PC2,PC3,PC4,PC5) dengan resolusi sebesar 10 bit. Dapat di gunakan untuk mengubah input yang berupa tegangan analog menjadi data digital
+			\item I2C (SDA dan SDL) adalah salah satu fitur yang terdapat pada PORT C. I2C digunakan untuk komunikasi dengan sensor atau device lain yang memiliki komunikasi data tipe I2C seperti sensor kompas, accelerometer nunchuck. 
 		\end {itemize}
 
 	\end{enumerate}
 \section{ATMega128}
 	\subsection{penjelasan}
-	Mikrokontroler ATmega 128 merupakan mikrokontroler keluarga AVR yang mempunyai kapasitas flash memori 128KB. AVR (Alf and Vegard’s Risc Processor) merupakan seri mikrokontroler CMOS 8-bit buatan Atmel, berbasis arsitektur RISC (Reduced Instruction Set Computer). Dengan mengeksekusi instruksi kuat dalam satu siklus clock tunggal, ATmega128 mencapai throughput mendekati 1 MIPS per MHz yang memungkinkan perancang sistem untuk mengoptimalkan konsumsi daya melawan kecepatan proses
+	Mikrokontroler ATmega 128 adalah mikrokontroler keluarga AVR yang kapasitas flash memorinya sebesar 128KB. AVR (Alf and Vegard’s Risc Processor) adalah seri mikrokontroler CMOS 8-bit yang dibuat oleh Atmel, yang berbasis arsitektur RISC (Reduced Instruction Set Computer). Dengan mengeksekusi instruksi kuat dalam satu siklus clock tunggal, ATmega128 mencapai throughput mendekati 1 MIPS per MHz yang memungkinkan perancang sistem untuk mengoptimalkan konsumsi daya melawan kecepatan proses
 	Fitur Mikrokontroler ATmega128
-	Menurut datasheet ATmega128 yang diambil dari sebuah situs resmi Atmel , fitur-fitur pada mikrokontroler ATmega128 antara lain sebagai berikut:
+	Menurut datasheet ATmega128 yang diambil dari situs resmi Atmel , fitur-fitur pada mikrokontroler ATmega128 antara lain sebagai berikut:
 	\begin{itemize}
-		\item a. Mikrokontroler AVR 8 bit mempunyai kemampuan tinggi dengan daya rendah. 
+		\item a. Mikrokontroler AVR 8 bit mempunyai kemampuan tinggi dengan daya yang rendah. 
 		\item b. Arsitektur canggih RISC
-				1) 133 intruksi yang kuat. Kebanyakan Single Clock siklus eksekusi 
-				2) 32 x 8 tujuan umum kerja register + Peripheral kontrol register 
-				3) Operasi sepenuhnya statis 
-				4) Sampai dengan 16 MIPS troughput pada 16 MHz
-				5) On-chip 2- siklus multiplier
+				1) 133 intruksi yang kuat. Hampir semua Single Clock siklus eksekusi.
+				2) 32 x 8 tujuan umum kerja register + Peripheral kontrol. register 
+				3) Semua operasi statis.
+				4) Bisa mencapai 16 MIPS troughput pada 16 MHz.
+				5) On-chip 2- siklus multiplier.
 		\item c.Segmen Memory Tinggi Ketahanan Non-volatile 
 				1) 128K Bytes of In-System Reprogrammable Flash Memory
 				2) 4Kbytes EEPROM
