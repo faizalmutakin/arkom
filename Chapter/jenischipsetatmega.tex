@@ -25,18 +25,46 @@
 \section{ATmega8}
 
 	\subsection{Penjelasan}
+		
+		\begin{figure}[ht]
+			\centerline{\includegraphics[width=0.5\textwidth]{figures/sebelum.jpg}}
+			\caption{Gamber_Atmega}
+			\label{atmega8}
+			\end{figure}
+			
 		Sekarang kami akan membahas tentang ATMega8. Kami akan membahas tentang fungsi pin, clock, fuse bit, dll. mikrokontroler ATMega8 merupakan mikrokontroler keluarga AVR 8bit. Beberapa tipe mikrokontroler yang satu jenis dengan ATMega8 ini adalah ATMega8535, ATMega16, ATMega32, ATmega328, dll. Yang membedakan antara mikrokontroler yang tadi adalah, ukuran memori, banyaknya GPIO (pin input/output), peripherial (USART, timer, counter, dll).Dari segi ukuran fisik, ATMega8 memiliki ukuran yang lebih kecil dari pada mikrokontroler yang telah disebutkan diatas. Tetapi walaupun ukurannya kecil ATMega8 tidak kalah dengan yang lainnya karena ukuran memori dan bagian lainnya relatif sama dengan ATMega32, ATMega8535, atau yang lainnya. Hanya saja jumlah GPIO nya lebih sedikit dibandingkan mikrokontroler yang telah disebutkan. Untuk penjelasan lebih lanjut akan dibahas di bawah ini.
 	
 	\subsection{Fungsi dan Kebutuhan Pin}
+	
+		\begin{figure}[ht]
+			\centerline{\includegraphics[width=0.5\textwidth]{figures/sebelum.jpg}}
+			\caption{PDIP}
+			\label{pdip}
+			\end{figure}
+			
 		Pinout dari IC mikrokontroler ATMega8 yang berpackage DIP dapat dilihat di bawah ini.
 		Dari gambar yang kita lihat dapat kita simpulkan bahwa ada 3 PORT utama dari ATMega8 yaitu PORTB, PORTC, dan PORTD dengan jumlah seluruh pin input/output nya sebanyak 23 pin. PORT tersebut berfungsi sebagai input/output digital atau juga berfungsi sebagai periperial lainnya.
 		
 	\subsection{Mikrokontroler ATmega8}
+	
+		\begin{figure}[ht]
+			\centerline{\includegraphics[width=0.5\textwidth]{figures/sebelum.jpg}}
+			\caption{Datasheet}
+			\label{datamemori}
+			\end{figure}
+			
 		ATMega8 adalah mikrokontroler keluarga AVR 8 bit yang biasa digunakan oleh pemula. Seperti yang terbaca, mikrokontroler ini mempunyai flash memori yang berukuran sebesar 8KB, SRAM yang berukuran sebesar 1KB, dan memori EEPROM sebesar 512 Bytes. Dibawah ini akan di jelaskan sedikit tentang perbedaan dari ketiga itu.
 	\subsection{Jenis dan ukuran memori ATmega8}
 		Flash memori adalah tempat dimana kita  menyimpan program yang kita buat. Setelah kita mengompilasi program, kita akan mendapatkan file hex yang akan dimasukkan ke dalam  mikrokontroler. File hex itu nantinya akan disimpan di memori yang disebut flash memori. Saat melakukan proses pemograman (coding), biasanya kita memerlukan sesuatu yang disebut dengan variabel atau tempat menampung data.
 		Saat mikrokontroler menjalankan suatu program, terdapat proses yang melibatkan variabel (seperti aritmatika). Maka data dari variabel tersebut akan disimpan di memori yang bernama SRAM. Lalu jika ingin menyimpan data seperti halnya pada flashdisk (data tidak hilang ketika tidak ada aliran listrik), kita dapat menyimpannya pada sebuah memori yang bernama EEPROM. EEPROM mirip dengan hardisk, flashdisk yang biasa digunakan pada komputer yaitu sebagai tempat penyimpanan data yang tidak terpengaruh terhadap aliran listrik.
 	\subsection{Kebutuhan supply ATMega8}
+	
+		\begin{figure}[ht]
+			\centerline{\includegraphics[width=0.5\textwidth]{figures/sebelum.jpg}}
+			\caption{VOLTASE}
+			\label{voltase}
+			\end{figure}
+			
 		Sekarang kita masuk ke kebutuhan supply. Di dalam datasheet tertulis seperti pada gambar dibawah ini:
 		Didalam gambar tersebut tertulis \"operating voltages 2.7 – 5.5 volt (ATMega8L)\" dan \"4.5 – 5.5 volt (ATMega8).)\". Dan di situ terdapat dua jenis operating voltages, yang pertama adalah untuk ATMega8L dan  yang kedua adalah untuk ATMega8. ATMega8 dan ATMega8L dapat dikatakan sama, tetapi terdapat beberapa perbedaan diantara keduanya, yaitu  jika kita ingin mengaplikasikan sesuatu yang membutuhkan suplly tegangan rendah atau low voltages maka kita akan menggunakan ATMega8L. Karena pada ATMega8L operating voltagenya adalah antara 2.7-5.5 volt.
 		Selain itu juga, frekuensi maksimal yang dapat digunakan pada ATMega8L hanya sebesar 8MHz, berbeda dengan ATMega8 yang frekuensi maksimalnya sebesar 16MHz. Jika minimum system yang akan kalian buat nanti menggunakan mikrokontroler ATMega8 maka kalian akan menggunakan tegangan suplly dari 4.5 – 5.5 volt.
@@ -121,5 +149,8 @@
 				6) Output Bandingkan Modulator
 
 		\end{itemize}
+		
+	\cite{kioumars2011atmega}
+	\cite{stankovic2008wireless}
 
 	
