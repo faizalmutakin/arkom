@@ -1,110 +1,124 @@
+
 \section{Jenis - Jenis chipset Serial to USB}
-\subsection{Definisi}
-\subsubsection{Motherboard}
-Motherboard dapat  terpasang di berbagai jenis slot untuk menghubungkan dengan perangkat keras atau komponen-komponen komputer seperti prosesor, RAM, kartu grafis, Hard Drive atau hardisk, DVD Drive, Keyboard, mouse dan lain-lain. Setiap Motherboard memiliki kumpulan chip dan yang mengendalikannya disebut sebagai chipset. Ketika sebuah motherboard baru dikembangkan, motherboard tersebut umumnya telah menggunakan chipset baru. Motherboard adalah salah satu komponen, atau perangkat keras komputer yang berfungsi  untuk papan induk dan menyambungkan seluruh komponen bagian-bagian CPU menjadi satu kesatuan sistem komputer. Motherboard sendiri  mempunyai  bentuk seperti  papan PCB yang biasa digunakan untuk keperluan perangkat elektronik, dimana di dalamnya terdapat banyak socket untuk menghubungkan keseluruhan sistem komputer.
-\subsubsection{Chipset}
-Chipset adalah kumpulan - kumpulan dari chip ditambah IC yang dibuat untuk dapat bekerja dalam komputer atau perangkat elektronik lainnya.
-Chipset sendiri lebih banyak dipakai sebagai input dan output pada alat elektronik. jadi jika sebuah board atau tempat chipset dipasang mengalami kerusakan, maka kemungkinan besar chipset yang bermasalah.
+\section{USB (Universal Serial Bus)}
 
-Berikut ini adalah fungsi dan juga peran dari chipset northbridge:
+\subsection{Definisi USB}
+USB adalah media penghubung antara perangkat satu dengan perangkat yang lain. pada contohnya yaitu komputer dengan perangkat input outpunya yaitu Mouse, Keyboard, Flash Drive, Scanner, Dan Lain - Lain.
+Teknologi USB dikembangkan pada pertengahan 1990-an ini telah menjadi standar penghubung antara komputer dengan perangkat yang mendukung. USB sendiri dapat digunakan sebagai pengisian baterai untuk perangkat - perangkat portable seperti Handphone, Power Bank, Headset Bluetooth, dan lain - lain.
+USB sendiri adalah port yang sangat dipakai karena dengan bentuknya yang kecil dapat mengirim data dengan kecepatan tinggi. Yang terhubung di pada USB dapat hingga 127 perangkat dalam 1 komputer. Saat ini transfer data menggunakan USB semakin banyak, sehingga port USB menjadi pilihan utama karena kecepatan pengiriman yang besar dan ukuran yang kecil. Bus PCI sendiri sudah mendukung pengiriman data hingga 132MB/s. Konektor sendiri ada memiliki berbagai macam tetapi untuk dari perangkat ke komputer memiliki 2 macam. USB sendiri dipasang secara umum oleh banyak vendor yang membuat kemudahan dalam menghubungkan perangkat satu dengan yang lainnya. 
 
-Mengendalikan komunikasi yang terjalin antara processor, RAM, AGP, PCI Express, dan juga southbridge.
-Dapat melakukan pengendalian terhadap video.
-Memiliki peran yang sangat penting dalam menentukan jumlah, tipe dan juga kecepatan dari sebuah CPU atau processor yang dihubungkan ke dalam motherboard.
-Menentukan jumlah, kecepatan dan juga tipe pada RAM yang bisa digunakan pada motherboard.
+\subsection{Fungsi USB}
+USB pada saat sekarang dapat disebut sebagai sebuah alat transceiver Baik pengirim maupun USB itu sendiri. USB sendiri terdapat yang memiliki kemampuan khusus yang dipakai ke printer, scanner, arduino, dan lain - lain. Jika data dikirim secara serial, maka USB harus mampu menangani secara kontinyu. Pada komputer sendiri, USB memiliki kemampuan dan perkembangan yang lebih baik dibanding port manapun karena efektifitasnya yang sangat tinggi.
 
-\subsubsection{I. PENGKABELAN PORT SERIAL}
+\subsection{Perkembangan USB}
+Teknologi USB sebelumnya hanya dikembangkan oleh perusahaan komputer besar seperti Intel, Microsoft, NEC yang membuat USB untuk membuat koneksi yang lebih mudah. Kabel USB sendiri menjadi standar penghubung antara komputer dengan elektronik yang membuat konektor menjadi hanya sedikit dan mempermudah dalam konfigurasi perangkat juga mempercepat transfer yang dilakukan oleh USB. USB pada komputer dapat mempercepat perangkat eksternal ke PC yang bersangkutan atau dari komputer ke perangkat elektronik tersebut.
+\break
+Versi pertama dari USB yaitu USB Versi 1.0 yang dirilis pada bulan Januari 1996 untuk penggunaan komersil yang memiliki kecepatan transfer data hingga 1,5 Mbit/s dan dapat mendukung 127 jenis perangkat eksternal. Untuk masa sekarang, USB sudah berkembang dan dapat 
+melakukan kecepatan transfer data yang lebih tinggi yaitu berkecepatan hingga 20 Gbit/s.
+\break
+\begin{center}
+\begin{tabular}{||c c c||} 
+\hline
+Versi USB & Waktu Rilis & Kecepatan Transfer \\ [0.5ex] 
+\hline\hline
+USB 1.0 & Januari 1996 & 1,5 Mbit/s\\ 
+\hline
+USB 1.1 & Agustus 1998 & 12 Mbit/s\\
+\hline
+USB 2.0 & April 2000 & 480 Mbit/s\\
+\hline
+USB 3.0 & November 2008 & 5 Gbit/s \\
+\hline
+USB 3.1 & Juli 2013 & 10 Gbit/s \\
+\hline
+USB 3.2 & September 2017 & 20 Gbit/s\\ [1ex] 
+\hline
+\end{tabular}
+\end{center}
 
-Pada prinsipnya, serial ialah pengiriman data dilakukan per bit, sehingga lebih lambat dibandingkan parallel seperti pada port printer yang mampu mengirim 8 bit sekaligus dalam sekali detak. Beberapa contoh serial ialah mouse, scanner dan system akuisisi data yang terhubung ke port COM1/COM2.
-
-\subsubsection{Pengkabelan}
-Device pada serial port dibagi menjadi 2 (dua ) kelompok yaitu Data Communication Equipment (DCE) dan Data Terminal Equipment (DTE). Contoh dari DCE ialah modem, plotter, scanner dan lain lain sedangkan contoh dari DTE ialah terminal di komputer.
-
-Spesifikasi elektronik dari serial port merujuk pada Electronic Industry Association (EIA) :
-
-1. “Space” (logika 0) ialah tegangan antara + 3 hingga +25 V.
-
-2. “Mark” (logika 1) ialah tegangan antara –3 hingga –25 V.
-
-3. Daerah antara + 3V hingga –3V tidak didefinisikan /tidak terpakai
-
-4. Tegangan open circuit tidak boleh melebihi 25 V.
-
-5. Arus hubungan singkat tidak boleh melebihi 500mA.
-
-\subsubsection{USB}
-USB ialah port yang sangat diandalkan saat ini dengan bentuknya yang kecil dan kecepatan datanya yang tinggi. Anda dapat menghubungkan hingga 127 produk usb dalam 1 komputer. USB versi 1.1 mendukung 2 kecepatan yaitu mode kecepatan penuh 12Mbits/s dan kecepatan rendah 1.5 Mbits/s. USB 2.0 mempunyai kecepatan 480Mbits/s yang dikenal sebagai mode kecepatan tinggi. 
-Saat ini transfer data menggunakan port USB sudah semakin marak, port USB menjadi pilihan utama karena ukuran yang ringkas dan kecepatan transfer data yang cukup besar.  Sebagai perbandingan, Bus  PCI saat ini mendukung transfer data hingga 132 MB/s, dimana AGP (pada 66MHz) mendukung hingga 533 MB/s. AGP  dapat melakukan ini karena kemampuannya untuk mentransfer data pada ujung naik dan turun detak 66MHz.
-
-USB Universal Serial Bus adalah singkatan dari Universal Serial Bus. USB merupakan suatu teknologi yang memungkinkan kita untuk menghubungkan alat eksternal (peripheral) seperti scanner, printer, mouse, papan ketik (keyboard), alat penyimpan data (zip drive), flash disk, kamera digital atau perangkat lainnya ke komputer kita. USB sangat mendukung transfer data sebesar 12 Mbps ( juta bit per detik). Komputer (PC) saat ini, umumnya sudah memiliki port USB. Biasanya disediakan minimal 2 port. Jika dibandingkan dengan paralel port dan serial port, penggunaan port USB lebih mudah dalam penggunaannya.
-
-perangkat Super­Speed, seperti hard disk dari Buffalo dan Western Digital, tetapi kecepatan transfernya hanya 100 MB/detik. SSD jauh lebih cepat dengan 250 MB/detik. SSD pertama dengan USB 3.0 dan kecepatan di atas 300 MB/detik telah diumumkan dan rencananya akan dipasarkan pada kuartal ketiga tahun ini.
- Kelebihan USB 3.0 :
- 1. tidak diperlukannya pasokan daya tambahan untuk penggunaan hard disk eksternal.
- 2. suplai daya untuk perangkat USB 2.0 maksimal 500 mA, sementara untuk perangkat 3.0 mencapai 900 mA.
- 3. Hal yang baru di USB 3.0, host-controller akan terhubung ke perangkat yang tepat ketika akan menuliskan data pada USB flashdisk. Sementara itu, USB 2.0 mengirim data ke semua perangkat de­ngan cara polling – tak soal apakah perangkat tersebut tepat atau tidak.
-
-Flash disk merupakan salah satu perangkat yang menggunakan USB port untuk menghubungkannya dengan komputer. Flash disk berfungsi sebagai media penyimpanan data. Cara menghubungkan Flash disk ke komputer sangat mudah. Masukkan flash disk tersebut ke port USB yang telah tersedia. Jika komputer kita menggunakan Windows XP maka secara otomatis Flash disk tersebut akan dikenali. Sedangkan jika kita menggunakan windows 98 atau windows 9x maka biasanya driver Flash tersebut harus terlebih dahulu di install. Setelah Flash disk
-
-\subsubsection{Kabel USB}
-Jika dibuka, kabel USB akan terlihat ada 4 warna, yaitu merah, coklat, kuning dan biru. Kabel berwarna merah dan coklat berfungsi sebagai power / untuk arus listrik. Kabel berwarna kuning dan biru berfungsi untuk membawa / mentransfer data.
-\subsubsection{Cara Menghubungkan USB Flash disk dengan Komputer }
-Flash disk merupakan salah satu perangkat yang menggunakan USB port untuk menghubungkannya dengan komputer. Flash disk berfungsi sebagai media penyimpanan data. Cara menghubungkan Flash disk ke komputer sangat mudah. Masukkan flash disk tersebut ke port USB yang telah tersedia. Jika komputer kita menggunakan Windows XP maka secara otomatis Flash disk tersebut akan dikenali. Sedangkan jika kita menggunakan windows 98 atau windows 9x maka biasanya driver Flash tersebut harus terlebih dahulu di install. 
-RS232 adalah standard komunikasi serial yang digunakan untuk koneksi periperal ke periperal. Biasa juga disebut dengan jalur I/O ( input / output ). Contoh yang paling sering kita temui adalah koneksi antara komputer dengan modem, atau komputer dengan mouse bahkan bisa juga antara komputer dengan komputer, semua biasanya dihubungkan lewat jalur port serial RS232. 
-Standar ini menggunakan beberapa piranti dalam implementasinya. Paling umum yang dipakai adalah plug / konektor DB9 atau DB25. Untuk RS232 dengan konektor DB9, biasanya dipakai untuk mouse, modem, kasir register dan lain sebagainya, sedang yang konektor DB25, biasanya dipakai untuk joystik game.
-
-menambahkan bandwitdh hingga 480 Mbit/s [60 MB/s] (disebut “Hi-Speed”). hasil modifikasi dari Engineering Change Notices (ECN). beberapa kemampuan yng ditambahkan ECN dpat dilihat di USB.org: Battery Charging Specification 1.1 (memungkinkan charge perankat ke usb misal kamera digital/ handphone), Micro-USB Cables and Connectors Specification 1.01 (telah support dengan port us ukuran mikro seperti pada kameradigital/ handphone), Link Power Management Addendum ECN (memungkinkan USB dalam kondisi Slepp saat tidak digunakan)
-
-\subsubsection{Transaksi pada USB (Universal Serial Bus)}
-Dalam satu kali transaksi, USB dapat mengirimkan 3 paket informasi yaitu :
+\subsection{Metode Transfer Data pada USB}
+USB memiliki 4 metode transfer yang digunakan untuk mengirim data atau melakukan komunikasi dengan perangkat atau komputer. Metode yang terdapat pada USB diantaranya sebagai berikut : 
 \begin{itemize}
-\item Token Packet, yaitu paket yang selalu dikirimkan oleh Host.
-\item Data Packet, yaitu paket yang dapat dikirimkan oleh Host maupun perangkat.
-\item Handshake Packet, yaitu paket yang berisikan informasi tentang sukses atau gagalnya penerimaan paket data. Perangkat dapat mengirimkan Handshake Packet ke Komputer ataupun sebaliknya Komputer juga dapat mengirimkan Handshake packet ke Perangkat untuk melakukan koreksi terhadap kesalahan.
+\item Control Transfer \\ Metode ini digunakan untuk mengirim informasi, mengidentifikasi perangkat dan mengkonfigurasikan perangkat yang terhubung
+\item Bulk Transfer \\ Metode ini mengirim data dalam jumlah besar dan memverifikasi data jika data tersebut benar atau salah. Metode ini biasa digunakan pada Printer
+\item Interrupt Transfer \\ Metode ini adalah untuk mentransmisikan data kecil yang dilakukan secepat mungkin. Metode ini digunakan pada mouse atau keyboard yang selalu dipakai.
+\item Isochronous Transfer \\ Metode ini digunakan untuk pemindahan data secara cepat dan realtime. Yang menjadi kunci utama pada transfer ini yaitu Waktu.
+\end{itemize}
+\subsection{Pengiriman data yang dilakukan USB}
+Saat melakukan transfer, USB mengirim 3 paket informasi diantaranya : 
+\begin{itemize}
+\item Token Packet - paket yang selalu ditransfer oleh Host.
+\item Data Packet - Paket yang dikirim oleh host maupun perangkat eksternal.
+\item Handshake Packet - Paket yang berisi konfirmasi dari laju transfer, baik Host maupun Perangkat Eksternal dapat mengirim paket ini karena paket ini dapat mengkoreksi kesalahan yang timbul karena kesalahan transfer.
+\end{itemize}
+\subsection{Kelebihan Penggunaan USB}
+Keuntungan yang didapat ada beberapa macam, Diantaranya : 
+\begin{itemize} 
+\item USB relatif mudah digunakan karena USB dapat mengkonfigurasi secara otomatis dan mendukung Single Interface untuk beberapa perangkat dan mudah dalam melakukan penambahan koneksi pada perangkat. Ukuran dari USB sendiri lebih mudah dan lebih kecil karena kabel ini hanya perlu dicolokan tanpa konfigurasi.
+\item USB Memiliki kecepatan tinggi hingga 20 Mbit/s
+\item USB dapat mendeteksi kesalah pengiriman data dan dapat mengirim konfirmasi dimana kesalahan dari transfer.
+\item USB Memiliki biaya yang cukup murah karena penggunaannya secara luas dan massal sehingga biaya dapat ditekan sekecil mungkin.
+\item Penggunaan daya lebih kecil dari kabel lainnya.
+\end{itemize}
+\subsection{Jenis - Jenis Connector USB}
+\begin{figure}[ht]
+\centerline{\includegraphics[width=0.6\textwidth]{figures/tipeusb.jpg}}
+\caption{Tipe - tipe USB}
+\label{tipeusb}
+\end{figure}
+Teknologi USB sudah dikembangkan mulai pada 1990-an ini telah menjadi standar penghubung antara komputer dengan perangkat yang mendukung. USB sendiri dapat digunakan sebagai pengisian baterai untuk perangkat - perangkat portable.
+USB sendiri adalah port yang sangat dipakai karena dengan bentuknya yang kecil dapat mengirim data dengan kecepatan tinggi. Yang terhubung di pada USB dapat hingga 127 perangkat dalam 1 komputer. Saat ini transfer data menggunakan USB semakin banyak, sehingga port USB menjadi pilihan utama karena kecepatan pengiriman yang besar dan ukuran yang kecil. 
+USB memiliki konektor yang umum digunakan, kecepatannya pun beragam setiap dari konektor tersebut. konektor itu diantaranya : 
+\subsubsection{Connector Type A}
+Kabel USB pada umumnya menggunakan Connector Type A (Gambar \ref{tipeusb}) baik pada perangkat komputer maupun perangkat lainnya. Connector A sendiri telah dijadikan standar dalam membuat sebuah konektor USB.
+\subsubsection{Connector Type B}
+Konektor ini memiliki karakteristik lekukan di kedua sudut atas. Jenis konektor ini dipakai sebagai komunikasi antara perangkat input eksternal ke komputer seperti Printer maupun Scanner.
+\subsubsection{Connector Mini USB}
+Konektor ini banyak digunakan pada perangkat portabel maupun ponsel sebagai media transfer maupun pengisian baterai. Konektor ini. Bentuk konektor ini lebih kecil dibanding dengan Konektor Tipe A maupun Tipe B (Gambar \ref{tipeusb}).
+\subsubsection{Connector Micro USB}
+Untuk Perangkat Ponsel zaman sekarang, banyak yang menggunakan Micro USB Sebagai penghubung ponsel dengan perangkat lainnya. dengan bentuknya yang tipis membuat Konektor ini digunakan oleh banyak vendor di dunia handphone.
+\subsubsection{Connector Type C}
+Konektor ini adalah konektor terbaru yang dapat mentransfer dengan kecepatan tinggi. Konektor ini memiliki bentuk oval dan kecil seperti Micro USB. Untuk beberapa smartphone sudah menggunakan USB Type C sebagai media transfer.
+\section{Chipset}
+Chipset adalah kumpulan microchip yang terdapat pada board maupun motherboard yang dibuat untuk melakukan fungsi tertentu. Fungsi dari chipset pada umumnya adalah mengatur aliran data antar komponen yang terpasang pada perangkat. Fungsi lain chipset sendiri adalah menganalisa dan mengkonfigurasi peralatan tambahan.
+\subsection{Chipset North Bridge}
+Chipset ini berfungsi mengatur aliran data pada peripheral internal inti.
+\subsection{Chipset South Bridge}
+Chipset ini mengatur aliran data pada peripheral eksternal seperti USB, Input Output, Audio, dan sebagainya.
+\section{Port}
+\subsection{Definisi Port}
+Port adalah sebuah slot aatau colokan yang terdapat pada komputer maupun alat lain yang berfungsi untuk menghubungkan peralatan input-output atau proses. Port sendiri memiliki berbagai macam diantaranya adalah Port USB, PS/2, Serial, Parallel, dan lain - lain.
+\section{Komunikasi Serial}
+Komunikasi Serial atau secara ilmiah disebut RS-232 adalah standar didefinisikan sebagai interface antara perangkat terminal data dan perangkat komunikasi data atau biasa disebut DTE dan DCE. Komunikasi Serial sendiri ada pada tahun 1962 tetapi pada tahun 1997, komunikasi DTE telah diperkenalkan sebagai modifikasi standar RS-232 dan menamainya sebagai EIA-232.
+Standar kecepatan dari Komunikasi Serial mencapai maksimal 256 kbps dengan jarak kurang dari 15 meter. Jenis serial sendiri dibagi menjadi dua yaitu Data Communication Equipment (DCE) dan Data Terminal Equipment(DTE). Port dari serial sendiri biasanya memiliki 9 PIN yang digunakan pada komputer ke monitor. 
 
-\subsubsection{Tipe USB}
-Mini-USB adalah konektor standar untuk perangkat-perangkat mobile. Mini-USB lebih kecil ketimbang USB reguler, dan digunakan di perangkat kecil seperti smartphone, atau kamera digital. Mini-USB kini sudah ditinggalkan dan sebagian besar kini menggunakan micro-USB.
-Micro-USB
-Pembenahan bentuk dari Mini-USB, dan telah disepakati oleh banyak pabrikan untuk memproduksi berbagai perangkat mobile-nya dengan USB tipe ini. Bentuk USB inilah yang terdapat pada charger smartphone kita. Sebagai tambahan, hanya Apple yang tak menggunakan USB tipe ini.
-If you need to connect a serial device to your computer but your computer doesn't have a serial port, then you need a USB to Serial adapter. Finding the best adapter can be a challenge since there are so many differnt models, types and manufacturers. These 5 steps will help you make the right decision. 
+Spesifikasi dari serial port mengarah pada Electronic Industry Association (EIA) : 
+\begin{itemize}
+\item "Space" (Logika 0) memiliki tegangan antara +3 sampai +25V.
+\item "Mark" (Logika 1) memiliki tegangan antara -3 sampai -25V.
+\item Daerah antara +3V sampai -3V tidak terpakai
+\item Tegangan tidak boleh melebihi 25V.
+\item Arus hubungan singkat tidak boleh melebihi 500mA.
+\end{itemize}
+\subsection{Serial RS-232}
+Dulu port serial RS-232 pada komputer terdapat minimal 2 buah port. tetapi sekarang sudah berkurang menjadi 1 buah, bahkan terkadang pada komputer masa kini sudah tidak disediakan port tersebut. Hal tersebut terjadi karena teknologi yang terus berkembang, dan sudah menjadi hal yang biasa jika suatu teknologi telah ditemukan maka teknologi lama akan ditinggalkan. Walaupun begitu bukan berarti RS-232 telah ditinggalkan sepenuhnya. RS-232 sendiri memiliki kelebihan yaitu kemudahan dalam penggunaan, pemrograman yang tidak rumit, mudah untuk dipelajari dan karena sudah umum sehingga tidak sulit mendapatkan alat yang digunakan untuk merancang port serial RS-232.
+\subsection{Serial DCE}
+Sirkuit ini adalah perangkat yang berada di antara peralatan DTE dan rangkaian transmisi data. Hal ini biasa disebut sebagai data peralatan komunikasi atau Carrier Data Tools. Dalam proses transfer data, DCE melakukan fungsi diantaranya signal conversion, coding, dan dapat menjadi bagian dari peralatan DTE atau menengah. Perangkat ini memerlukan Interface untuk beberapa peralatan terminal data ke rangkaian transmisi atau saluran dan dari sirkuit transisi atau saluran ke DTE. Meskipun sering disebut dengan RS-232, beberapa komunikasi data berbeda definisi dengan sebutan tersebut. DCE sendiri adalah perangkat yang berkomunikasi dengan DTE dalam standar ini. Standarnya adalah sebagai berikut : 
+\begin{itemize}
+\item Federal Standard 1037C
+\item MIL-STD-188
+\item RS-232
+\end{itemize}
+\subsection{Serial DTE}
+Sirkuit ini adalah perangkat komunikasi yang memiliki fungsi sebagai penerima sinyal dari pusat yang nanti akan dikirimkan data tersebut ke client. dimana data tersebut akan dikirimkan ke tempat yang telah ditentukan dan diterima di tempat yang ditentukan
+\subsection{Fungsi dari Serial}
+Komunikasi Serial atau secara ilmiah disebut RS-232 adalah standar didefinisikan sebagai interface antara perangkat terminal data dan perangkat komunikasi data atau biasa disebut DTE dan DCE. Komunikasi Serial sendiri ada pada tahun 1962 tetapi pada tahun 1997, komunikasi DTE telah diperkenalkan sebagai modifikasi standar RS-232 dan menamainya sebagai EIA-232.
+Standar kecepatan dari Komunikasi Serial mencapai maksimal 256 kbps dengan jarak kurang dari 15 meter. Jenis serial sendiri dibagi menjadi dua yaitu Data Communication Equipment (DCE) dan Data Terminal Equipment(DTE).
+Serial biasa digunakan untuk melakukan pengiriman data yang berpacu pada pengiriman bit per waktu, karena hal tersebut pengiriman data berjalan agak lambat. Serial sendiri biasa digunakan untuk mengkoneksikan perangkat seperti Mouse, Printer, dan lain - lain. Port yang dipakai adalah port COM. sedangkan konektor yang digunakan adalah RS-232C.
+\section{Fungsi Serial to USB pada Arduino}
+\subsection{Fungsi USB}
+Fungsi dari konektor USB pada kabel Arduino adalah sebagai penghubung ke komputer dimana sebuah perangkat dapat dihubungkan dan dikirimkan data dari komputer ke arduino. USB sendiri dapat sebagai power supply sementara yang membuat sebuah arduino dapat dijalankan dan difungsikan juga diujicobakan. 
+\subsection{Fungsi Serial}
+Fungsi dari konektor Serial pada kabel Arduino adalah sebagai penerima data yang berasal dari komputer ke mikro controller Arduino yang menerima sesuai dengan kapasitas yang dapat diterima arduino. Serial sendiri memiliki kecepatan yang relatif rendah sehingga membuat pengiriman data ke arduino hanya dapat menerima dengan kecepatan cukup rendah. Pada Arduino sendiri terdapat Serial Monitor dimana data yang dikirim dari arduino dapat dilacak ke Arduino IDE pada komputer yang nanti digunakan untuk memonitor hasil yang didapat dari Arduino tersebut. Setelah dimonitor hasil yang terdapat dari arduino dapat diubah sesuai dengan tegangan serial yang dihasilkan dan disediakan oleh arduino tersebut.
 
-\subsubsection{Konektor USB Tipe A}
-Sebagian besar Kabel USB memiliki konektor USB Tipe A di satu sisi, karena Konektor USB Tipe A yang berbentuk persegi panjang inilah yang dipasangkan pada bagian komputer. PC atau Komputer Personal pada umumnya memiliki beberapa port USB Tipe A. Perangkat-perangkat seperti keyboard dan mouse juga menggunakan konektor USB Tipe A di satu sisinya. Beberapa jenis adaptor yang dipergunakan oleh perangkat-perangkat elektronik portabel juga memiliki port USB Tipe A untuk melakukan pengisian ulang baterainya. Nama resmi konektor USB Tipe A ini adalah USB Standard A.
-
-\subsubsection{Konektor USB Tipe B}
-Nama resmi konektor USB Tipe B ini adalah USB Standard B. Konektor USB Tipe B berbentuk bujur sangkar dengan sedikit lekukan di kedua sudut atas. Jenis Konektor USB Tipe B ini biasanya digunakan oleh Printer ataupun Scanner dan tidak sepopuler USB Tipe-A.
-
-\subsubsection{USB}
-USB Tipe C yang baru dirilis beberapa waktu lalu memiliki bentuk yang sama dengan tipe B (port dan konektor). Port untuk tipe C berukuran 8.4 mm dan 2.6 mm. Tentunya, dengan ukuran yang kecil akan kompatibel untuk device kecil. Kabel yang berada pada bagian ujung sangat kecil sehingga dapat digunakan secara bolak-balik
-USB Universal Serial Bus adalah singkatan dari Universal Serial Bus. USB merupakan suatu teknologi yang memungkinkan kita untuk menghubungkan alat eksternal (peripheral) seperti scanner, printer, mouse, papan ketik (keyboard), alat penyimpan data (zip drive), flash disk, kamera digital atau perangkat lainnya ke komputer kita. USB sangat mendukung transfer data sebesar 12 Mbps ( juta bit per detik). Komputer (PC) saat ini, umumnya sudah memiliki port USB. Biasanya disediakan minimal 2 port. Jika dibandingkan dengan paralel port dan serial port, penggunaan port USB lebih mudah dalam penggunaannya.
-
-\subsection{Serial}
-\subsubsection{Serial}
-Serial port merupakan salah satu sarana yang digunakan oleh sebuah PC untuk berhubungan dengan perangkat luar. Melalui port ini, semua peralatan luar yang terkoneksi dengan PC dapat dikontrol atau dikendalikan dengan memberikan sebuah perintah melalui PC. Ada dua cara dalam komunikasi serial, yaitu komunikasi data serial secara sinkron dan komunikasi data serial secara asinkron. Pada komunikasi data serial secara sinkron, sinyal clock dikirimkan bersama-sama dengan data serial. Sedangkan komunikasi data secara asinkron, sinyal clock tidak dikirim bersama-sama dengan data serial, melainkan
-dibangkitkan sendiri-sendiri oleh rangkaian penerima data (receiver) maupun rangkaian pengirim data (transmitter)
-
-Pada PC, serial port yang digunakan termasuk jenis asinkron, dimana komunikasi serial ini dikerjakan oleh UART (Universal Asynchronous Receiver / Transmitter). IC UART ini berfungsi untuk mengubah data parallel menjadi data serial dan menerima data serial yang kemudian diubah kembali menjadi data parallel.
-Standar sinyal komunikasi serial yang banyak digunakan adalah standar RS232 yang dikembangkan oleh Electronic Industry Association and the Telecommunications Industry Association (EIA / TIA). Standar ini hanya menyangkut komunikasi data antara komputer (Data Terminal Equipment – DTE) dengan alat – alat pelengkap komputer (Data Circuit-Terminating Equipment – DCE). Standarad RS232 inilah yang biasa digunakan pada serial port IBM PC Compatibel
-Pada UART, kecepatan pengiriman data (baudrate) dan fase clock pada sisi transmitter dan pada sisi receiver harus sinkron. Untuk itu diperlukan diperlukan sinkronisasi antara transmitter dan receiver. Hal ini dilakukan oleh bit ‘Start’ dan bit ‘Stop’.
-
-RS232 adalah standard komunikasi serial yang digunakan untuk koneksi periperal ke periperal. Biasa juga disebut dengan jalur I/O ( input / output ). Contoh yang paling sering kita temui adalah koneksi antara komputer dengan modem, atau komputer dengan mouse bahkan bisa juga antara komputer dengan komputer, semua biasanya dihubungkan lewat jalur port serial RS232. 
-Standar ini menggunakan beberapa piranti dalam implementasinya. Paling umum yang dipakai adalah plug / konektor DB9 atau DB25. Untuk RS232 dengan konektor DB9, biasanya dipakai untuk mouse, modem, kasir register dan lain sebagainya, sedang yang konektor DB25, biasanya dipakai untuk joystik game.
-
-Standar RS232 ditetapkan oleh Electronic Industry Association and Telecomunication Industry Association pada tahun 1962. Nama lengkapnya adalah EIA/TIA-232 Interface Between Data Terminal Equipment and Data Circuit-Terminating Equipment Employing Serial Binary Data Interchange.
-Port Serial RS232 juga mempunyai fungsi yaitu untuk menghubungkan / koneksi dari perangkat yang satu dengan perangkat yang lain, atau peralatan standart yang menyangkut komunikasi data antara komputer dengan alat-alat pelengkap komputer.
-
-\subsubsection{Serial Interface}
-Sebuah saluran data yang mentransfer data digital secara serial: satu bit demi satu di atas satu kawat atau serat. Serial Interface mungkin memiliki beberapa baris, tetapi hanya satu baris digunakan untuk data. Garis lain yang digunakan untuk kontrol.
-Pada PC sebelumnya, port serial adalah serial interface untuk memasang modem dan terminal akuisisi data, dan kadang-kadang mouse.
-Umum Komputer Desktop Serial Interface
-USB banyak digunakan untuk memasang perangkat periferal segudang. Populer di dunia Apple, FireWire (IEEE 1394) digunakan untuk transfer video. Serial ATA (SATA) adalah antarmuka hard drive populer.
-
-adalah sebuah port pada personal computer yang berfungsi untuk mentransmisikan satu bit informasi pada satu satuan waktu. Dalam serial port, pengiriman informasi tidak memungkinkan untuk melakukan secara banyak sekalius. Hal ini disebabkan karena dalam melakukan pemindahan data, biasanya serial port bekerja seri, misalnya COM 1 dan COM 2. Untuk penggunaan port serial sekarang ini sudah berkurang. 
-
-Penggunaan port serial telah tergantikan dengan port USB dan Firewire. Sedangkan untuk jaringan (networking) fungsinya sudah tergantikan dengan port Ethernet. Berikut beberapa fungsi serial port yaitu menghubungkan antara peripheral (alat) computer lain dengan motherboard, penghubung antara mouse dengan motherboard, penghubung antara modem dengan motherboard, dan mentransmisikan informasi-informasi berupa bit-bit dari mainboard ke perangkat lainnya.
-PORT PARALLEL: Port yang digunakan untuk menghubungkan CPU dengan printer dan modem eksternal serta periferal lainnya yang memiliki kabel untuk port parallel. Port paralel bekerja dengan mengirim dan menerima beberapa bit pada satu saat melalui satu set kabel. Termasuk dalam port paralel adalah port penghubung printer, modem, dan port penghubung disk drive
-PORT USB: Merupakan port multi fungsi yang dapat digunakan pada beberapa perangkat atau feriperal lainnya seperti mouse, keyboard, modem, card wireless, dan lain sebagainya. Port USB merupakan pengembangan dari port serial. Saat ini, port usb paling populer digunakan, misalnya untuk flash disk, harddisk eksternal, mouse, keyboard. Kelebihan dari port USB adalah kemudahannya dalam melakukan koneksi device ke komputer, sehingga banyak alat dapat dipasang secara plug and play. 
-
-USB ini dirancang tidak tergantung pada ekspansion slot, dan USB yang dipasang tidak perlu melakukan booting ulang komputer. Selain itu, USB juga mendukung arsitektur daisy-chain ganda, yaitu penggunaan USB hub. Sebuah USB hub dapat menampung banyak device USB. Jumlah tingkat atau level USB hub yang tersusun maksimal 5 tingkat, sedangkan jumlah USB device yang dapat terkoneksi ke sebuah kontroler USB maksimal 127 buah
-Hampir setiap orang tentu mengenal dan menggunakan Universal Serial Bus atau lebih dikenal dengan sebutan USB. Definisi USB sendiri adalah cara komunikasi antara peralatan dengan Host Controller(biasanya PC) 
 
