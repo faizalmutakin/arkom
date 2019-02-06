@@ -14,72 +14,66 @@ Dalam melakukan percobaan sebuah sensor pir hendaknya mengetahui terlebih dahulu
 \subsection {Cara Merakit Sensor Pir dan Arduino}
 
 Sebelum merakit sensor pir dan arduiono berikut yang perlu dilakukan sebelum merakit.
-1. Pastikan kita mengetahui komponen sensor pir.
-2. Mengetahui fungsi dan cara kerja sensor pir.
+\begin{enumerate}
+\item Pastikan kita mengetahui komponen sensor pir.
+\item Mengetahui fungsi dan cara kerja sensor pir.
+\end{enumerate}
 
 \subsubsection {Tutorial Merakit Sensor Pir}
 Alat yang diperlukan:
-1. Arduino Uno.
-2. Sensor Pir.
-3. Lampu Led (warna bebas).
-4. Kabel Jumper Male to Female (3 buah warna).
-5. Kabel USB.
-6. PC.
+\begin{enumerate}
+\item Arduino Uno.
+\item Sensor Pir.
+\item Lampu Led (warna bebas).
+\item Kabel Jumper Male to Female (3 buah warna).
+\item Kabel USB.
+\item PC.
+\end{enumerate}
 
 Cara Merakit:
-a. Gabungkan kabel jumper male to female berwarna orange dari VCC sensor pir ke pin 5 arduino.
+a. Gabungkan kabel jumper male to female berwarna orange dari VCC sensor pir ke pin 5 arduino seperti terlihat pada gambar \ref{carakoneksikabelvcc}.
 
-\ref{kabelvcc}
+
 
 \begin{figure} [ht]
 \centerline{\includegraphics[width=1\textwidth]{figures/kabelvcc.JPG}}
 \caption{gambar kabelvcc.}
-\label{kabelvcc}
+\label{carakoneksikabelvcc}
 \end{figure}
 
-b. Gabungkan kabel jumper male to female berwarna merah dari OUPUT sensor pir ke pin A5 arduino.
-
-\ref{kabeloutput}
+b. Gabungkan kabel jumper male to female berwarna merah dari OUPUT sensor pir ke pin A5 arduino(gambar \ref{ckkabeloutput})
 
 \begin{figure} [ht]
 \centerline{\includegraphics[width=1\textwidth]{figures/kabeloutput.JPG}}
 \caption{gambar kabeloutput.}
-\label{kabeloutput}
+\label{ckkabeloutput}
 \end{figure}
 
-c. Gabungkan kabel jumper male to female berwarna coklate dari GND sensor pir ke GND arduino.
-
-\ref{kabelgnd}
+c. Gabungkan kabel jumper male to female berwarna coklate dari GND sensor pir ke GND arduino(gambar \ref{ckkabelgnd})
 
 \begin{figure} [ht]
 \centerline{\includegraphics[width=1\textwidth]{figures/kabelgnd.JPG}}
 \caption{gambar kabelgnd.}
-\label{kabelgnd}
+\label{ckkabelgnd}
 \end{figure}
 
-d. Pasang lampu led berwarna biru ke pin 13 arduino.
-
-\ref{led}
+d. Pasang lampu led berwarna biru ke pin 13 arduino. lihat di gambar \ref{ckled}.
 
 \begin{figure} [ht]
 \centerline{\includegraphics[width=1\textwidth]{figures/led.JPG}}
 \caption{gambar led.}
-\label{led}
+\label{ckled}
 \end{figure}
 
-e. Pasang kabel USB dari arduino ke PC.
-
-\ref{kabelusb}
+e. Pasang kabel USB dari arduino ke PC seperti pada gambar \ref{ckkabelusb}.
 
 \begin{figure} [ht]
 \centerline{\includegraphics[width=1\textwidth]{figures/kabelusb.JPG}}
 \caption{gambar kabelusb.}
-\label{kabelusb}
+\label{ckkabelusb}
 \end{figure}
 
-f. Buat Codingan Sensor Pir.
-
-\ref{coding}
+f. Buat Codingan Sensor Pir seperti gambar \ref{coding}.
 
 \begin{figure} [ht]
 \centerline{\includegraphics[width=1\textwidth]{figures/coding.JPG}}
