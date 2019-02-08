@@ -24,11 +24,11 @@
 	Upaya modern mengenai bentuk standar ASCII IPA menghasilkan TIMITBET, MRPA, SAMPA, dan
 	SAMPA Diperpanjang untuk beberapa nama dari mereka. Huruf fonetik ini dibatasi untuk bahasa Inggris atau bahasa Inggris kebahasa-bahasa Eropa.
 	ASCII memiliki jumlah kode sebanyak 255 dengan nilai ANSI ASCII desimal 0 sampai 127 merupakan kode ASCII manipulasi teks sedangkan kode ASCII dengan nilai ANSI ASCII 128 sampai 255 merupakan kode ASCII untuk memanipulasi gambar grafik.
-	
-		1. Kode yang tidak terlihat seperti kode 8 back space,10 pergantian baris,32 spasi 
-		2. sedangkan kode yang terlihat simbolnya seperti numerik atau angka 0...9 abjad a...z karakter khusus.
-		3. dan kode yang tidak ada di keyboard tapi tidak dapat ditampilkan, kode-kode ini biasanya untuk kode-kode grafik dengan nilai ANSI ASCII 128 sampai 225.
-  
+	\begin{enumerate}
+		\item Kode yang tidak terlihat seperti kode 8 back space,10 pergantian baris,32 spasi 
+		\item sedangkan kode yang terlihat simbolnya seperti numerik atau angka 0...9 abjad a...z karakter khusus.
+		\item dan kode yang tidak ada di keyboard tapi tidak dapat ditampilkan, kode-kode ini biasanya untuk kode-kode grafik dengan nilai ANSI ASCII 128 sampai 225.
+  \end{enumerate}
 
 	Berikut contoh tabel berisi karakterk-karakter ASCII.
 \begin{table}[H]
@@ -173,22 +173,23 @@ Sementara itu, ketidakpastian sayangnya tetap dan mungkin akan mempengaruhi
    keseimbangan antara keuntungan (pengurangan ketidakpastian) dan
    Kekurangan (kehilangan fungsi tanda tangan) dari pembatasan tersebut, itu
    berguna untuk membedakan beberapa kasus:
+\begin{enumerate}
 
-    1. Protokol HARUS melarang penggunaan U + FEFF sebagai tanda tangan untuk itu
+    \item Protokol HARUS melarang penggunaan U + FEFF sebagai tanda tangan untuk itu
       elemen protokol tekstual yang mandat protokolnya selalu
       UTF-8, fungsi tanda tangan sama sekali tidak berguna bagi mereka
       kasus.
 
-    2. Protokol HARUS melarang penggunaan U + FEFF sebagai tanda tangan untuk
+    \item Protokol HARUS melarang penggunaan U + FEFF sebagai tanda tangan untuk
       elemen protokol teks yang disediakan oleh protokol ini
       mekanisme identifikasi pengkodean karakter, bila diharapkan
       bahwa implementasi protokol akan berada dalam posisi untuk
       selalu gunakan mekanisme dengan benar. Ini akan terjadi kapan
-	  3. elemen protokol dipelihara dengan ketat di bawah kendali
+	\item elemen protokol dipelihara dengan ketat di bawah kendali
       pelaksanaannya mulai dari saat penciptaan sampai saat ini
       transmisi mereka (diberi label dengan benar).
 
-    4. Protokol TIDAK HARUS melarang penggunaan U + FEFF sebagai tanda tangan
+    \item Protokol TIDAK HARUS melarang penggunaan U + FEFF sebagai tanda tangan
       elemen protokol tekstual yang protokolnya tidak
       berikan mekanisme identifikasi pengkodean karakter, bila ada larangan
       tidak dapat dijalankan, atau bila diharapkan begitu
@@ -201,3 +202,4 @@ Sementara itu, ketidakpastian sayangnya tetap dan mungkin akan mempengaruhi
       atau dari protokol lain yang tidak menjamin tepat
       identifikasi pengkodean karakter (seperti HTTP).
      hal tersebut berdasarkan yang ditulis dalam artikel wahl \cite{wahl1997lightweight}
+\end{enumerate}
